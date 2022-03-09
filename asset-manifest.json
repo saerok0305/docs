@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/docs/static/css/main.94f842ea.css",
+    "main.js": "/docs/static/js/main.21021981.js",
+    "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
+    "static/media/react-simple-documentation.mdx": "/docs/static/media/react-simple-documentation.7d0be975ee06428450c7.mdx",
+    "index.html": "/docs/index.html",
+    "static/media/get-started.mdx": "/docs/static/media/get-started.407ca3913e388ebd804f.mdx",
+    "static/media/topic-modeling.mdx": "/docs/static/media/topic-modeling.8751b48b9f103aa4284e.mdx",
+    "static/media/repository.mdx": "/docs/static/media/repository.02d009ce01588dfee50f.mdx",
+    "static/media/development.mdx": "/docs/static/media/development.e40476442289a853955d.mdx",
+    "static/media/research.mdx": "/docs/static/media/research.bc27423e5d11dd1aa30f.mdx",
+    "static/media/lda.mdx": "/docs/static/media/lda.f71e1feec7dd03e4c61a.mdx",
+    "main.94f842ea.css.map": "/docs/static/css/main.94f842ea.css.map",
+    "main.21021981.js.map": "/docs/static/js/main.21021981.js.map",
+    "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94f842ea.css",
+    "static/js/main.21021981.js"
+  ]
+}
