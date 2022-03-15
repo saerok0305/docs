@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.2f9e5967.css",
-    "main.js": "/docs/static/js/main.ec344966.js",
+    "main.css": "/docs/static/css/main.9a673570.css",
+    "main.js": "/docs/static/js/main.9dc2515b.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
-    "static/media/react-simple-documentation.mdx": "/docs/static/media/react-simple-documentation.0a8c364b510a1dfb5c3a.mdx",
+    "static/media/topic-modeling.mdx": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.mdx",
+    "static/media/how-to-use-blog.mdx": "/docs/static/media/how-to-use-blog.dc29f1aa8c4355e342f5.mdx",
+    "static/media/react-simple-documentation.mdx": "/docs/static/media/react-simple-documentation.0f92589458f272ec32da.mdx",
     "index.html": "/docs/index.html",
-    "static/media/get-started.mdx": "/docs/static/media/get-started.52ce20a7c402cc28b3e7.mdx",
+    "static/media/study.mdx": "/docs/static/media/study.2dee6b85ac3897ca069f.mdx",
+    "static/media/lda.mdx": "/docs/static/media/lda.338ad51916e32c3017c9.mdx",
+    "static/media/maven-support.mdx": "/docs/static/media/maven-support.7ba768ba401c3cb543ab.mdx",
+    "static/media/project.mdx": "/docs/static/media/project.1d4e74ff2c66c6943b76.mdx",
     "static/media/installation.mdx": "/docs/static/media/installation.882480e6b2c95541e2c5.mdx",
-    "static/media/topic-modeling.mdx": "/docs/static/media/topic-modeling.8751b48b9f103aa4284e.mdx",
-    "static/media/repository.mdx": "/docs/static/media/repository.02d009ce01588dfee50f.mdx",
-    "static/media/development.mdx": "/docs/static/media/development.e40476442289a853955d.mdx",
-    "static/media/research.mdx": "/docs/static/media/research.bc27423e5d11dd1aa30f.mdx",
+    "static/media/spring-boot.mdx": "/docs/static/media/spring-boot.0e9830b05c3a5c75279b.mdx",
+    "static/media/development.mdx": "/docs/static/media/development.016b1454d9329eb43ca8.mdx",
+    "static/media/research.mdx": "/docs/static/media/research.04552c37944805412439.mdx",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
-    "static/media/lda.mdx": "/docs/static/media/lda.f71e1feec7dd03e4c61a.mdx",
-    "main.2f9e5967.css.map": "/docs/static/css/main.2f9e5967.css.map",
-    "main.ec344966.js.map": "/docs/static/js/main.ec344966.js.map",
+    "main.9a673570.css.map": "/docs/static/css/main.9a673570.css.map",
+    "main.9dc2515b.js.map": "/docs/static/js/main.9dc2515b.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f9e5967.css",
-    "static/js/main.ec344966.js"
+    "static/css/main.9a673570.css",
+    "static/js/main.9dc2515b.js"
   ]
 }
