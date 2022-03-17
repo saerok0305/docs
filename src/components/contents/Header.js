@@ -4,6 +4,8 @@ import defaultStyle from "../../style";
 import StyledLink from "../common/StyledLink";
 import mappings from "../../pages/mappings.json";
 import { AiOutlineMenu, AiOutlineEllipsis } from "react-icons/ai";
+import Infinite from "../../Infinite.png";
+import { NavLink } from "react-router-dom";
 
 const Container = styled.div`
   position: relative; //////////////////////////////
@@ -17,14 +19,14 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
-  width: 60px;
+  width: 160px;
 `;
 
 const Middle = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
-  width: calc(100% - 120px);
+  width: calc(100% - 220px);
   overflow: none;
   ${(props) =>
     props.responsive === "mobile" &&
@@ -64,8 +66,8 @@ const MenuItem = styled.div`
   align-items: center;
   padding: 10px;
   margin-left: 10px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 
   cursor: pointer;
 
@@ -83,6 +85,24 @@ const MenuItem = styled.div`
     `}
 
   -webkit-tap-highlight-color: transparent;
+`;
+
+const LogoItem = styled.div`
+  margin-left: 30px;
+  height: 40px;
+
+  cursor: pointer;
+  text-align: center;
+
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+`;
+
+const Logo = styled.img`
+  /* width: 100%; */
+  /* width: 100px; */
+  height: 40px;
+  opacity: 0.3;
 `;
 
 const HeaderItem = styled.div`
@@ -113,8 +133,8 @@ const ExtendButton = styled.div`
   display: flex;
   justify-content: center; ////////////////////////////////////////////
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 
   &:hover {
@@ -133,7 +153,15 @@ const ExtendButton = styled.div`
   -webkit-tap-highlight-color: transparent;
 `;
 
-function Header({ responsive, collapsed, onClickMenu, link, onClickLink, extend, setExtend }) {
+function Header({
+  responsive,
+  collapsed,
+  onClickMenu,
+  link,
+  onClickLink,
+  extend,
+  setExtend,
+}) {
   const ref = useRef(null);
 
   // const [windowSize, setWindowSize] = useState({
@@ -176,7 +204,6 @@ function Header({ responsive, collapsed, onClickMenu, link, onClickLink, extend,
     };
   }, []);
 
-  
   const onExtend = () => {
     console.log(extend); ////
     setExtend(!extend);
@@ -188,6 +215,11 @@ function Header({ responsive, collapsed, onClickMenu, link, onClickLink, extend,
         <MenuItem collapsed={collapsed} onClick={onClickMenu}>
           <AiOutlineMenu />
         </MenuItem>
+        <LogoItem>
+          <NavLink to={"/"} style={{ margin: "0 auto", padding: "4px" }}>
+            <Logo src={Infinite} />
+          </NavLink>
+        </LogoItem>
       </Left>
       {responsive === "mobile" && (
         <Middle responsive={responsive} ref={ref} collapsed={collapsed}>

@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-// import logo from '../Nclogo_leftright.svg';
+import logo from "../../Infinite.png";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%100px;
+  height: 100%;
 `;
 const ImageContainer = styled.div`
   display: block;
-  width: 400px;
-  height: 400px;
+  width: 330px;
+  height: 220px;
   display: block;
   background-image: url(${(props) => props.data});
   // background-size: contain;
@@ -29,12 +30,14 @@ const ImageContainer = styled.div`
 
         transition: width 0.5s, height 0.5s;
     } */
+
+  opacity: 0.3;
 `;
 
 function Home() {
   return (
     <Container>
-      {/* <ImageContainer data={logo}></ImageContainer> */}asdf
+      <ImageContainer data={logo}></ImageContainer>
     </Container>
   );
 }

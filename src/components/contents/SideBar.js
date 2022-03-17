@@ -134,7 +134,7 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
     : selectedHeader;
 
   const [state, setState] = useState({});
-  const onExtend = (e, key) => {
+  const onExtend = (key) => {
     setState({ ...state, [key]: state[key] ? !state[key] : true });
   };
   return (
@@ -151,9 +151,10 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
                       selected={
                         link === item.header.path + "/" + sideBarItem.path
                       }
-                      onClick={() =>
-                        onClickLink(item.header.path + "/" + sideBarItem.path)
-                      }
+                      onClick={() => {
+                        onClickLink(item.header.path + "/" + sideBarItem.path);
+                        onExtend(index1 + "-" + index2);
+                      }}
                     >
                       <StyledLink
                         selected={
@@ -169,7 +170,7 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
                             link === item.header.path + "/" + sideBarItem.path
                           }
                           extend={state[index1 + "-" + index2]}
-                          onClick={(e) => onExtend(e, index1 + "-" + index2)}
+                          // onClick={() => onExtend(index1 + "-" + index2)}
                         >
                           <AiOutlineDown />
                         </ExtendButton>

@@ -5,12 +5,18 @@
 그럼 여기서 말하는 토픽(Topic)이란 뭘까?
 토픽에 대해 설명하기 위해서 **LDA 모델에 대한 이해**가 필요하다.
 
-기본적으로 LDA는 비지도 학습(Unsupervised Learning) 모델이다.
+먼저, LDA는 비지도 학습(Unsupervised Learning) 모델이다.
 
-다시 말하면, 뉴럴넷을 기반으로 하는 딥러닝 모델과 같은 지도 학습(Supervised Learning) 모델 처럼,
-입력 값에 대한 모델의 출력 값을, 주어진 Labeled Data를 이용하여, 그 괴리를 좁혀나가는 방식이 아니다.
+다시 말하면, 뉴럴넷을 기반으로 하는 딥러닝 모델처럼, 
+입력 값에 대한 모델의 예측 값과 실제 값(Labeled Data)의 차이를 최소화 하는 지도 학습(Supervised Learning) 모델이 아니다.
 
 물론 최적화의 관점에서 보면 위 두가지 종류의 모델 모두 극대값 혹은 극소값을 추구하는 것은 같다.
+그렇다면, Labeled Data가 필요없는 LDA는 과연 어떻게 학습이 되는 걸까? 무엇을 최적화 하는 걸까?
+
+바로 이 지점에서 LDA 모델이란 것의 의미를 다시 한번 생각해 볼 필요가 있다. 
+
+LDA 모델에서 필요한 데이터는 단지 텍스트 데이터이다. 
+
 
 <img src="/docs/assets/research/topic_modeling/lda/Smoothed_LDA.png" />
 <figcaption align="center">

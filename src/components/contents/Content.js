@@ -19,16 +19,22 @@ function Content({ onClickContent }) {
   return (
     <Container onClick={onClickContent}>
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/home" element={<Home />} /> */}
-        <Route path="/docs" element={<Home />} />
+        <Route path="/*" element={<Home />} />
+        {/* <Route
+          path="/"
+          element={<MarkDownComponent file={"home.md"} meta={{}} />}
+        />
+        <Route
+          path="/docs"
+          element={<MarkDownComponent file={"home.md"} meta={{}} />}
+        /> */}
         {mappings.map((item, index) => (
           <Route
             key={index}
             path={item.header.path + "/*"}
             element={
               <MarkDownComponent
-                file={item.header.path + "/" + item.header.mdx}
+                file={item.header.path + "/" + item.header.md}
                 meta={item.header.meta}
               />
             }
@@ -48,7 +54,7 @@ function Content({ onClickContent }) {
                       "/" +
                       sideBarItem.path +
                       "/" +
-                      sideBarItem.mdx
+                      sideBarItem.md
                     }
                     meta={sideBarItem.meta}
                   />
@@ -83,7 +89,7 @@ function Content({ onClickContent }) {
                           "/" +
                           subItem.path +
                           "/" +
-                          subItem.mdx
+                          subItem.md
                         }
                         meta={subItem.meta}
                       />

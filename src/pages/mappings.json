@@ -1,74 +1,74 @@
 [
     {
-        "header": {"label": "연구","path": "research", "mdx": "research.mdx", "meta":{}},
+        "header": {"label": "연구","path": "research", "md": "research.md", "meta":{}},
         "side_bar": [
             {
-                "label": "Topic Modeling", "path": "topic-modeling", "mdx": "topic-modeling.mdx", "meta":{} ,
+                "label": "Topic Modeling", "path": "topic-modeling", "md": "topic-modeling.md", "meta":{} ,
                 "sub":[
-                    {"label":"Latent Dirichlet Allocation", "path": "lda", "mdx": "lda.mdx", "meta":{}}
+                    {"label":"Latent Dirichlet Allocation", "path": "lda", "md": "lda.md", "meta":{}}
                 ]
             }
         ]
     },
     {
-        "header": {"label": "개발","path": "development", "mdx": "development.mdx", "meta":{}},
+        "header": {"label": "개발","path": "development", "md": "development.md", "meta":{}},
         "side_bar": [
             {
-                "label": "Spring Boot", "path": "spring-boot", "mdx": "spring-boot.mdx", "meta":{}, 
+                "label": "Spring Boot", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, 
                 "sub":[
-                    {"label":"Maven Support", "path": "maven-support", "mdx": "maven-support.mdx", "meta":{}}
+                    {"label":"Maven Support", "path": "maven-support", "md": "maven-support.md", "meta":{}}
                 ]
             },
             {
-                "label": "Kubernates", "path": "k8s", "mdx": "k8s.mdx", "meta":{},
+                "label": "Kubernates", "path": "k8s", "md": "k8s.md", "meta":{},
                 "sub":[
-                    {"label":"Installation", "path": "installation", "mdx": "installation.mdx", "meta":{}}
+                    {"label":"Installation", "path": "installation", "md": "installation.md", "meta":{}}
                 ]
             }
         ]
     },
     {
-        "header": {"label": "공부","path": "study", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부","path": "study", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "프로젝트", "path": "project", "mdx": "project.mdx", "meta":{}},
+        "header": {"label": "프로젝트", "path": "project", "md": "project.md", "meta":{}},
         "side_bar": [
             {
-                "label": "리액트로 블로그 만들기", "path": "react-simple-documentation", "mdx": "react-simple-documentation.mdx","meta":{}, 
+                "label": "리액트로 블로그 만들기", "path": "react-simple-documentation", "md": "react-simple-documentation.md","meta":{}, 
                 "sub":[
-                    {"label":"How to use", "path": "how-to-use-blog", "mdx": "how-to-use-blog.mdx" ,"meta":{}}
+                    {"label":"How to use", "path": "how-to-use-blog", "md": "how-to-use-blog.md" ,"meta":{}}
                 ]
             }
         ]
     },
     {
-        "header": {"label": "공부1","path": "study1", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부1","path": "study1", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부2","path": "study2", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부2","path": "study2", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부3","path": "study3", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부3","path": "study3", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부4","path": "study4", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부4","path": "study4", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부5","path": "study5", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부5","path": "study5", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부6","path": "study6", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부6","path": "study6", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부7","path": "study7", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부7","path": "study7", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부8","path": "study8", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부8","path": "study8", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부9","path": "study8", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부9","path": "study8", "md": "study.md", "meta":{}}
     },
     {
-        "header": {"label": "공부10","path": "study9", "mdx": "study.mdx", "meta":{}}
+        "header": {"label": "공부10","path": "study9", "md": "study.md", "meta":{}}
     }
 ]
