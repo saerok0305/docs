@@ -1,0 +1,74 @@
+[
+    {
+        "header": {"label": "연구","path": "research", "mdx": "research.mdx", "meta":{}},
+        "side_bar": [
+            {
+                "label": "Topic Modeling", "path": "topic-modeling", "mdx": "topic-modeling.mdx", "meta":{} ,
+                "sub":[
+                    {"label":"Latent Dirichlet Allocation", "path": "lda", "mdx": "lda.mdx", "meta":{}}
+                ]
+            }
+        ]
+    },
+    {
+        "header": {"label": "개발","path": "development", "mdx": "development.mdx", "meta":{}},
+        "side_bar": [
+            {
+                "label": "Spring Boot", "path": "spring-boot", "mdx": "spring-boot.mdx", "meta":{}, 
+                "sub":[
+                    {"label":"Maven Support", "path": "maven-support", "mdx": "maven-support.mdx", "meta":{}}
+                ]
+            },
+            {
+                "label": "Kubernates", "path": "k8s", "mdx": "k8s.mdx", "meta":{},
+                "sub":[
+                    {"label":"Installation", "path": "installation", "mdx": "installation.mdx", "meta":{}}
+                ]
+            }
+        ]
+    },
+    {
+        "header": {"label": "공부","path": "study", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "프로젝트", "path": "project", "mdx": "project.mdx", "meta":{}},
+        "side_bar": [
+            {
+                "label": "리액트로 블로그 만들기", "path": "react-simple-documentation", "mdx": "react-simple-documentation.mdx","meta":{}, 
+                "sub":[
+                    {"label":"How to use", "path": "how-to-use-blog", "mdx": "how-to-use-blog.mdx" ,"meta":{}}
+                ]
+            }
+        ]
+    },
+    {
+        "header": {"label": "공부1","path": "study1", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부2","path": "study2", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부3","path": "study3", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부4","path": "study4", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부5","path": "study5", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부6","path": "study6", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부7","path": "study7", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부8","path": "study8", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부9","path": "study8", "mdx": "study.mdx", "meta":{}}
+    },
+    {
+        "header": {"label": "공부10","path": "study9", "mdx": "study.mdx", "meta":{}}
+    }
+]
