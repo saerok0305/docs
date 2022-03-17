@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.a2595adc.css",
+    "main.css": "/docs/static/css/main.10b6401e.css",
     "main.js": "/docs/static/js/main.61fc271d.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/Smoothed_LDA.png": "/docs/static/media/Smoothed_LDA.01ae8929609363e5abd4.png",
@@ -17,12 +17,12 @@
     "static/media/development.mdx": "/docs/static/media/development.016b1454d9329eb43ca8.mdx",
     "static/media/research.mdx": "/docs/static/media/research.04552c37944805412439.mdx",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
-    "main.a2595adc.css.map": "/docs/static/css/main.a2595adc.css.map",
+    "main.10b6401e.css.map": "/docs/static/css/main.10b6401e.css.map",
     "main.61fc271d.js.map": "/docs/static/js/main.61fc271d.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2595adc.css",
+    "static/css/main.10b6401e.css",
     "static/js/main.61fc271d.js"
   ]
 }
