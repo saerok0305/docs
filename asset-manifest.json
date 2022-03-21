@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.081cd05f.css",
-    "main.js": "/docs/static/js/main.51e0ffb9.js",
+    "main.js": "/docs/static/js/main.1a23af98.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -65,9 +65,9 @@
     "static/media/KaTeX_Size3-Regular.woff": "/docs/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/docs/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "static/media/installation.md": "/docs/static/media/installation.9ab9f7685877633b91e7.md",
+    "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.a0314e61629b7d299b8e.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
     "static/media/lda.md": "/docs/static/media/lda.51b307646c90cc451a75.md",
-    "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.56430e717121ae199055.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.a6521fa9f171e3b4fbb0.md",
     "index.html": "/docs/index.html",
     "static/media/study.md": "/docs/static/media/study.2dee6b85ac3897ca069f.md",
@@ -79,6 +79,7 @@
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.e1b941acd6681abf1333.md",
     "static/media/test-of-independence.md": "/docs/static/media/test-of-independence.818465a58351c1cb9fdb.md",
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.3cc1e196487ab891cbde.md",
+    "static/media/k8s.md": "/docs/static/media/k8s.191118a64eb7f661f0ad.md",
     "static/media/spring-boot.md": "/docs/static/media/spring-boot.60e1b0ea8c9f8a0eaa3b.md",
     "static/media/maven-support.md": "/docs/static/media/maven-support.7ba768ba401c3cb543ab.md",
     "static/media/news.md": "/docs/static/media/news.0244e5cd2e78d736e57d.md",
@@ -92,11 +93,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.081cd05f.css.map": "/docs/static/css/main.081cd05f.css.map",
-    "main.51e0ffb9.js.map": "/docs/static/js/main.51e0ffb9.js.map",
+    "main.1a23af98.js.map": "/docs/static/js/main.1a23af98.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.081cd05f.css",
-    "static/js/main.51e0ffb9.js"
+    "static/js/main.1a23af98.js"
   ]
 }
