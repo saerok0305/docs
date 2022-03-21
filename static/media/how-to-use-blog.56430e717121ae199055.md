@@ -1,11 +1,11 @@
-# How to use
+# 사용법
 
-> React-Simple-Documentation(내 블로그 템플릿) 설치와 사용법
+> 내 블로그 템플릿 설치와 사용법
 
 ## Prerequsite
 
 - React 개발 환경 구축
-- React-Simple-Documentation 설치하기
+- 블로그 템플릿 설치하기
 - Github 계정 (Github Pages를 통한 호스팅의 경우)
 
 ## React 개발 환경 구축
@@ -38,14 +38,13 @@ npm(Node.js의 패키지 관리자)을 이용하여 yarn 설치
 $ npm install --global yarn
 ```
 
-## React-Simple-Documentation 설치하기
+## 블로그 템플릿 설치하기
 
 ### 1. React 프로젝트(템플릿) 내려받기
 
 ```sh
 $ git clone https://~
 ```
-
 
 ### 2. 내려받은 React 프로젝트 디렉토리에서 package.json에 등록된 의존성 설치
 
