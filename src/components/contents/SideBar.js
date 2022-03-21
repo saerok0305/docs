@@ -31,11 +31,32 @@ const Container = styled.div`
   ${(props) =>
     !props.collapsed &&
     css`
-      width: 300px; ///////////////////////////////////////
+      width: 400px; ///////////////////////////////////////
       border-right: 1px solid ${defaultStyle.color0};
       background-color: white;
     `}
   transition: width 0.2s ease-out;
+
+  overflow-y: auto;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: ${defaultStyle.color0};
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
 `;
 
 const ItemContainer = styled.div`
@@ -144,7 +165,7 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
           (item, index1) =>
             item.side_bar &&
             item.side_bar.map((sideBarItem, index2) => {
-              if (item.header.path.startsWith(selectedHeader))
+              if (item.header.path === selectedHeader || path === "/")
                 return (
                   <ItemContainer key={index1 + "-" + index2}>
                     <SideBarItem
@@ -164,19 +185,22 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
                       >
                         {sideBarItem.label}
                       </StyledLink>
-                      {sideBarItem.sub.length && sideBarItem.sub.length > 0 && (
-                        <ExtendButton
-                          selected={
-                            link === item.header.path + "/" + sideBarItem.path
-                          }
-                          extend={state[index1 + "-" + index2]}
-                          // onClick={() => onExtend(index1 + "-" + index2)}
-                        >
-                          <AiOutlineDown />
-                        </ExtendButton>
-                      )}
+                      {sideBarItem.sub &&
+                        sideBarItem.sub.length &&
+                        sideBarItem.sub.length > 0 && (
+                          <ExtendButton
+                            selected={
+                              link === item.header.path + "/" + sideBarItem.path
+                            }
+                            extend={state[index1 + "-" + index2]}
+                            // onClick={() => onExtend(index1 + "-" + index2)}
+                          >
+                            <AiOutlineDown />
+                          </ExtendButton>
+                        )}
                     </SideBarItem>
-                    {sideBarItem.sub.length &&
+                    {sideBarItem.sub &&
+                      sideBarItem.sub.length &&
                       sideBarItem.sub.length > 0 &&
                       state[index1 + "-" + index2] &&
                       sideBarItem.sub.map((subItem, index3) => (

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../Infinite.png";
+import barcode from "../../barcode.png";
 
 const Container = styled.div`
   display: flex;
@@ -31,13 +31,13 @@ const ImageContainer = styled.div`
         transition: width 0.5s, height 0.5s;
     } */
 
-  opacity: 0.3;
+  /* opacity: 0.3; */
 `;
 
 function Home() {
   return (
     <Container>
-      <ImageContainer data={logo}></ImageContainer>
+      <ImageContainer data={barcode}></ImageContainer>
     </Container>
   );
 }

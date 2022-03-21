@@ -34,16 +34,16 @@ function MainApp({ responsive, collapsedDefault }) {
 
   const [extend, setExtend] = useState(false);
 
-  const onClickMenu = () => {
-    setCollapsed(!collapsed);
-    setLink(null);
-  };
-
   console.log(collapsed); ////////
 
-  const [link, setLink] = useState(null);
+  const [link, setLink] = useState("/");
   const onClickLink = (link) => {
     setCollapsed(false);
+    setLink(link);
+  };
+
+  const onClickMenu = () => {
+    setCollapsed(!collapsed);
     setLink(link);
   };
 
@@ -53,14 +53,18 @@ function MainApp({ responsive, collapsedDefault }) {
     }
     setExtend(false);
   };
+
+  console.log(link); ////
   return (
     <Container>
       <HeaderContainer>
         <Header
           responsive={responsive}
           collapsed={collapsed}
+          setCollapsed={setCollapsed}
           onClickMenu={onClickMenu}
           link={link}
+          setLink={setLink}
           onClickLink={onClickLink}
           extend={extend}
           setExtend={setExtend}

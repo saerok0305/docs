@@ -3,16 +3,37 @@
         "header": {"label": "연구","path": "research", "md": "research.md", "meta":{}},
         "side_bar": [
             {
+                "label": "Bayesian Inference", "path": "bayesian-inference", "md": "bayesian-inference.md", "meta":{}
+            },
+            {
                 "label": "Topic Modeling", "path": "topic-modeling", "md": "topic-modeling.md", "meta":{} ,
                 "sub":[
                     {"label":"Latent Dirichlet Allocation", "path": "lda", "md": "lda.md", "meta":{}}
                 ]
+            },
+            {
+                "label": "Gaussian Mixture Model", "path": "gaussian-mixture-model", "md": "gaussian-mixture-model.md", "meta":{}
+            },
+            {
+                "label": "Stochastic Process", "path": "stochastic-process", "md": "stochastic-process.md", "meta":{},
+                "sub":[
+                    {"label":"Gaussian Process", "path": "gaussian-process", "md": "gaussian-process.md", "meta":{}},
+                    {"label":"Dirichlet Process", "path": "dirichlet-process", "md": "dirichlet-process.md", "meta":{}},
+                    {"label":"Poisson Process", "path": "poisson-process", "md": "poisson-process.md", "meta":{}}
+                ]
             }
+            
         ]
     },
     {
         "header": {"label": "개발","path": "development", "md": "development.md", "meta":{}},
         "side_bar": [
+            {
+                "label": "ElasticSearch", "path": "elasticsearch", "md": "elasticsearch.md", "meta":{}
+            },
+            {
+                "label": "Lucene", "path": "lucene", "md": "lucene.md", "meta":{} 
+            },
             {
                 "label": "Spring Boot", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, 
                 "sub":[
@@ -20,15 +41,26 @@
                 ]
             },
             {
+                "label": "React", "path": "react", "md": "react.md", "meta":{}
+            },
+            {
                 "label": "Kubernates", "path": "k8s", "md": "k8s.md", "meta":{},
                 "sub":[
-                    {"label":"Installation", "path": "installation", "md": "installation.md", "meta":{}}
+                    {"label":"쿠버네티스 설치하기", "path": "installation", "md": "installation.md", "meta":{}}
                 ]
             }
         ]
     },
     {
-        "header": {"label": "공부","path": "study", "md": "study.md", "meta":{}}
+        "header": {"label": "공부","path": "study", "md": "study.md", "meta":{}},
+        "side_bar": [
+            {
+                "label": "기타", "path": "etc", "md": "etc.md", "meta":{} ,
+                "sub":[
+                    {"label":"독립성 검정", "path": "test-of-independence", "md": "test-of-independence.md", "meta":{}}
+                ]
+            }
+        ]
     },
     {
         "header": {"label": "프로젝트", "path": "project", "md": "project.md", "meta":{}},
@@ -36,39 +68,16 @@
             {
                 "label": "리액트로 블로그 만들기", "path": "react-simple-documentation", "md": "react-simple-documentation.md","meta":{}, 
                 "sub":[
-                    {"label":"How to use", "path": "how-to-use-blog", "md": "how-to-use-blog.md" ,"meta":{}}
+                    {"label":"사용법", "path": "how-to-use-blog", "md": "how-to-use-blog.md" ,"meta":{}}
+                ]
+            },
+            {
+                "label": "뉴스", "path": "news", "md": "news.md","meta":{}, 
+                "sub":[
+                    {"label":"하이라이트 뉴스", "path": "highlight-news", "component": "HighlightNews" ,"meta":{}},
+                    {"label":"뉴스 검색", "path": "search-news", "component": "SearchNews" ,"meta":{}}
                 ]
             }
         ]
-    },
-    {
-        "header": {"label": "공부1","path": "study1", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부2","path": "study2", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부3","path": "study3", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부4","path": "study4", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부5","path": "study5", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부6","path": "study6", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부7","path": "study7", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부8","path": "study8", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부9","path": "study8", "md": "study.md", "meta":{}}
-    },
-    {
-        "header": {"label": "공부10","path": "study9", "md": "study.md", "meta":{}}
     }
 ]

@@ -4,8 +4,19 @@ import defaultStyle from "../../style";
 import StyledLink from "../common/StyledLink";
 import mappings from "../../pages/mappings.json";
 import { AiOutlineMenu, AiOutlineEllipsis } from "react-icons/ai";
-import Infinite from "../../Infinite.png";
+import barcode from "../../barcode.png";
 import { NavLink } from "react-router-dom";
+
+function getTextWidth(text, font) {
+  // re-use canvas object for better performance
+  const canvas =
+    getTextWidth.canvas ||
+    (getTextWidth.canvas = document.createElement("canvas"));
+  const context = canvas.getContext("2d");
+  context.font = font;
+  const metrics = context.measureText(text);
+  return metrics.width;
+}
 
 const Container = styled.div`
   position: relative; //////////////////////////////
@@ -102,7 +113,7 @@ const Logo = styled.img`
   /* width: 100%; */
   /* width: 100px; */
   height: 40px;
-  opacity: 0.3;
+  /* opacity: 0.3; */
 `;
 
 const HeaderItem = styled.div`
@@ -156,8 +167,10 @@ const ExtendButton = styled.div`
 function Header({
   responsive,
   collapsed,
+  setCollapsed,
   onClickMenu,
   link,
+  setLink,
   onClickLink,
   extend,
   setExtend,
@@ -172,15 +185,23 @@ function Header({
   const [lastIndex, setLastIndex] = useState(0);
 
   const calcLastIndex = () => {
-    const clientWidth = ref.current.offsetWidth - 60;
+    const clientWidth = ref.current.clientWidth - 60;
     //const scrollWidth = ref.current.scrollWidth;
 
     let left = 0;
     for (let i = 0; i < mappings.length; i++) {
-      const len = mappings[i].header.label.length;
-      const px = len * 16 + 60 + 8; // rem + padding + margin
+      const textLen = getTextWidth(
+        mappings[i].header.label,
+        "normal 1rem arial"
+      );
+      // console.log(textLen); ///
+      // const len = mappings[i].header.label.length;
+      // const px = len * 16 + 60 + 8; // rem + padding + margin
+      const px = textLen + 60 + 8; // rem + padding + margin
       left = left + px;
-      if (left > clientWidth) {
+
+      console.log((left + 160) + " : " + clientWidth); //
+      if (left + 160 > clientWidth) {
         setLastIndex(i - 1);
         break;
       } else {
@@ -209,27 +230,52 @@ function Header({
     setExtend(!extend);
   };
 
+  const onClickLogo = () => {
+    setLink("/");
+    setCollapsed(true);
+  };
+
   return (
-    <Container>
+    <Container ref={ref}>
       <Left collapsed={collapsed}>
         <MenuItem collapsed={collapsed} onClick={onClickMenu}>
           <AiOutlineMenu />
         </MenuItem>
-        <LogoItem>
-          <NavLink to={"/"} style={{ margin: "0 auto", padding: "4px" }}>
-            <Logo src={Infinite} />
+        <LogoItem onClick={onClickLogo}>
+          <NavLink to={"/"} style={{ margin: "0 auto", padding: "0 10px" }}>
+            <Logo src={barcode} />
           </NavLink>
         </LogoItem>
+        {/* <LogoItem2>
+          <NavLink
+            to={"/"}
+            style={{
+              // display: "block",
+              // alignItems: "center",
+              // // fontSize: "100px",
+              textDecoration: "none",
+              color: "grey",
+              // // height: "40px",
+              // // width: "100%"
+              fontSize: "30px"
+            }}
+          >
+            Docs
+          </NavLink>
+        </LogoItem2> */}
       </Left>
       {responsive === "mobile" && (
-        <Middle responsive={responsive} ref={ref} collapsed={collapsed}>
+        <Middle responsive={responsive} collapsed={collapsed}>
           {mappings.map((e, index) => (
             <HeaderItem
               key={index}
               onClick={() => onClickLink(e.header.path)}
-              selected={e.header.path === link}
+              selected={link.startsWith(e.header.path)}
             >
-              <StyledLink selected={e.header.path === link} to={e.header.path}>
+              <StyledLink
+                selected={link.startsWith(e.header.path)}
+                to={e.header.path}
+              >
                 {e.header.label}
               </StyledLink>
             </HeaderItem>
@@ -245,10 +291,10 @@ function Header({
                 <HeaderItem
                   key={index}
                   onClick={() => onClickLink(e.header.path)}
-                  selected={e.header.path === link}
+                  selected={link.startsWith(e.header.path)}
                 >
                   <StyledLink
-                    selected={e.header.path === link}
+                    selected={link.startsWith(e.header.path)}
                     to={e.header.path}
                   >
                     {e.header.label}
@@ -268,10 +314,10 @@ function Header({
                 <HeaderItem
                   key={index}
                   onClick={() => onClickLink(e.header.path)}
-                  selected={e.header.path === link}
+                  selected={link.startsWith(e.header.path)}
                 >
                   <StyledLink
-                    selected={e.header.path === link}
+                    selected={link.startsWith(e.header.path)}
                     to={e.header.path}
                   >
                     {e.header.label}

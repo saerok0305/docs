@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import styled from "styled-components";
 import "../../markdown-styles.css";
 import MetaTag from "../../utils/MetaTag";
 import NotFound from "../NotFound";
-
-import "../../pages/research/topic-modeling/lda/Smoothed_LDA.png";
-
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import rehypeRaw from "rehype-raw";
+import rehypeKatex from "rehype-katex";
+import "../../pages/research/topic-modeling/lda/Smoothed_LDA.png";
+import ReactMarkdown from "react-markdown";
+
+import "katex/dist/katex.min.css";
 
 const MarkDownContainer = styled.div`
   display: flex;
@@ -37,14 +40,14 @@ function MarkDownComponent({ file, meta }) {
       return (
         <MarkDownContainer>
           <MetaTag meta={meta} />
-          <Markdown
+          <ReactMarkdown
             className={"markdown"}
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkMath]}
             // escapeHtml={false}
-            rehypePlugins={[rehypeRaw]}
+            rehypePlugins={[rehypeRaw, rehypeKatex]}
           >
             {markdown}
-          </Markdown>
+          </ReactMarkdown>
         </MarkDownContainer>
       );
     } catch {

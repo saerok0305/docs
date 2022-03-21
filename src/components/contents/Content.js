@@ -5,6 +5,7 @@ import NotFound from "../NotFound";
 import mappings from "../../pages/mappings.json";
 import MarkDownComponent from "../common/MarkDownComponent";
 import { css } from "styled-components";
+import GeneralComponent from "../common/GeneralComponent";
 
 const Container = styled.div`
   display: flex;
@@ -48,16 +49,19 @@ function Content({ onClickContent }) {
                 key={index1 + "-" + index2}
                 path={item.header.path + "/" + sideBarItem.path + "/*"}
                 element={
-                  <MarkDownComponent
-                    file={
-                      item.header.path +
-                      "/" +
-                      sideBarItem.path +
-                      "/" +
-                      sideBarItem.md
-                    }
-                    meta={sideBarItem.meta}
-                  />
+                  (sideBarItem.md && (
+                    <MarkDownComponent
+                      file={
+                        item.header.path +
+                        "/" +
+                        sideBarItem.path +
+                        "/" +
+                        sideBarItem.md
+                      }
+                      meta={sideBarItem.meta}
+                    />
+                  )) ||
+                  (sideBarItem.js && <div>asdf</div>)
                 }
               />
             ))
@@ -81,18 +85,33 @@ function Content({ onClickContent }) {
                       "/*"
                     }
                     element={
-                      <MarkDownComponent
-                        file={
-                          item.header.path +
-                          "/" +
-                          sideBarItem.path +
-                          "/" +
-                          subItem.path +
-                          "/" +
-                          subItem.md
-                        }
-                        meta={subItem.meta}
-                      />
+                      (subItem.md && (
+                        <MarkDownComponent
+                          file={
+                            item.header.path +
+                            "/" +
+                            sideBarItem.path +
+                            "/" +
+                            subItem.path +
+                            "/" +
+                            subItem.md
+                          }
+                          meta={subItem.meta}
+                        />
+                      )) ||
+                      (subItem.component && (
+                        <GeneralComponent
+                          component={
+                            item.header.path +
+                            "/" +
+                            sideBarItem.path +
+                            "/" +
+                            subItem.path +
+                            "/" +
+                            subItem.component
+                          }
+                        />
+                      ))
                     }
                   />
                 ))
