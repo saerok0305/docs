@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.081cd05f.css",
-    "main.js": "/docs/static/js/main.1a23af98.js",
+    "main.js": "/docs/static/js/main.5f5c3174.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -68,8 +68,8 @@
     "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.a0314e61629b7d299b8e.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
     "static/media/lda.md": "/docs/static/media/lda.51b307646c90cc451a75.md",
-    "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.a6521fa9f171e3b4fbb0.md",
     "index.html": "/docs/index.html",
+    "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.a6521fa9f171e3b4fbb0.md",
     "static/media/study.md": "/docs/static/media/study.2dee6b85ac3897ca069f.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
     "static/media/gaussian-mixture-model.md": "/docs/static/media/gaussian-mixture-model.175a6cb29d8b9b878fe7.md",
@@ -93,11 +93,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.081cd05f.css.map": "/docs/static/css/main.081cd05f.css.map",
-    "main.1a23af98.js.map": "/docs/static/js/main.1a23af98.js.map",
+    "main.5f5c3174.js.map": "/docs/static/js/main.5f5c3174.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.081cd05f.css",
-    "static/js/main.1a23af98.js"
+    "static/js/main.5f5c3174.js"
   ]
 }
