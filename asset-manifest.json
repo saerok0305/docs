@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.081cd05f.css",
-    "main.js": "/docs/static/js/main.5f5c3174.js",
+    "main.js": "/docs/static/js/main.37ffbb62.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -93,11 +93,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.081cd05f.css.map": "/docs/static/css/main.081cd05f.css.map",
-    "main.5f5c3174.js.map": "/docs/static/js/main.5f5c3174.js.map",
+    "main.37ffbb62.js.map": "/docs/static/js/main.37ffbb62.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.081cd05f.css",
-    "static/js/main.5f5c3174.js"
+    "static/js/main.37ffbb62.js"
   ]
 }
