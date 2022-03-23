@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.081cd05f.css",
-    "main.js": "/docs/static/js/main.f7333fe4.js",
+    "main.css": "/docs/static/css/main.7b0a0172.css",
+    "main.js": "/docs/static/js/main.7fa1646c.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -65,11 +65,12 @@
     "static/media/KaTeX_Size3-Regular.woff": "/docs/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/docs/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "static/media/installation.md": "/docs/static/media/installation.9ab9f7685877633b91e7.md",
-    "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.a0314e61629b7d299b8e.md",
+    "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.2611df7e67d5ce30ef28.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
     "static/media/lda.md": "/docs/static/media/lda.51b307646c90cc451a75.md",
+    "static/media/react.md": "/docs/static/media/react.b1cbafb202d5c856c29a.md",
+    "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.5d0cf2ec0f3d94cb3d61.md",
     "index.html": "/docs/index.html",
-    "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.a6521fa9f171e3b4fbb0.md",
     "static/media/study.md": "/docs/static/media/study.2dee6b85ac3897ca069f.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
     "static/media/gaussian-mixture-model.md": "/docs/static/media/gaussian-mixture-model.175a6cb29d8b9b878fe7.md",
@@ -84,7 +85,6 @@
     "static/media/maven-support.md": "/docs/static/media/maven-support.7ba768ba401c3cb543ab.md",
     "static/media/news.md": "/docs/static/media/news.0244e5cd2e78d736e57d.md",
     "static/media/project.md": "/docs/static/media/project.1d4e74ff2c66c6943b76.md",
-    "static/media/react.md": "/docs/static/media/react.17e02fbe2f9bf7763481.md",
     "static/media/hadoop.md": "/docs/static/media/hadoop.fe2082bcf601a110d87e.md",
     "static/media/lucene.md": "/docs/static/media/lucene.27923d4a7bd4fb2efe2c.md",
     "static/media/development.md": "/docs/static/media/development.016b1454d9329eb43ca8.md",
@@ -92,12 +92,12 @@
     "static/media/research.md": "/docs/static/media/research.04552c37944805412439.md",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
-    "main.081cd05f.css.map": "/docs/static/css/main.081cd05f.css.map",
-    "main.f7333fe4.js.map": "/docs/static/js/main.f7333fe4.js.map",
+    "main.7b0a0172.css.map": "/docs/static/css/main.7b0a0172.css.map",
+    "main.7fa1646c.js.map": "/docs/static/js/main.7fa1646c.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.081cd05f.css",
-    "static/js/main.f7333fe4.js"
+    "static/css/main.7b0a0172.css",
+    "static/js/main.7fa1646c.js"
   ]
 }
