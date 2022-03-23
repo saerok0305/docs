@@ -53,10 +53,13 @@ h6 {
 .markdown img {
   display: block;
   margin: 40px auto 10px;
-  width: 100%;
-  max-width: 400px;
+  border: 1px solid #d3d3d3;
 }
 
 .markdown figcaption {
   margin: 0 0 40px 0;
+}
+
+.markdown .flex {
+  display: flex;
 }

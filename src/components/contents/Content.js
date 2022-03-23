@@ -16,7 +16,7 @@ const Container = styled.div`
   height: 100%;
 `;
 
-function Content({ onClickContent }) {
+function Content({ onClickContent, setLink }) {
   return (
     <Container onClick={onClickContent}>
       <Routes>
@@ -37,6 +37,7 @@ function Content({ onClickContent }) {
               <MarkDownComponent
                 file={item.header.path + "/" + item.header.md}
                 meta={item.header.meta}
+                setLink={setLink}
               />
             }
           />
@@ -59,6 +60,7 @@ function Content({ onClickContent }) {
                         sideBarItem.md
                       }
                       meta={sideBarItem.meta}
+                      setLink={setLink}
                     />
                   )) ||
                   (sideBarItem.js && <div>asdf</div>)
@@ -97,6 +99,7 @@ function Content({ onClickContent }) {
                             subItem.md
                           }
                           meta={subItem.meta}
+                          setLink={setLink}
                         />
                       )) ||
                       (subItem.component && (

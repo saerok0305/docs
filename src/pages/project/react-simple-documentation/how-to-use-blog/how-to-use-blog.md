@@ -4,40 +4,9 @@
 
 ## Prerequsite
 
-- React 개발 환경 구축
+- [React 개발 환경 구축](/docs/development/react)
 - 블로그 템플릿 설치하기
 - Github 계정 (Github Pages를 통한 호스팅의 경우)
-
-## React 개발 환경 구축
-
-### 1. node.js 설치
-
-#### 1.1 Linux or Mac OS 환경
-
-[nvm](https://github.com/nvm-sh/nvm)을 설치 스크립트 다운로드 및 실행
-
-```sh
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
-
-nvm을 이용한 Node.js 설치
-
-```sh
-$ nvm install --lts
-```
-
-#### 1.2 Windows 환경
-
-[Node.js 공식 홈페이지](https://nodejs.org/en/) 참고
-윈도우 환경에서는 [Git for Windows](https://gitforwindows.org/)를 설치하고 Git Bash를 통해 아래 명령어를 사용한다.
-
-### 2. yarn 설치
-
-npm(Node.js의 패키지 관리자)을 이용하여 yarn 설치
-
-```sh
-$ npm install --global yarn
-```
 
 ## 블로그 템플릿 설치 및 실행
 
@@ -59,10 +28,33 @@ $ yarn
 ```
 
 ### 3. 리액트 앱(블로그 템플릿) 실행
-아래 명령어는 개발 서버를 실행하고 브라우저에 [http://localhost:3000/](http://localhost:3000/)이 열리면서 블로그 템플릿을 실행시킨다.
+
+아래 명령어는 개발 서버를 실행하고 브라우저에 [http://localhost:3000/react-simple-documentation](http://localhost:3000/react-simple-documentation)이 열리면서 블로그 템플릿을 실행시킨다.
 
 ```sh
 $ yarn start
 ```
 
+실행하면 아래와 같은 블로그 템플릿이 브라우저에 나타난다.
 
+<img width="800" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/desktop.JPG" />
+<figcaption align="center">
+  <b>블로그 템플릿 (데스크탑 환경)</b>
+</figcaption>
+
+모바일에서는 다음과 같은 모습이다.
+
+<div class="flex">
+<img width="200" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/mobile1.JPG" />
+<img width="200" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/mobile2.JPG" />
+</div>
+
+<figcaption align="center">
+  <b>블로그 템플릿 (모바일 환경)</b>
+</figcaption>
+
+github pages 호스팅
+
+respository 이름
+basepath
+packages.json hompage

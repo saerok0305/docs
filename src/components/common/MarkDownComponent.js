@@ -10,8 +10,10 @@ import rehypeRaw from "rehype-raw";
 import rehypeKatex from "rehype-katex";
 import "../../pages/research/topic-modeling/lda/Smoothed_LDA.png";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 
 import "katex/dist/katex.min.css";
+import RouterLink from "./RouterLink";
 
 const MarkDownContainer = styled.div`
   display: flex;
@@ -23,7 +25,7 @@ const MarkDownContainer = styled.div`
   /* white-space: nowrap; */
 `;
 
-function MarkDownComponent({ file, meta }) {
+function MarkDownComponent({ file, meta, setLink }) {
   const [markdown, setMarkdown] = useState(null);
   useEffect(() => {
     return () => {
@@ -45,6 +47,13 @@ function MarkDownComponent({ file, meta }) {
             remarkPlugins={[remarkGfm, remarkMath]}
             // escapeHtml={false}
             rehypePlugins={[rehypeRaw, rehypeKatex]}
+            components={{
+              a: (props) => (
+                <RouterLink href={props.href} setLink={setLink}>
+                  {props.children}
+                </RouterLink>
+              ),
+            }}
           >
             {markdown}
           </ReactMarkdown>

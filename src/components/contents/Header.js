@@ -200,7 +200,6 @@ function Header({
       const px = textLen + 60 + 8; // rem + padding + margin
       left = left + px;
 
-      console.log((left + 160) + " : " + clientWidth); //
       if (left + 160 > clientWidth) {
         setLastIndex(i - 1);
         break;

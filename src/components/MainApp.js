@@ -34,8 +34,6 @@ function MainApp({ responsive, collapsedDefault }) {
 
   const [extend, setExtend] = useState(false);
 
-  console.log(collapsed); ////////
-
   const [link, setLink] = useState("/");
   const onClickLink = (link) => {
     setCollapsed(false);
@@ -54,7 +52,6 @@ function MainApp({ responsive, collapsedDefault }) {
     setExtend(false);
   };
 
-  console.log(link); ////
   return (
     <Container>
       <HeaderContainer>
@@ -77,7 +74,11 @@ function MainApp({ responsive, collapsedDefault }) {
           link={link}
           onClickLink={onClickLink}
         />
-        <Content collapsed={collapsed} onClickContent={onClickContent} />
+        <Content
+          collapsed={collapsed}
+          onClickContent={onClickContent}
+          setLink={setLink}
+        />
       </ContentContainer>
     </Container>
   );

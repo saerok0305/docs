@@ -8,13 +8,14 @@ import mappings from "../../pages/mappings.json";
 import { useLocation } from "react-router-dom";
 
 const Container = styled.div`
+  position: absolute;
+  z-index: 1;
   ${(props) =>
     props.responsive === "mobile" &&
     css`
       position: absolute;
       top: 50px;
       left: 0;
-      z-index: 1;
     `}
 
   display: flex;
@@ -23,7 +24,7 @@ const Container = styled.div`
   height: 100%;
   /* padding-top: 10px; */
   /* padding-bottom: 10px; */
-  padding: 10px;
+  padding: 4px;
 
   height: 100%;
   width: 0px;
@@ -31,7 +32,7 @@ const Container = styled.div`
   ${(props) =>
     !props.collapsed &&
     css`
-      width: 400px; ///////////////////////////////////////
+      width: 280px; ///////////////////////////////////////
       border-right: 1px solid ${defaultStyle.color0};
       background-color: white;
     `}
@@ -63,7 +64,7 @@ const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280px;
+  width: 240px;
 `;
 
 const SideBarItem = styled.div`
@@ -109,7 +110,7 @@ const SideBarSubItem = styled.div`
   }
 
   border-radius: 12px;
-  padding-left: 20px;
+  padding-left: 10px;
 
   user-select: none;
 
