@@ -167,3 +167,8 @@ https://깃허브_아이디.github.io/저장소_이름/?/path3
 ...
 
 ```
+
+
+이렇게 까지 하다보니, 빌드할 때 각 페이지마다 html 파일을 만들어주는 static site generator를 쓰는게 나을 것 같다는...
+
+Gatsby나 Next.js를 사용해 볼 예정이다.
