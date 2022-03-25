@@ -122,6 +122,8 @@ const SideBarSubItem = styled.div`
     css`
       background-color: black;
     `}
+  font-size: 0.8rem;
+
 `;
 
 const ExtendButton = styled.div`
