@@ -37,7 +37,7 @@ $ yarn start
 
 실행하면 아래와 같은 블로그 템플릿이 브라우저에 나타난다.
 
-<img width="800" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/desktop.JPG" />
+<img width="600" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/desktop.JPG" />
 <figcaption align="center">
   <b>블로그 템플릿 (데스크탑 환경)</b>
 </figcaption>
@@ -45,8 +45,8 @@ $ yarn start
 모바일에서는 다음과 같은 모습이다.
 
 <div class="flex">
-<img width="200" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/mobile1.JPG" />
-<img width="200" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/mobile2.JPG" />
+<img width="160" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/mobile1.JPG" />
+<img width="160" src="/docs/assets/project/react-simple-documentation/how-to-use-blog/mobile2.JPG" />
 </div>
 
 <figcaption align="center">
