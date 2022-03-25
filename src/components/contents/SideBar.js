@@ -10,13 +10,16 @@ import { useLocation } from "react-router-dom";
 const Container = styled.div`
   position: absolute;
   z-index: 1;
-  ${(props) =>
+  top: 0;
+  left: 0;
+  /* ${(props) =>
     props.responsive === "mobile" &&
     css`
       position: absolute;
-      top: 50px;
+      z-index: 1;
+      top: 0;
       left: 0;
-    `}
+    `} */
 
   display: flex;
   flex-direction: column;
@@ -36,9 +39,9 @@ const Container = styled.div`
       border-right: 1px solid ${defaultStyle.color0};
       background-color: white;
     `}
-  transition: width 0.2s ease-out;
+  transition: width 0.1s ease-out;
 
-  overflow-y: auto;
+  overflow-y: overlay;
   /* width */
   ::-webkit-scrollbar {
     width: 4px;

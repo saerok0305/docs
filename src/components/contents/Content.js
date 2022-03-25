@@ -8,9 +8,10 @@ import { css } from "styled-components";
 import GeneralComponent from "../common/GeneralComponent";
 
 const Container = styled.div`
+
   display: flex;
   justify-content: center;
-  overflow-y: scroll;
+  overflow-y: overlay;
 
   width: 100%;
   height: 100%;

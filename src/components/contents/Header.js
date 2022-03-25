@@ -6,17 +6,7 @@ import mappings from "../../pages/mappings.json";
 import { AiOutlineMenu, AiOutlineEllipsis } from "react-icons/ai";
 import barcode from "../../barcode.png";
 import { NavLink } from "react-router-dom";
-
-function getTextWidth(text, font) {
-  // re-use canvas object for better performance
-  const canvas =
-    getTextWidth.canvas ||
-    (getTextWidth.canvas = document.createElement("canvas"));
-  const context = canvas.getContext("2d");
-  context.font = font;
-  const metrics = context.measureText(text);
-  return metrics.width;
-}
+import { getTextWidth } from "../../utils/LayoutUtil";
 
 const Container = styled.div`
   position: relative; //////////////////////////////
@@ -75,10 +65,9 @@ const MenuItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   margin-left: 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 
   cursor: pointer;
 
@@ -86,6 +75,7 @@ const MenuItem = styled.div`
     background: ${defaultStyle.color0};
   }
 
+  border: 1px solid ${defaultStyle.color0};
   border-radius: 50%;
 
   ${(props) =>
@@ -96,10 +86,11 @@ const MenuItem = styled.div`
     `}
 
   -webkit-tap-highlight-color: transparent;
+  font-size: 1.2rem;
 `;
 
 const LogoItem = styled.div`
-  margin-left: 30px;
+  margin-left: 10px;
   height: 40px;
 
   cursor: pointer;
@@ -144,14 +135,15 @@ const ExtendButton = styled.div`
   display: flex;
   justify-content: center; ////////////////////////////////////////////
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 
   &:hover {
     background: ${defaultStyle.color0};
   }
 
+  border: 1px solid ${defaultStyle.color0};
   border-radius: 50%;
 
   ${(props) =>
@@ -162,6 +154,8 @@ const ExtendButton = styled.div`
     `}
 
   -webkit-tap-highlight-color: transparent;
+
+  font-size: 1.2rem;
 `;
 
 function Header({
