@@ -12,7 +12,6 @@
 - CSR로 충분하지 않을까. SSR은 고려 하지않는다.
   - CRA로 만든 순수 React 프로젝트 (Next.js나 Gatsby 해본 적 없으므로)
   - react-router-dom 활용
-  - 찾아보니, react-snap? 같은거 이용하여 정적 페이지 생성 가능해서, 그리고 요즘엔 구글이 js로 렌더링 되는 페이지도 크롤링 해준다고 해서...
   - react-helmet으로 메타 정보 관리
 - Google ads도 적용 해 볼 예정
 - Google Analytics도 적용 해 볼 예정
