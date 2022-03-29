@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.be483424.css",
-    "main.js": "/docs/static/js/main.cbf6cc66.js",
+    "main.js": "/docs/static/js/main.72b14aa5.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -54,7 +54,7 @@
     "static/media/KaTeX_Caligraphic-Bold.woff": "/docs/static/media/KaTeX_Caligraphic-Bold.d757c535a2e5902f1325.woff",
     "static/media/KaTeX_Caligraphic-Regular.woff": "/docs/static/media/KaTeX_Caligraphic-Regular.db074fa22cf224af93d7.woff",
     "static/media/KaTeX_Size3-Regular.ttf": "/docs/static/media/KaTeX_Size3-Regular.8d6b6822586eea3d3b20.ttf",
-    "static/media/spa-github-pages.md": "/docs/static/media/spa-github-pages.5dded094974b5f4197f5.md",
+    "static/media/spa-github-pages.md": "/docs/static/media/spa-github-pages.4ef627474664cd25e102.md",
     "static/media/KaTeX_Caligraphic-Bold.woff2": "/docs/static/media/KaTeX_Caligraphic-Bold.a1abf90dfd72792a577a.woff2",
     "static/media/KaTeX_Caligraphic-Regular.woff2": "/docs/static/media/KaTeX_Caligraphic-Regular.d6484fce1ef428d5bd94.woff2",
     "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.0b41d39159752f8ccead.md",
@@ -69,7 +69,7 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/docs/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "static/media/installation.md": "/docs/static/media/installation.9ab9f7685877633b91e7.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
-    "static/media/lda.md": "/docs/static/media/lda.51b307646c90cc451a75.md",
+    "static/media/lda.md": "/docs/static/media/lda.11c6b69e099f9089f717.md",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
     "index.html": "/docs/index.html",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.cf202b65cf85d7f27822.md",
@@ -97,11 +97,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.be483424.css.map": "/docs/static/css/main.be483424.css.map",
-    "main.cbf6cc66.js.map": "/docs/static/js/main.cbf6cc66.js.map",
+    "main.72b14aa5.js.map": "/docs/static/js/main.72b14aa5.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be483424.css",
-    "static/js/main.cbf6cc66.js"
+    "static/js/main.72b14aa5.js"
   ]
 }

@@ -38,7 +38,7 @@ SPA 형태인 리액트의 경우에는 라우팅 처리 로직이 서버가 아
 
 이 문제를 해결한 방법을 찾았는데 아래를 참고하기 바란다.
 
-> [Sinle Page Apps for GitHub Pages](https://github.com/rafgraph/spa-github-pages#how-it-works) 참고
+> [Single Page Apps for GitHub Pages](https://github.com/rafgraph/spa-github-pages#how-it-works) 참고
 
 상당히 영리한 솔루션인데 대략적인 방식은 다음과 같다.
 

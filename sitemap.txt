@@ -1,3 +1,5 @@
+https://saerok0305.github.io/docs/
+https://saerok0305.github.io/docs/?/
 https://saerok0305.github.io/docs/?/research/bayesian-inference
 https://saerok0305.github.io/docs/?/research/topic-modeling
 https://saerok0305.github.io/docs/?/research/topic-modeling/lda
@@ -17,5 +19,4 @@ https://saerok0305.github.io/docs/?/study/etc/test-of-independence
 https://saerok0305.github.io/docs/?/project/react-simple-documentation
 https://saerok0305.github.io/docs/?/project/react-simple-documentation/how-to-use-blog
 https://saerok0305.github.io/docs/?/eact-simple-documentation/github-hosting
-https://saerok0305.github.io/docs/?/
 
