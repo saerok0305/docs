@@ -1,22 +1,2 @@
 https://saerok0305.github.io/docs/
-https://saerok0305.github.io/docs/?/
-https://saerok0305.github.io/docs/?/research/bayesian-inference
-https://saerok0305.github.io/docs/?/research/topic-modeling
-https://saerok0305.github.io/docs/?/research/topic-modeling/lda
-https://saerok0305.github.io/docs/?/gaussian-mixture-model
-https://saerok0305.github.io/docs/?/research/stochastic-process/gaussian-process
-https://saerok0305.github.io/docs/?/research/stochastic-process/dirichlet-process
-https://saerok0305.github.io/docs/?/research/stochastic-process/poisson-process
-https://saerok0305.github.io/docs/?/development/elasticsearch
-https://saerok0305.github.io/docs/?/development/lucene
-https://saerok0305.github.io/docs/?/development/spring-boot
-https://saerok0305.github.io/docs/?/development/spring-boot/maven-support
-https://saerok0305.github.io/docs/?/development/react/spa-github-pages
-https://saerok0305.github.io/docs/?/development/react/package-json
-https://saerok0305.github.io/docs/?/development/k8s/installation
-https://saerok0305.github.io/docs/?/etc/test-of-independence
-https://saerok0305.github.io/docs/?/study/etc/test-of-independence
-https://saerok0305.github.io/docs/?/project/react-simple-documentation
-https://saerok0305.github.io/docs/?/project/react-simple-documentation/how-to-use-blog
-https://saerok0305.github.io/docs/?/eact-simple-documentation/github-hosting
 
