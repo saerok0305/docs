@@ -1,8 +1,12 @@
 # Latent Dirichlet Allocation (LDA)
 
-> LDA는 많은 수의 문서 집합이 있을 때, 각 문서를 K개의 토픽 분포로 표현하고, 각 토픽은 V개의 단어 분포로 표현한다.
 
-LDA 모델에서 토픽(Topic)이란 뭘까?
+LDA는 주어진 문서 집합을 어떤 가정에 기반하여 텍스트에 내재된 시멘틱 구조를 발견해내는 토픽 모델의 일종이다.
+여기에서 말하는 가정이란, 임의의 문서는 K개의 토픽 분포로 표현되고, 각 토픽은 V개의 단어 분포로 표현된다는 것이다.
+
+LDA에 대해 이해하기 위해서는 토픽(Topic)이란 무엇인지 생각해 볼 필요가 있다.
+
+예를들어, 신문 기자가 기사를 작성한다고 가정해 보자. 
 
 <img src="/docs/assets/research/topic_modeling/lda/dist_desc.JPG" />
 <figcaption align="center">
