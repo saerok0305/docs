@@ -1,5 +1,4 @@
 https://saerok0305.github.io/docs/
-https://saerok0305.github.io/docs/?/
 https://saerok0305.github.io/docs/?/research
 https://saerok0305.github.io/docs/?/research/bayesian-inference
 https://saerok0305.github.io/docs/?/research/topic-modeling
