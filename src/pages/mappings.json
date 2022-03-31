@@ -29,22 +29,32 @@
         "header": {"label": "개발","path": "development", "md": "development.md", "meta":{}},
         "side_bar": [
             {
-                "label": "ElasticSearch", "path": "elasticsearch", "md": "elasticsearch.md", "meta":{}
+                "label": "개발 환경 설정", "path": "env", "md": "env.md", "meta":{},
+                "sub":[
+                    {"label":"code-server", "path": "code-server", "md": "code-server.md", "meta":{}}
+                ]
             },
             {
-                "label": "Lucene", "path": "lucene", "md": "lucene.md", "meta":{} 
+                "label": "엘라스틱서치", "path": "elasticsearch", "md": "elasticsearch.md", "meta":{}
             },
             {
-                "label": "Spring Boot", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, 
+                "label": "루씬", "path": "lucene", "md": "lucene.md", "meta":{} 
+            },
+            {
+                "label": "스프링 부트", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, 
                 "sub":[
                     {"label":"Maven Support", "path": "maven-support", "md": "maven-support.md", "meta":{}}
                 ]
             },
             {
-                "label": "React", "path": "react", "md": "react.md", "meta":{}
+                "label": "리액트", "path": "react", "md": "react.md", "meta":{},
+                "sub":[
+                    {"label":"GitHub Pages를 위한 SPA 배포", "path": "spa-github-pages", "md": "spa-github-pages.md", "meta":{}},
+                    {"label":"package.json", "path": "package-json", "md": "package-json.md", "meta":{}}
+                ]
             },
             {
-                "label": "Kubernates", "path": "k8s", "md": "k8s.md", "meta":{},
+                "label": "쿠버네티스", "path": "k8s", "md": "k8s.md", "meta":{},
                 "sub":[
                     {"label":"쿠버네티스 설치하기", "path": "installation", "md": "installation.md", "meta":{}}
                 ]

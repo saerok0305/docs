@@ -123,7 +123,6 @@ const SideBarSubItem = styled.div`
       background-color: black;
     `}
   font-size: 0.8rem;
-
 `;
 
 const ExtendButton = styled.div`
@@ -152,7 +151,14 @@ const ExtendButton = styled.div`
     `}
 `;
 
-function SideBar({ responsive, collapsed, link, onClickLink }) {
+function SideBar({
+  responsive,
+  collapsed,
+  link,
+  onClickLink,
+  menuState,
+  changeMenuState,
+}) {
   const location = useLocation();
   const path = location.pathname;
   let selectedHeader = path.substring(1, path.length);
@@ -160,10 +166,6 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
     ? selectedHeader.substring(0, selectedHeader.indexOf("/"))
     : selectedHeader;
 
-  const [state, setState] = useState({});
-  const onExtend = (key) => {
-    setState({ ...state, [key]: state[key] ? !state[key] : true });
-  };
   return (
     <Container responsive={responsive} collapsed={collapsed}>
       {!collapsed &&
@@ -180,7 +182,7 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
                       }
                       onClick={() => {
                         onClickLink(item.header.path + "/" + sideBarItem.path);
-                        onExtend(index1 + "-" + index2);
+                        changeMenuState(index1 + "-" + index2);
                       }}
                     >
                       <StyledLink
@@ -198,7 +200,7 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
                             selected={
                               link === item.header.path + "/" + sideBarItem.path
                             }
-                            extend={state[index1 + "-" + index2]}
+                            extend={menuState[index1 + "-" + index2]}
                             // onClick={() => onExtend(index1 + "-" + index2)}
                           >
                             <AiOutlineDown />
@@ -208,7 +210,7 @@ function SideBar({ responsive, collapsed, link, onClickLink }) {
                     {sideBarItem.sub &&
                       sideBarItem.sub.length &&
                       sideBarItem.sub.length > 0 &&
-                      state[index1 + "-" + index2] &&
+                      menuState[index1 + "-" + index2] &&
                       sideBarItem.sub.map((subItem, index3) => (
                         <SideBarSubItem
                           selected={

@@ -168,6 +168,7 @@ function Header({
   onClickLink,
   extend,
   setExtend,
+  setMenuState,
 }) {
   const ref = useRef(null);
 
@@ -226,6 +227,7 @@ function Header({
   const onClickLogo = () => {
     setLink("/");
     setCollapsed(true);
+    setMenuState({});
   };
 
   return (

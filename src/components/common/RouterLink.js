@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function RouterLink(props) {
+  console.log(props.href);/////////
+  console.log(process.env.PUBLIC_URL);
   const location = props.href.substring(
     props.href.indexOf(process.env.PUBLIC_URL) + process.env.PUBLIC_URL.length
   ); // location: leave base url off

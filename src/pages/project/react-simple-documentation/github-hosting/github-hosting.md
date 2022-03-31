@@ -4,6 +4,7 @@ GitHub 계정이 있다면 자신이 생성한 저장소(Repository)를 통해 �
 
 > GitHub에서는 [GitHub Pages](https://pages.github.com/)라는 서비스를 통해 Jekyll과 같은 도구를 이용하여 블로깅을 할 수 있지만,
 > 나는 내가 원하는 대로 커스터마이징 하고 싶어서 리액트로 개발을 했기 때문에 호스팅을 위한 몇가지 과정이 필요하다.
+> 또한 라우팅이 적용된 SPA(Single Page Application)을 GitHub Pages에 배포하려면 추가적으로 해결해야 할 문제가 있다. 이는 맨 뒤에서 별도 설명으로 첨부한다.
 
 간단하게 과정을 설명하면,
 

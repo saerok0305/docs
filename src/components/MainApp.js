@@ -40,6 +40,9 @@ function MainApp({ responsive, collapsedDefault }) {
   const [link, setLink] = useState("/");
   const onClickLink = (link) => {
     setCollapsed(false);
+    // if (responsive === "mobile") {
+    //   setCollapsed(true);
+    // }
     setLink(link);
   };
 
@@ -55,6 +58,11 @@ function MainApp({ responsive, collapsedDefault }) {
     setExtend(false);
   };
 
+  const [menuState, setMenuState] = useState({});
+  const changeMenuState = (key) => {
+    setMenuState({ ...menuState, [key]: menuState[key] ? !menuState[key] : true });
+  };
+
   return (
     <Container>
       <HeaderContainer>
@@ -68,6 +76,7 @@ function MainApp({ responsive, collapsedDefault }) {
           onClickLink={onClickLink}
           extend={extend}
           setExtend={setExtend}
+          setMenuState={setMenuState}
         />
       </HeaderContainer>
       <ContentContainer>
@@ -76,6 +85,8 @@ function MainApp({ responsive, collapsedDefault }) {
           collapsed={collapsed}
           link={link}
           onClickLink={onClickLink}
+          menuState={menuState}
+          changeMenuState={changeMenuState}
         />
         <Content
           collapsed={collapsed}

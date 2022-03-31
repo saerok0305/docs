@@ -47,13 +47,13 @@ function MarkDownComponent({ file, meta, setLink }) {
             remarkPlugins={[remarkGfm, remarkMath]}
             // escapeHtml={false}
             rehypePlugins={[rehypeRaw, rehypeKatex]}
-            components={{
-              a: (props) => (
-                <RouterLink href={props.href} setLink={setLink}>
-                  {props.children}
-                </RouterLink>
-              ),
-            }}
+            //components={{
+            // a: (props) => (
+            //   <RouterLink href={props.href} setLink={setLink}>
+            //     {props.children}
+            //  </RouterLink>
+            // ),
+            //}}
           >
             {markdown}
           </ReactMarkdown>
