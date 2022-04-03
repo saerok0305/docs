@@ -1,5 +1,10 @@
 # code-server: WSL2 환경에서 vscode 원격 접속
 
+<img width="600" src="/docs/assets/development/env/code-server/code-server.png" />
+<figcaption align="center">
+  <b>code-server screen shot</b>
+</figcaption>
+
 wsl2 + ubuntu 20.04
 
 1. 공유기 포트포워딩 설정
