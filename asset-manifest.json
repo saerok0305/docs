@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.23d41889.css",
-    "main.js": "/docs/static/js/main.191f4f18.js",
+    "main.js": "/docs/static/js/main.5712b24a.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -99,11 +99,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.23d41889.css.map": "/docs/static/css/main.23d41889.css.map",
-    "main.191f4f18.js.map": "/docs/static/js/main.191f4f18.js.map",
+    "main.5712b24a.js.map": "/docs/static/js/main.5712b24a.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23d41889.css",
-    "static/js/main.191f4f18.js"
+    "static/js/main.5712b24a.js"
   ]
 }
