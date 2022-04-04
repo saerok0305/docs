@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.23d41889.css",
-    "main.js": "/docs/static/js/main.1e7f5f9d.js",
+    "main.css": "/docs/static/css/main.f9461d83.css",
+    "main.js": "/docs/static/js/main.0d5c062f.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -51,6 +51,7 @@
     "static/media/KaTeX_Size4-Regular.ttf": "/docs/static/media/KaTeX_Size4-Regular.4ad7c7e8bb8d10a34bb7.ttf",
     "static/media/KaTeX_SansSerif-Regular.woff2": "/docs/static/media/KaTeX_SansSerif-Regular.cd5e231e0cc53b2cb2c0.woff2",
     "static/media/KaTeX_Script-Regular.woff2": "/docs/static/media/KaTeX_Script-Regular.c81d1b2a4b75d3eded60.woff2",
+    "static/media/lda.md": "/docs/static/media/lda.431c008753d3b737c480.md",
     "static/media/KaTeX_Caligraphic-Bold.woff": "/docs/static/media/KaTeX_Caligraphic-Bold.d757c535a2e5902f1325.woff",
     "static/media/KaTeX_Caligraphic-Regular.woff": "/docs/static/media/KaTeX_Caligraphic-Regular.db074fa22cf224af93d7.woff",
     "static/media/KaTeX_Size3-Regular.ttf": "/docs/static/media/KaTeX_Size3-Regular.8d6b6822586eea3d3b20.ttf",
@@ -63,7 +64,6 @@
     "static/media/KaTeX_Size4-Regular.woff": "/docs/static/media/KaTeX_Size4-Regular.aeffd8025cba3647f1a6.woff",
     "static/media/KaTeX_Size1-Regular.woff2": "/docs/static/media/KaTeX_Size1-Regular.6eec866c69313624be60.woff2",
     "static/media/KaTeX_Size2-Regular.woff2": "/docs/static/media/KaTeX_Size2-Regular.2960900c4f271311eb36.woff2",
-    "static/media/lda.md": "/docs/static/media/lda.a3eae3d72f19eb378211.md",
     "static/media/KaTeX_Size4-Regular.woff2": "/docs/static/media/KaTeX_Size4-Regular.e418bf257af1052628d8.woff2",
     "static/media/KaTeX_Size3-Regular.woff": "/docs/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/github-hosting.md": "/docs/static/media/github-hosting.14964ebbce73438f61a5.md",
@@ -87,6 +87,7 @@
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.3cc1e196487ab891cbde.md",
     "static/media/k8s.md": "/docs/static/media/k8s.191118a64eb7f661f0ad.md",
     "static/media/spring-boot.md": "/docs/static/media/spring-boot.60e1b0ea8c9f8a0eaa3b.md",
+    "static/media/vae.md": "/docs/static/media/vae.dcac5418cc400d268bde.md",
     "static/media/env.md": "/docs/static/media/env.35c28492e5958677f60d.md",
     "static/media/maven-support.md": "/docs/static/media/maven-support.7ba768ba401c3cb543ab.md",
     "static/media/news.md": "/docs/static/media/news.0244e5cd2e78d736e57d.md",
@@ -98,12 +99,12 @@
     "static/media/research.md": "/docs/static/media/research.04552c37944805412439.md",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
-    "main.23d41889.css.map": "/docs/static/css/main.23d41889.css.map",
-    "main.1e7f5f9d.js.map": "/docs/static/js/main.1e7f5f9d.js.map",
+    "main.f9461d83.css.map": "/docs/static/css/main.f9461d83.css.map",
+    "main.0d5c062f.js.map": "/docs/static/js/main.0d5c062f.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23d41889.css",
-    "static/js/main.1e7f5f9d.js"
+    "static/css/main.f9461d83.css",
+    "static/js/main.0d5c062f.js"
   ]
 }
