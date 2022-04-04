@@ -111,7 +111,12 @@ $$
 $$
 
 \begin{aligned}
-P(W|\alpha,\beta) = \displaystyle\int_{\Phi}\displaystyle\int_{\Theta}\displaystyle\sum_{Z}P(W,Z,\Theta,\Phi;\alpha,\beta)d\Theta d\Phi = \displaystyle\int_{\Phi} P(\Phi|\beta) \displaystyle\int_{\Theta} P(\Theta|\alpha) \displaystyle\sum_{Z} P(Z|\Theta)P(W|Z,\Phi) d\Theta d\Phi
+P(W|\alpha,\beta) &= \displaystyle\int_{\Phi}\displaystyle\int_{\Theta}\displaystyle\sum_{Z}P(W,Z,\Theta,\Phi;\alpha,\beta)d\Theta d\Phi \\ &= \displaystyle\int_{\Phi} P(\Phi|\beta) \displaystyle\int_{\Theta} P(\Theta|\alpha) \displaystyle\sum_{Z} P(Z|\Theta)P(W|Z,\Phi) d\Theta d\Phi
 \end{aligned}
 $$
 
+<figcaption align="center">
+  <b>식 3: Evidence</b>
+</figcaption>
+
+하지만, 
