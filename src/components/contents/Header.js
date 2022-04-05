@@ -1,12 +1,12 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import styled, { css } from "styled-components";
-import defaultStyle from "../../style";
-import StyledLink from "../common/StyledLink";
-import mappings from "../../pages/mappings.json";
-import { AiOutlineMenu, AiOutlineEllipsis } from "react-icons/ai";
-import barcode from "../../barcode.png";
-import { NavLink } from "react-router-dom";
-import { getTextWidth } from "../../utils/LayoutUtil";
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import styled, { css } from 'styled-components';
+import defaultStyle from '../../style';
+import StyledLink from '../common/StyledLink';
+import mappings from '../../pages/mappings.json';
+import { AiOutlineMenu, AiOutlineEllipsis } from 'react-icons/ai';
+import barcode from '../../barcode.png';
+import { NavLink } from 'react-router-dom';
+import { getTextWidth } from '../../utils/LayoutUtil';
 
 const Container = styled.div`
   position: relative; //////////////////////////////
@@ -30,7 +30,7 @@ const Middle = styled.div`
   width: calc(100% - 220px);
   overflow: none;
   ${(props) =>
-    props.responsive === "mobile" &&
+    props.responsive === 'mobile' &&
     css`
       width: calc(100% - 60px);
       overflow-x: scroll;
@@ -90,7 +90,7 @@ const MenuItem = styled.div`
 `;
 
 const LogoItem = styled.div`
-  margin-left: 10px;
+  margin-left: 6px;
   height: 40px;
 
   cursor: pointer;
@@ -100,11 +100,23 @@ const LogoItem = styled.div`
   user-select: none;
 `;
 
-const Logo = styled.img`
-  /* width: 100%; */
-  /* width: 100px; */
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
   height: 40px;
-  /* opacity: 0.3; */
+`;
+
+const Logo = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url(${(props) => props.data});
+  background-size: contain;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 const HeaderItem = styled.div`
@@ -187,7 +199,7 @@ function Header({
     for (let i = 0; i < mappings.length; i++) {
       const textLen = getTextWidth(
         mappings[i].header.label,
-        "normal 1rem arial"
+        'normal 1rem arial',
       );
       // console.log(textLen); ///
       // const len = mappings[i].header.label.length;
@@ -212,10 +224,10 @@ function Header({
   }, []);
 
   useEffect(() => {
-    window.addEventListener("resize", calcLastIndex);
+    window.addEventListener('resize', calcLastIndex);
     return () => {
       // clean up
-      window.removeEventListener("resize", calcLastIndex);
+      window.removeEventListener('resize', calcLastIndex);
     };
   }, []);
 
@@ -225,7 +237,7 @@ function Header({
   };
 
   const onClickLogo = () => {
-    setLink("/");
+    setLink('/');
     setCollapsed(true);
     setMenuState({});
   };
@@ -237,29 +249,14 @@ function Header({
           <AiOutlineMenu />
         </MenuItem>
         <LogoItem onClick={onClickLogo}>
-          <NavLink to={"/"} style={{ margin: "0 auto", padding: "0 10px" }}>
-            <Logo src={barcode} />
+          <NavLink to={'/'} style={{ display: 'block' }}>
+            <LogoContainer>
+              <Logo data={barcode} />
+            </LogoContainer>
           </NavLink>
         </LogoItem>
-        {/* <LogoItem2>
-          <NavLink
-            to={"/"}
-            style={{
-              // display: "block",
-              // alignItems: "center",
-              // // fontSize: "100px",
-              textDecoration: "none",
-              color: "grey",
-              // // height: "40px",
-              // // width: "100%"
-              fontSize: "30px"
-            }}
-          >
-            Docs
-          </NavLink>
-        </LogoItem2> */}
       </Left>
-      {responsive === "mobile" && (
+      {responsive === 'mobile' && (
         <Middle responsive={responsive} collapsed={collapsed}>
           {mappings.map((e, index) => (
             <HeaderItem
@@ -278,7 +275,7 @@ function Header({
         </Middle>
       )}
 
-      {responsive !== "mobile" && (
+      {responsive !== 'mobile' && (
         <Middle responsive={responsive} ref={ref} collapsed={collapsed}>
           {mappings.map((e, index) => {
             if (lastIndex === 0 || index <= lastIndex) {
@@ -301,7 +298,7 @@ function Header({
         </Middle>
       )}
 
-      {responsive !== "mobile" && extend && (
+      {responsive !== 'mobile' && extend && (
         <SubMiddle>
           {mappings.map((e, index) => {
             if (lastIndex > 0 && index > lastIndex) {
@@ -324,7 +321,7 @@ function Header({
         </SubMiddle>
       )}
 
-      {responsive !== "mobile" && (
+      {responsive !== 'mobile' && (
         <Right>
           {lastIndex > 0 && (
             <ExtendButton extend={extend} onClick={onExtend}>

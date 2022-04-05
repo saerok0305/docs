@@ -1,14 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import styled from "styled-components";
-import Home from "./Home";
-import NotFound from "../NotFound";
-import mappings from "../../pages/mappings.json";
-import MarkDownComponent from "../common/MarkDownComponent";
-import { css } from "styled-components";
-import GeneralComponent from "../common/GeneralComponent";
+import { Route, Routes } from 'react-router-dom';
+import styled from 'styled-components';
+import Home from './Preview';
+import NotFound from '../NotFound';
+import mappings from '../../pages/mappings.json';
+import MarkDownComponent from '../common/MarkDownComponent';
+import { css } from 'styled-components';
+import GeneralComponent from '../common/GeneralComponent';
 
 const Container = styled.div`
-
   display: flex;
   justify-content: center;
   overflow-y: overlay;
@@ -17,11 +16,36 @@ const Container = styled.div`
   height: 100%;
 `;
 
-function Content({ onClickContent, setLink }) {
+function Content({
+  onClickContent,
+  onClickLink,
+  link,
+  setLink,
+  changeMenuState,
+}) {
   return (
     <Container onClick={onClickContent}>
       <Routes>
-        <Route path="/*" element={<Home />} />
+        <Route
+          path="/*"
+          element={
+            <Home
+              link={link}
+              onClickLink={onClickLink}
+              changeMenuState={changeMenuState}
+            />
+          }
+        />
+        <Route
+          path="/docs"
+          element={
+            <Home
+              link={link}
+              onClickLink={onClickLink}
+              changeMenuState={changeMenuState}
+            />
+          }
+        />
         {/* <Route
           path="/"
           element={<MarkDownComponent file={"home.md"} meta={{}} />}
@@ -33,10 +57,10 @@ function Content({ onClickContent, setLink }) {
         {mappings.map((item, index) => (
           <Route
             key={index}
-            path={item.header.path + "/*"}
+            path={item.header.path + '/*'}
             element={
               <MarkDownComponent
-                file={item.header.path + "/" + item.header.md}
+                file={item.header.path + '/' + item.header.md}
                 meta={item.header.meta}
                 setLink={setLink}
               />
@@ -48,16 +72,16 @@ function Content({ onClickContent, setLink }) {
             item.side_bar &&
             item.side_bar.map((sideBarItem, index2) => (
               <Route
-                key={index1 + "-" + index2}
-                path={item.header.path + "/" + sideBarItem.path + "/*"}
+                key={index1 + '-' + index2}
+                path={item.header.path + '/' + sideBarItem.path + '/*'}
                 element={
                   (sideBarItem.md && (
                     <MarkDownComponent
                       file={
                         item.header.path +
-                        "/" +
+                        '/' +
                         sideBarItem.path +
-                        "/" +
+                        '/' +
                         sideBarItem.md
                       }
                       meta={sideBarItem.meta}
@@ -67,7 +91,7 @@ function Content({ onClickContent, setLink }) {
                   (sideBarItem.js && <div>asdf</div>)
                 }
               />
-            ))
+            )),
         )}
         {mappings.map(
           (item, index1) =>
@@ -78,25 +102,25 @@ function Content({ onClickContent, setLink }) {
                 sideBarItem.sub.length > 0 &&
                 sideBarItem.sub.map((subItem, index3) => (
                   <Route
-                    key={index1 + "-" + index2 + "-" + index3}
+                    key={index1 + '-' + index2 + '-' + index3}
                     path={
                       item.header.path +
-                      "/" +
+                      '/' +
                       sideBarItem.path +
-                      "/" +
+                      '/' +
                       subItem.path +
-                      "/*"
+                      '/*'
                     }
                     element={
                       (subItem.md && (
                         <MarkDownComponent
                           file={
                             item.header.path +
-                            "/" +
+                            '/' +
                             sideBarItem.path +
-                            "/" +
+                            '/' +
                             subItem.path +
-                            "/" +
+                            '/' +
                             subItem.md
                           }
                           meta={subItem.meta}
@@ -107,19 +131,19 @@ function Content({ onClickContent, setLink }) {
                         <GeneralComponent
                           component={
                             item.header.path +
-                            "/" +
+                            '/' +
                             sideBarItem.path +
-                            "/" +
+                            '/' +
                             subItem.path +
-                            "/" +
+                            '/' +
                             subItem.component
                           }
                         />
                       ))
                     }
                   />
-                ))
-            )
+                )),
+            ),
         )}
 
         <Route path="*" element={<NotFound />} />

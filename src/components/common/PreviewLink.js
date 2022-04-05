@@ -7,8 +7,8 @@ import defaultStyle from '../../style';
 const MyLink = styled(NavLink)`
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
+  margin: 10px;
   text-decoration: none;
   color: black;
 
@@ -18,14 +18,22 @@ const MyLink = styled(NavLink)`
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  ${(props) =>
+  /* ${(props) =>
     props.selected &&
     css`
       color: white;
+    `} */
+
+  user-select: none;
+
+  ${(props) =>
+    props.selected &&
+    css`
+      background-color: black;
     `}
 `;
 
-function StyledLink({ children, selected, to }) {
+function PreviewLink({ children, selected, to }) {
   return (
     <MyLink selected={selected} to={to}>
       {children}
@@ -33,4 +41,4 @@ function StyledLink({ children, selected, to }) {
   );
 }
 
-export default StyledLink;
+export default PreviewLink;

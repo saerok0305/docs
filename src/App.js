@@ -1,9 +1,9 @@
-import "./App.css";
-import styled, { createGlobalStyle } from "styled-components";
-import MainApp from "./components/MainApp";
-import { Desktop, Mobile, Tablet } from "./utils/Responsive";
-import MetaTag from "./utils/MetaTag";
-import { useEffect } from "react";
+import './App.css';
+import styled, { createGlobalStyle } from 'styled-components';
+import MainApp from './components/MainApp';
+import { Desktop, Mobile, Tablet } from './utils/Responsive';
+import MetaTag from './utils/MetaTag';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga4';
 
 const GlobalStyle = createGlobalStyle`
@@ -34,22 +34,24 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+
+  overflow: hidden; //
 `;
 function App() {
-  const meta = { title: "Documentation" };
+  const meta = { title: 'Documentation' };
 
   return (
     <Container>
       <MetaTag meta={meta} />
       <GlobalStyle />
       <Desktop>
-        <MainApp responsive={"desktop"} collapsedDefault={false} />
+        <MainApp responsive={'desktop'} collapsedDefault={false} />
       </Desktop>
       <Tablet>
-        <MainApp responsive={"tablet"} collapsedDefault={false} />
+        <MainApp responsive={'tablet'} collapsedDefault={false} />
       </Tablet>
       <Mobile>
-        <MainApp responsive={"mobile"} collapsedDefault={true} />
+        <MainApp responsive={'mobile'} collapsedDefault={true} />
       </Mobile>
     </Container>
   );

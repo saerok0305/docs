@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import styled from "styled-components";
-import defaultStyle from "../style";
-import Content from "./contents/Content";
-import Header from "./contents/Header";
-import SideBar from "./contents/SideBar";
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import styled from 'styled-components';
+import defaultStyle from '../style';
+import Content from './contents/Content';
+import Header from './contents/Header';
+import SideBar from './contents/SideBar';
 
 const Container = styled.div`
   display: flex;
@@ -37,7 +37,7 @@ function MainApp({ responsive, collapsedDefault }) {
 
   const [extend, setExtend] = useState(false);
 
-  const [link, setLink] = useState("/");
+  const [link, setLink] = useState('/');
   const onClickLink = (link) => {
     setCollapsed(false);
     // if (responsive === "mobile") {
@@ -52,7 +52,7 @@ function MainApp({ responsive, collapsedDefault }) {
   };
 
   const onClickContent = () => {
-    if (responsive === "mobile") {
+    if (responsive === 'mobile') {
       setCollapsed(true);
     }
     setExtend(false);
@@ -60,7 +60,10 @@ function MainApp({ responsive, collapsedDefault }) {
 
   const [menuState, setMenuState] = useState({});
   const changeMenuState = (key) => {
-    setMenuState({ ...menuState, [key]: menuState[key] ? !menuState[key] : true });
+    setMenuState({
+      ...menuState,
+      [key]: menuState[key] ? !menuState[key] : true,
+    });
   };
 
   return (
@@ -90,8 +93,11 @@ function MainApp({ responsive, collapsedDefault }) {
         />
         <Content
           collapsed={collapsed}
+          onClickLink={onClickLink}
           onClickContent={onClickContent}
+          link={link}
           setLink={setLink}
+          changeMenuState={changeMenuState}
         />
       </ContentContainer>
     </Container>
