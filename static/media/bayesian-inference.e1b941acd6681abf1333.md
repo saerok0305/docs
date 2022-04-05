@@ -1,1 +1,0 @@
-# 베이지안 추론(Bayesian Inference)

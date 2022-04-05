@@ -86,7 +86,7 @@ $$
 
 여기서 우변의 분모는,
 
-앞서 나왔던 Graphcial Model을 기반으로하여, LDA 모델에서 모든 문서-토픽 분포 $$\Theta$$, 모든 토픽-단어 분포 $$\Phi$$, 모든 토픽 assignments $$Z$$, 코퍼스의 모든 단어 $$W$$, 그리고 주어진 하이퍼파라미터 $$\alpha$$, $$\beta$$ 의 결합 확률 분포로 생각할 수 있고, 다음과 같은 식으로 나타낼 수 있다.
+모든 문서-토픽 분포 $$\Theta$$, 모든 토픽-단어 분포 $$\Phi$$, 모든 토픽 assignments $$Z$$, 코퍼스의 모든 단어 $$W$$, 그리고 주어진 하이퍼파라미터 $$\alpha$$, $$\beta$$ 의 결합 확률 분포이다. 앞서 나왔던 Graphcial Model을 참조하여 아래와 같은 식으로 정리할 수 있다.
 
 <!-- <img width="600" src="/docs/assets/research/topic_modeling/lda/total-prob.png" />
 
@@ -106,7 +106,7 @@ $$
 
 그리고 우변의 분자는,
 
-위 결합 확률 분포를 $$\Phi$$, $$\Theta$$, $$Z$$에 대하여 주변화(marginalize out) 함으로써 구할 수 있다.
+위 결합 확률 분포를 $$\Phi$$, $$\Theta$$, $$Z$$에 대하여 주변화(marginalize out) 함으로써 구할 수 있다. (이를 evidence 혹은 marginal likelihood라고 한다.)
 
 $$
 
@@ -119,4 +119,68 @@ $$
   <b>식 3: Evidence</b>
 </figcaption>
 
-하지만, 
+보통 현실 세계 문제에서, Evidence를 계산하는 것은 불가능한데 이를 보통 intractable하다고 표현한다. 왜냐하면 위 식에서 볼 수 있듯이, $$\Theta$$와 $$\Phi$$ 가 잠재 변수 Z에 대한 summation 내에 coupling 되어 있기 때문이다.
+
+> Z(topic assignment)에 대한 configuration이 $$K^{|M*N|}$$ 개 만큼 존재한다. 이처럼 베이지안 추론에서는 evidence의 존재가 LDA 같은 베이지안 모델을 어렵게 만드는 원인이라고도 볼 수 있다.
+
+하지만, 이런 상황에도 해결 방법이 존재한다.
+
+모델의 잠재 변수(엄밀하게는 파라미터)를 추정하기 위한 베이지안 추론에는 크게 두가지 방법론이 있다.
+
+1. Variational Inference
+2. Gibbs Sampling
+
+[베이지안 추론](/docs/research/bayesian-inference)에 대해서는 다룰 내용이 방대하므로 별도의 페이지에서 정리를 할 예정이고, 여기에서는 Gibbs Sampling 방식으로 설명을 이어나가도록 하겠다.
+
+## (Collapsed) Gibbs Sampling
+
+앞서 언급했듯이, intractable한 분포를 가진 사후 확률 분포(posterior)를 추론하는데 일반적인 접근법이 바로 Gibbs Sampling이다.
+LDA에서는 $$\Phi$$와 $$\Theta$$에 대한 사전 확률 분포(prior)가 conjugate하기 때문에, 결합 확률 분포로 부터 해당 확률 변수를 integrated out(=marginalized out)하여 계산하게 되는데, prior를 callapsing 한다고 하여 특별히 이것을 Collapsed Gibbs Sampling 이라고 부른다.
+
+먼저 위 식 2를 $$\Phi$$와 $$\Theta$$에 대하여 marginalize 하고 정리하면, 다음과 같은 형태로 변환이 가능하다.
+
+$$
+\begin{aligned}
+P(W,Z|\alpha,\beta) &= \displaystyle\int_{\Theta}\displaystyle\int_{\Phi}P(W,Z,\Theta,\Phi;\alpha,\beta)d\Phi d\Theta \\ &= \displaystyle\int_{\Phi}\displaystyle\prod_{i=1}^{K} P(\phi_i;\beta) \displaystyle\prod_{j=1}^{M} \displaystyle\prod_{t=1}^{N} P(W_{j,t}|\phi_{z_{jt}})d\Phi \cdot \displaystyle\int_{\Theta} \displaystyle\prod_{j=1}^{M} P(\theta_j;\alpha) \displaystyle\prod_{t=1}^{N} P(Z_{j,t} | \theta_j) d\theta \\ &= ... \\ &= 식
+\end{aligned}
+$$
+
+<figcaption align="center">
+  <b>식 4: marginalized out</b>
+</figcaption>
+
+위 생략된 부분은 [위키피디아](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)에 디테일한 과정이 있으니 참고하기 바란다.
+
+앞서 언급했듯이, Collapsed Gibbs Sampling의 목표는 아래와 같이 Z에 대한 사후 확률 분포를 구하는 것인데,
+
+$$
+\begin{aligned}
+P(Z|W;\alpha,\beta) = \cfrac {P(Z,W,\Theta,\Phi;\alpha,\beta)} {P(W|\alpha,\beta)}
+\end{aligned}
+$$
+
+<figcaption align="center">
+  <b>식 5: Collapsed Gibbs Sampling의 목표</b>
+</figcaption>
+
+Z에 대해서 불변한 값인 $$P(W,\alpha,\beta)$$를 무시하고, $$P(Z,W,\Theta,\Phi;\alpha,\beta)$$로부터 직접 Sampling Equation을 유도해 낼 수 있다.
+
+> Gibbs Sampling은 사후 확률 분포를 직접 구하는 것이 아니라, 사후 확률 분포의 샘플을 만들어 내는 것을 목표로 한다. (Z의 샘플)
+
+## Sampling Equation
+
+$$
+\begin{aligned}
+P(Z_{(m,n)}|Z_{-(m,n)},W;\alpha,\beta) = \cfrac {P(Z_{(m,n)}, Z_{-(m,n)},W,\alpha,\beta)} {P(Z_{-(m,n)}, W|\alpha,\beta)}
+\end{aligned}
+$$
+
+<figcaption align="center">
+  <b>식 6: Collapsed Gibbs Sampling의 목표</b>
+</figcaption>
+
+위 식처럼 결합 확률 분포를 직접 구하는 것 대신, 조건부 확률을 통해 샘플을 만들어 낸다. 부연 설명을 하자면, Gibbs sampler는 각 잠재 변수를 샘플링 하기 위해서, 그 외 다른 모든 잠재 변수는 현재 값을 고정시키는 방식으로 조건부 확률을 계산하고 이 조건부 확률 분포로 부터 해당 잠재 변수 값을 샘플링 하게 된다.
+
+> 샘플링은 inverse transforming sampling 방식으로 구현한다.
+
+위 식을 더 전개 하기 위해서, 만약 $$m$$문서의 $$n$$번째 단어의 토픽이 $$v$$ 라고 한다면,
