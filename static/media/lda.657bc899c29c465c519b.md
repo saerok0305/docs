@@ -134,14 +134,35 @@ $$
 
 ## (Collapsed) Gibbs Sampling
 
-앞서 언급했듯이, intractable한 분포를 가진 사후 확률 분포(posterior)를 추론하는데 일반적인 접근법이 바로 Gibbs Sampling이다.
+Gibbs Sampling은 intractable한 분포를 가진 사후 확률 분포(posterior)를 추론하는데 사용되는 일반적인 접근법이다.
+
 LDA에서는 $$\Phi$$와 $$\Theta$$에 대한 사전 확률 분포(prior)가 conjugate하기 때문에, 결합 확률 분포로 부터 해당 확률 변수를 integrated out(=marginalized out)하여 계산하게 되는데, prior를 callapsing 한다고 하여 특별히 이것을 Collapsed Gibbs Sampling 이라고 부른다.
 
-먼저 위 식 2를 $$\Phi$$와 $$\Theta$$에 대하여 marginalize 하고 정리하면, 다음과 같은 형태로 변환이 가능하다.
+즉, Collapsed Gibbs Sampling의 목표는 아래와 같이 Z에 대한 사후 확률 분포를 구하는 것이다.
 
 $$
 \begin{aligned}
-P(W,Z|\alpha,\beta) &= \displaystyle\int_{\Theta}\displaystyle\int_{\Phi}P(W,Z,\Theta,\Phi;\alpha,\beta)d\Phi d\Theta \\ &= \displaystyle\int_{\Phi}\displaystyle\prod_{i=1}^{K} P(\phi_i;\beta) \displaystyle\prod_{j=1}^{M} \displaystyle\prod_{t=1}^{N} P(W_{j,t}|\phi_{z_{jt}})d\Phi \cdot \displaystyle\int_{\Theta} \displaystyle\prod_{j=1}^{M} P(\theta_j;\alpha) \displaystyle\prod_{t=1}^{N} P(Z_{j,t} | \theta_j) d\theta \\ &= ... \\ &= 식
+P(Z|W;\alpha,\beta) = \cfrac {P(Z,W;\alpha,\beta)} {P(W|\alpha,\beta)}
+\end{aligned}
+$$
+
+<figcaption align="center">
+  <b>식 4: Collapsed Gibbs Sampling의 목표</b>
+</figcaption>
+
+먼저 위 식 4 우변의 분자는, 식 2 결합 확률 분포를 $$\Phi$$와 $$\Theta$$에 대하여 marginalize 하여 다음과 같이 정리해보자.
+
+$$
+\begin{aligned}
+P(Z,W|\alpha,\beta) &= \displaystyle\int_{\Theta}\displaystyle\int_{\Phi}P(Z,W,\Theta,\Phi;\alpha,\beta)d\Phi d\Theta \\ &= \displaystyle\int_{\Phi}\displaystyle\prod_{i=1}^{K} P(\phi_i;\beta) \displaystyle\prod_{j=1}^{M} \displaystyle\prod_{t=1}^{N} P(W_{j,t}|\phi_{z_{jt}})d\Phi \cdot \displaystyle\int_{\Theta} \displaystyle\prod_{j=1}^{M} P(\theta_j;\alpha) \displaystyle\prod_{t=1}^{N} P(Z_{j,t} | \theta_j) d\theta \\ &= ... \\ &=
+\displaystyle\prod_{j=1}^{M}
+\cfrac {\Gamma \big(\sum_{i=1}^{K} \alpha_{i} \big)}  {\prod_{i=1}^{K} \Gamma(\alpha_{i})}
+\cfrac {\prod_{i=1}^K \Gamma(n_{j,(\cdot)}^i)+\alpha_{i}} {\Gamma(\sum_{i=1}^{K} n_{j,(\cdot)}^{i} + \alpha_{i})}
+
+\times
+\displaystyle\prod_{i=1}^{K}
+\cfrac {\Gamma \big(\sum_{r=1}^{V} \beta_{r} \big)}  {\prod_{r=1}^{V} \Gamma(\beta_{r})}
+\cfrac {\prod_{r=1}^V \Gamma(n_{(\cdot), r}^i)+\beta_{r}} {\Gamma(\sum_{r=1}^{V} n_{(\cdot),r}^{i} + \beta_{r})}
 \end{aligned}
 $$
 
@@ -149,38 +170,60 @@ $$
   <b>식 4: marginalized out</b>
 </figcaption>
 
-위 생략된 부분은 [위키피디아](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)에 디테일한 과정이 있으니 참고하기 바란다.
+- $$n_{j,r}^{i}$$: $$j$$번째 문서에서 vocabulary상 id값이 $$r$$인 단어에, id값이 i인 토픽이 할당된 단어(토큰)의 갯수 
+- $$n_{j,(\cdot)}^{i}$$: $$j$$번째 문서에서, id값이 i인 토픽이 할당된 단어(토큰)의 총 갯수 
 
-앞서 언급했듯이, Collapsed Gibbs Sampling의 목표는 아래와 같이 Z에 대한 사후 확률 분포를 구하는 것인데,
+> 위 생략된 부분은 [위키피디아](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)에 디테일한 과정이 있으니 참고하기 바란다.
 
-$$
-\begin{aligned}
-P(Z|W;\alpha,\beta) = \cfrac {P(Z,W,\Theta,\Phi;\alpha,\beta)} {P(W|\alpha,\beta)}
-\end{aligned}
-$$
-
-<figcaption align="center">
-  <b>식 5: Collapsed Gibbs Sampling의 목표</b>
-</figcaption>
-
+Gibbs Sampling은 사후 확률 분포를 직접 구하는 것이 아니라, 사후 확률 분포의 샘플(Z의 샘플)을 만들어 내는 것이 목표이기 때문에,
 Z에 대해서 불변한 값인 $$P(W,\alpha,\beta)$$를 무시하고, $$P(Z,W,\Theta,\Phi;\alpha,\beta)$$로부터 직접 Sampling Equation을 유도해 낼 수 있다.
-
-> Gibbs Sampling은 사후 확률 분포를 직접 구하는 것이 아니라, 사후 확률 분포의 샘플을 만들어 내는 것을 목표로 한다. (Z의 샘플)
 
 ## Sampling Equation
 
 $$
 \begin{aligned}
-P(Z_{(m,n)}|Z_{-(m,n)},W;\alpha,\beta) = \cfrac {P(Z_{(m,n)}, Z_{-(m,n)},W,\alpha,\beta)} {P(Z_{-(m,n)}, W|\alpha,\beta)}
+P(Z_{(m,n)}|Z_{-(m,n)},W;\alpha,\beta) 
+= \cfrac {P(Z_{(m,n)}, Z_{-(m,n)},W,\alpha,\beta)} {P(Z_{-(m,n)}, W|\alpha,\beta)}
 \end{aligned}
 $$
 
 <figcaption align="center">
-  <b>식 6: Collapsed Gibbs Sampling의 목표</b>
+  <b>식 5: LDA sampling equation의 유도 - 1</b>
 </figcaption>
 
-위 식처럼 결합 확률 분포를 직접 구하는 것 대신, 조건부 확률을 통해 샘플을 만들어 낸다. 부연 설명을 하자면, Gibbs sampler는 각 잠재 변수를 샘플링 하기 위해서, 그 외 다른 모든 잠재 변수는 현재 값을 고정시키는 방식으로 조건부 확률을 계산하고 이 조건부 확률 분포로 부터 해당 잠재 변수 값을 샘플링 하게 된다.
+- $$Z_{(m,n)}$$: $$m$$번째 문서의 $$n$$번째 단어에 대한 토픽을 나타내는 확률 변수
+- $$Z_{-(m,n)}$$: $$m$$번째 문서의 $$n$$번째 단어를 제외하고, 모든 단어에 대한 토픽을 나타내는 확률 변수
+
+위 식처럼 결합 확률 분포를 직접 구하는 것 대신, 조건부 확률을 통해 샘플을 만들어 낸다. 다시 말하면, Gibbs sampler는 각 잠재 변수의 좋은? 샘플을 만들어 내기 위해서, 그 외 다른 모든 잠재 변수는 현재 값으로 고정시키고 나서 특정 잠재 변수에 대한 조건부 확률을 계산하고 이 조건부 확률 분포로 부터 해당 잠재 변수 값을 샘플링 하게 된다.
 
 > 샘플링은 inverse transforming sampling 방식으로 구현한다.
 
-위 식을 더 전개 하기 위해서, 만약 $$m$$문서의 $$n$$번째 단어의 토픽이 $$v$$ 라고 한다면,
+결과적으로, 만약 $$m$$문서의 $$n$$번째 단어의 토픽이 $$v$$로 할당된다라고 할 때, 그 확률은 다음과 같이 정리 된다.
+
+$$
+\begin{aligned}
+P(Z_{(m,n)} = v|Z_{-(m,n)}, W;\alpha,\beta)
+&\propto
+P(Z_{(m,n)}=v, Z_{-(m,n)}, W;\alpha, \beta)
+
+\\ &\propto ...
+
+\\ &\propto
+\displaystyle\prod_{i=1}^{K} \Gamma \bigg( n_{m,(\cdot)}^{i} + \alpha_{i} \bigg)
+\displaystyle\prod_{i=1}^{K} \cfrac {\Gamma(n_{(\cdot), v}^i)+\beta_{v}} {\Gamma(\sum_{r=1}^{V} n_{(\cdot),r}^{i} + \beta_{r})}
+
+\\ &\propto ...
+
+\\ &\propto
+\bigg( n_{m,(\cdot)}^{k,-(m,n)} + \alpha_{k} \bigg) \cfrac { \Gamma \bigg( n_{(\cdot),v}^{k,-(m,n)} + \beta_{v} \bigg) } {\sum_{r=1}^{V}  n_{(\cdot),r}^{k,-(m,n)} + \beta_{r}}
+
+\end{aligned}
+$$
+
+<figcaption align="center">
+  <b>식 5: LDA sampling equation의 유도 - 2</b>
+</figcaption>
+
+- $$n_{m,(\cdot)}^{k, -(m,n)}$$: $$m$$번째 문서에서 id값이 $$k$$인 토픽(단, $$Z_(m,n)$$은 제외, 즉 현재 단어에 어떤 토픽이 할당되는지는 제외)이 할당된 단어(토큰)의 갯수 
+
+> 위 생략된 부분은 [위키피디아](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)에 디테일한 과정이 있으니 참고하기 바란다.
