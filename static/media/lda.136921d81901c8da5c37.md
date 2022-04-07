@@ -2,7 +2,7 @@
 
 > LDA는 임의의 문서를 K개의 토픽 분포로 표현하고, 각 토픽은 V개의 단어 분포로 표현하는 모델이다.
 
-> 토픽 갯수 K와 단어집 갯수 V는 하이퍼파라미터이다. 특히 토픽 갯수 K를 지정하지 않는, 좀 더 advanced한 방법론도 존재하는데 향후 Dirichlet Process에 대한 부분을 다루면서 소개하도록 하겠다.
+> 토픽 갯수 K와 단어집 갯수 V는 하이퍼파라미터이다. 특히 토픽 갯수 K를 지정하지 않는, 좀 더 advanced한 방법론도 존재하는데 [Hierarchical Dirichlet Process](/docs/research/topic-modeling/hdp)에서 소개하도록 하겠다.
 
 일반적으로 사람들이 글을 쓸 때는 여러가지 소재를 담아 이야기를 구성한다. 이때 이 소재가 바로 토픽모델에서 말하는 토픽(Topic) 이다.
 
@@ -170,8 +170,8 @@ $$
   <b>식 4: marginalized out</b>
 </figcaption>
 
-- $$n_{j,r}^{i}$$: $$j$$번째 문서에서 vocabulary상 id값이 $$r$$인 단어에, id값이 i인 토픽이 할당된 단어(토큰)의 갯수 
-- $$n_{j,(\cdot)}^{i}$$: $$j$$번째 문서에서, id값이 i인 토픽이 할당된 단어(토큰)의 총 갯수 
+- $$n_{j,r}^{i}$$: $$j$$번째 문서에서 vocabulary상 id값이 $$r$$인 단어에, id값이 i인 토픽이 할당된 단어(토큰)의 갯수
+- $$n_{j,(\cdot)}^{i}$$: $$j$$번째 문서에서, id값이 i인 토픽이 할당된 단어(토큰)의 총 갯수
 
 > 위 생략된 부분은 [위키피디아](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)에 디테일한 과정이 있으니 참고하기 바란다.
 
@@ -182,7 +182,7 @@ Z에 대해서 불변한 값인 $$P(W,\alpha,\beta)$$를 무시하고, $$P(Z,W,\
 
 $$
 \begin{aligned}
-P(Z_{(m,n)}|Z_{-(m,n)},W;\alpha,\beta) 
+P(Z_{(m,n)}|Z_{-(m,n)},W;\alpha,\beta)
 = \cfrac {P(Z_{(m,n)}, Z_{-(m,n)},W,\alpha,\beta)} {P(Z_{-(m,n)}, W|\alpha,\beta)}
 \end{aligned}
 $$
@@ -202,7 +202,9 @@ $$
 
 $$
 \begin{aligned}
-P(Z_{(m,n)} = v|Z_{-(m,n)}, W;\alpha,\beta)
+\color{blue} {
+  P(Z_{(m,n)} = v|Z_{-(m,n)}, W;\alpha,\beta)
+}
 &\propto
 P(Z_{(m,n)}=v, Z_{-(m,n)}, W;\alpha, \beta)
 
@@ -215,7 +217,9 @@ P(Z_{(m,n)}=v, Z_{-(m,n)}, W;\alpha, \beta)
 \\ &\propto ...
 
 \\ &\propto
-\bigg( n_{m,(\cdot)}^{k,-(m,n)} + \alpha_{k} \bigg) \cfrac { \Gamma \bigg( n_{(\cdot),v}^{k,-(m,n)} + \beta_{v} \bigg) } {\sum_{r=1}^{V}  n_{(\cdot),r}^{k,-(m,n)} + \beta_{r}}
+\color{blue} {
+  \bigg( n_{m,(\cdot)}^{k,-(m,n)} + \alpha_{k} \bigg) \cfrac { \Gamma \bigg( n_{(\cdot),v}^{k,-(m,n)} + \beta_{v} \bigg) } {\sum_{r=1}^{V}  n_{(\cdot),r}^{k,-(m,n)} + \beta_{r}}
+}
 
 \end{aligned}
 $$
@@ -224,6 +228,43 @@ $$
   <b>식 5: LDA sampling equation의 유도 - 2</b>
 </figcaption>
 
-- $$n_{m,(\cdot)}^{k, -(m,n)}$$: $$m$$번째 문서에서 id값이 $$k$$인 토픽(단, $$Z_(m,n)$$은 제외, 즉 현재 단어에 어떤 토픽이 할당되는지는 제외)이 할당된 단어(토큰)의 갯수 
+- $$n_{m,(\cdot)}^{k, -(m,n)}$$: $$m$$번째 문서에서 id값이 $$k$$인 토픽(단, $$Z_(m,n)$$은 제외, 즉 현재 단어에 어떤 토픽이 할당되는지는 제외)이 할당된 단어(토큰)의 갯수
 
 > 위 생략된 부분은 [위키피디아](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)에 디테일한 과정이 있으니 참고하기 바란다.
+
+# Gibss Sampling 과정 요약
+LDA 모델 학습에 있어서 가장 중요한 식이 바로 위(파란색)에 유도되었다.
+
+실제 구현 레벨에서 위 식을 이용하는 방법은 다음의 과정을 따르게 된다. (간단히만 설명)
+> 향후 개인적으로 구현한 LDA 모델을 github에 올릴 예정이다.
+
+1. 모든 문서 내, 모든 단어(토큰) 마다 임의의 토픽을 할당한다.
+2. 모든 문서, 모든 단어를 하나씩 스캔하면서, 현재 단어에 할당된 토픽을 무효화 하고, 1 부터 K의 토픽 할당 했을 때의 조건부 확률 값(위의 파란색 식)을 계산한다.
+3. 2에서 구한 각 토픽 별 확률값을 누적 확률 분포로 표현하고, 이 누적 함수의 역함수를 구한다. 
+4. 0 부터 1사이의 난수를 위 역함수의 입력으로하여 함수 값을 찾으면 이것이 현재 단어(토큰)의 $$Z$$ 값이 샘플링 된 것으로 생각할 수 있다.
+5. 다음 단어를 스캔하면서 위 2번 부터 다시 반복한다.
+
+> 위 3번, 4번 과정에서 설명한 부분이 앞서 언급한 inverse transform sampling 방식을 설명한 것인데 이는 별도의 페이지에서 추가로 섦명하도록 하겠다.
+
+<img width="400" src="/docs/assets/research/topic_modeling/lda/gibbs-sampling.png" />
+<figcaption align="center">
+  <b>그림3: Gibbs Sampling pseudo code</b>
+</figcaption>
+
+
+결론적으로, 과정을 반복하다보면 우리가 목표로 하는 잠재 변수에 대한 사후 확률 분포, $$P(Z|W;\alpha,\beta)$$, 가 점점 (데이터를 가장 잘 설명하는) 목표 분포에 수렴하게 되고, Gibbs Sampling에서는 실제 Z의 샘플을 만들었기 때문에, 각 단어에 어떤 토픽을 할당하는 것이 좋은지 에 대한 결과를 얻을 수 있다.
+
+<img width="400" src="/docs/assets/research/topic_modeling/lda/convergence.png" />
+<figcaption align="center">
+  <b>그림4: Convergence</b>
+</figcaption>
+
+위 그림은 임의로 가져온 그림이긴 한데, 각 점을 $$Z$$의 configuration을 나타내는 어떤 state라고 이해하면 좋을 것 같다.
+
+사실 개인적으로는 이 과정이 가장 핵심이라고 생각한다.
+그 이유는 현재 단어에 어떤 토픽이 할당 되는 것이 가장 그럴듯 할지에 대해 섦명하는 확률이 식 5인데 argmax를 취하여 할당 될 토픽을 결정하는 것이 아닌, 말 그대로 샘플링을 통해서 결정한다라는 부분을 어떻게 받아들여야 할지를 이해하는 것이 중요하기 때문이다. 이러한 방식이 Markov Chain Monte Carlo(MCMC) 메소드 라고 하는 것인데 이 부분에 대한 섦명은 마찬가지로 별도의 페이지에서 설명할 예정이다.
+
+> Gibbs Samping은 대표적인 Markov Chain Monte Carlo(MCMC) 알고리즘이다.
+
+
+위에 설명한 내용을 이해하기 위해서는 상당히 많은 배경지식 필요하기 때문에 상당 부분 설명이 생략 된 부분이 많이 있지만, 나름 핵심적인 사고 과정은 포함되어 있다고 생각한다. 조금씩 시간이 날 때마다 디테일한 부분을 업데이트 하도록 하겠다.
