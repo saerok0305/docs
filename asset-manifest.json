@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.04ec7a83.css",
-    "main.js": "/docs/static/js/main.960c3965.js",
+    "main.js": "/docs/static/js/main.fee37654.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -71,6 +71,7 @@
     "static/media/code-server.md": "/docs/static/media/code-server.f9468c38fcc822ccf8bd.md",
     "static/media/installation.md": "/docs/static/media/installation.9ab9f7685877633b91e7.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
+    "static/media/maven-support.md": "/docs/static/media/maven-support.51479fc3bca8a11ff878.md",
     "index.html": "/docs/index.html",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.422663432eae747b7da7.md",
@@ -95,7 +96,6 @@
     "static/media/ctm.md": "/docs/static/media/ctm.acbd44a3b699337f531e.md",
     "static/media/lem.md": "/docs/static/media/lem.d983b6c86d1d0456a24f.md",
     "static/media/env.md": "/docs/static/media/env.35c28492e5958677f60d.md",
-    "static/media/maven-support.md": "/docs/static/media/maven-support.7ba768ba401c3cb543ab.md",
     "static/media/glda.md": "/docs/static/media/glda.56c578cc3976ee74f959.md",
     "static/media/news.md": "/docs/static/media/news.0244e5cd2e78d736e57d.md",
     "static/media/project.md": "/docs/static/media/project.1d4e74ff2c66c6943b76.md",
@@ -107,11 +107,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.04ec7a83.css.map": "/docs/static/css/main.04ec7a83.css.map",
-    "main.960c3965.js.map": "/docs/static/js/main.960c3965.js.map",
+    "main.fee37654.js.map": "/docs/static/js/main.fee37654.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04ec7a83.css",
-    "static/js/main.960c3965.js"
+    "static/js/main.fee37654.js"
   ]
 }
