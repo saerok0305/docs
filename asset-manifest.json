@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.04ec7a83.css",
-    "main.js": "/docs/static/js/main.4f325719.js",
+    "main.js": "/docs/static/js/main.c19d705a.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -65,12 +65,12 @@
     "static/media/KaTeX_Size4-Regular.woff": "/docs/static/media/KaTeX_Size4-Regular.aeffd8025cba3647f1a6.woff",
     "static/media/KaTeX_Size1-Regular.woff2": "/docs/static/media/KaTeX_Size1-Regular.6eec866c69313624be60.woff2",
     "static/media/KaTeX_Size2-Regular.woff2": "/docs/static/media/KaTeX_Size2-Regular.2960900c4f271311eb36.woff2",
+    "static/media/installation.md": "/docs/static/media/installation.42fe5d7507f4b07556dc.md",
     "static/media/KaTeX_Size4-Regular.woff2": "/docs/static/media/KaTeX_Size4-Regular.e418bf257af1052628d8.woff2",
     "static/media/KaTeX_Size3-Regular.woff": "/docs/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/github-hosting.md": "/docs/static/media/github-hosting.14964ebbce73438f61a5.md",
     "static/media/KaTeX_Size3-Regular.woff2": "/docs/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "static/media/code-server.md": "/docs/static/media/code-server.f9468c38fcc822ccf8bd.md",
-    "static/media/installation.md": "/docs/static/media/installation.9ab9f7685877633b91e7.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
     "index.html": "/docs/index.html",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
@@ -78,7 +78,7 @@
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
-    "static/media/k-means.md": "/docs/static/media/k-means.9a944c0e59b161d5f7af.md",
+    "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0cd1a92b64eccd474e14.md",
@@ -107,11 +107,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.04ec7a83.css.map": "/docs/static/css/main.04ec7a83.css.map",
-    "main.4f325719.js.map": "/docs/static/js/main.4f325719.js.map",
+    "main.c19d705a.js.map": "/docs/static/js/main.c19d705a.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04ec7a83.css",
-    "static/js/main.4f325719.js"
+    "static/js/main.c19d705a.js"
   ]
 }
