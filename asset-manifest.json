@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.04ec7a83.css",
-    "main.js": "/docs/static/js/main.1facce4c.js",
+    "main.js": "/docs/static/js/main.a749831d.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -78,10 +78,11 @@
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
+    "static/media/k-means.md": "/docs/static/media/k-means.9a944c0e59b161d5f7af.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0cd1a92b64eccd474e14.md",
-    "static/media/study.md": "/docs/static/media/study.2dee6b85ac3897ca069f.md",
+    "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.0c4e71aef08665d13858.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
     "static/media/gaussian-mixture-model.md": "/docs/static/media/gaussian-mixture-model.175a6cb29d8b9b878fe7.md",
@@ -102,16 +103,15 @@
     "static/media/hadoop.md": "/docs/static/media/hadoop.fe2082bcf601a110d87e.md",
     "static/media/lucene.md": "/docs/static/media/lucene.27923d4a7bd4fb2efe2c.md",
     "static/media/development.md": "/docs/static/media/development.016b1454d9329eb43ca8.md",
-    "static/media/etc.md": "/docs/static/media/etc.7560b23b59223313711a.md",
     "static/media/research.md": "/docs/static/media/research.04552c37944805412439.md",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.04ec7a83.css.map": "/docs/static/css/main.04ec7a83.css.map",
-    "main.1facce4c.js.map": "/docs/static/js/main.1facce4c.js.map",
+    "main.a749831d.js.map": "/docs/static/js/main.a749831d.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04ec7a83.css",
-    "static/js/main.1facce4c.js"
+    "static/js/main.a749831d.js"
   ]
 }
