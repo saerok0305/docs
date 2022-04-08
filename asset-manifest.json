@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.04ec7a83.css",
-    "main.js": "/docs/static/js/main.458fe60f.js",
+    "main.css": "/docs/static/css/main.2621f876.css",
+    "main.js": "/docs/static/js/main.b4899ad4.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -69,6 +69,7 @@
     "static/media/KaTeX_Size4-Regular.woff2": "/docs/static/media/KaTeX_Size4-Regular.e418bf257af1052628d8.woff2",
     "static/media/KaTeX_Size3-Regular.woff": "/docs/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/github-hosting.md": "/docs/static/media/github-hosting.14964ebbce73438f61a5.md",
+    "static/media/pagerank.md": "/docs/static/media/pagerank.dc6ff2a5e575312b74b4.md",
     "static/media/KaTeX_Size3-Regular.woff2": "/docs/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "static/media/neighbor.md": "/docs/static/media/neighbor.51dafcadfe5d0c6ccb36.md",
     "static/media/contents.md": "/docs/static/media/contents.d2bfe9babe5aca7d8873.md",
@@ -82,10 +83,12 @@
     "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.6f86c9d004afba3034ba.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
+    "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.7538885b4040b717f3ac.md",
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0cd1a92b64eccd474e14.md",
+    "static/media/research.md": "/docs/static/media/research.ad8e486b477dfe22a07d.md",
     "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.0c4e71aef08665d13858.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
@@ -107,15 +110,15 @@
     "static/media/hadoop.md": "/docs/static/media/hadoop.fe2082bcf601a110d87e.md",
     "static/media/lucene.md": "/docs/static/media/lucene.27923d4a7bd4fb2efe2c.md",
     "static/media/development.md": "/docs/static/media/development.016b1454d9329eb43ca8.md",
-    "static/media/research.md": "/docs/static/media/research.04552c37944805412439.md",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
-    "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
-    "main.04ec7a83.css.map": "/docs/static/css/main.04ec7a83.css.map",
-    "main.458fe60f.js.map": "/docs/static/js/main.458fe60f.js.map",
+    "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
+    "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
+    "main.2621f876.css.map": "/docs/static/css/main.2621f876.css.map",
+    "main.b4899ad4.js.map": "/docs/static/js/main.b4899ad4.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04ec7a83.css",
-    "static/js/main.458fe60f.js"
+    "static/css/main.2621f876.css",
+    "static/js/main.b4899ad4.js"
   ]
 }
