@@ -1,6 +1,6 @@
 # Maven에서 Spring Boot 설정
 
-## Spring Boot Application을 Maven Dependency로 Import하기
+## Maven multi-module 프로젝트에서 Spring Boot Application을 Maven Dependency로 Import하기
 
 개인적으로 자바 프로젝트를 Maven multi-module 프로젝트로 만들면서 Parent-Child 구조로 사용하는 경우가 많은데,
 이때 각 Child 모듈을 Spring Boot 프로젝트로 사용하는 경우가 많았다.

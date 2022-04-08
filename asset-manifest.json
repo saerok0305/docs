@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.04ec7a83.css",
-    "main.js": "/docs/static/js/main.c19d705a.js",
+    "main.js": "/docs/static/js/main.06ddbd43.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -52,7 +52,7 @@
     "static/media/KaTeX_SansSerif-Regular.woff2": "/docs/static/media/KaTeX_SansSerif-Regular.cd5e231e0cc53b2cb2c0.woff2",
     "static/media/coin-tossing.md": "/docs/static/media/coin-tossing.50177ef584ba20d696a5.md",
     "static/media/KaTeX_Script-Regular.woff2": "/docs/static/media/KaTeX_Script-Regular.c81d1b2a4b75d3eded60.woff2",
-    "static/media/maven-support.md": "/docs/static/media/maven-support.638427ab81eb88898f9d.md",
+    "static/media/maven-support.md": "/docs/static/media/maven-support.97e10188b6ef75438c98.md",
     "static/media/KaTeX_Caligraphic-Bold.woff": "/docs/static/media/KaTeX_Caligraphic-Bold.d757c535a2e5902f1325.woff",
     "static/media/KaTeX_Caligraphic-Regular.woff": "/docs/static/media/KaTeX_Caligraphic-Regular.db074fa22cf224af93d7.woff",
     "static/media/KaTeX_Size3-Regular.ttf": "/docs/static/media/KaTeX_Size3-Regular.8d6b6822586eea3d3b20.ttf",
@@ -80,6 +80,7 @@
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
+    "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.968da5bb0740b341fb6f.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0cd1a92b64eccd474e14.md",
     "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
@@ -93,6 +94,9 @@
     "static/media/aem.md": "/docs/static/media/aem.b53441554f45864f47ef.md",
     "static/media/hdp.md": "/docs/static/media/hdp.f90480209168ee7d0314.md",
     "static/media/k8s.md": "/docs/static/media/k8s.191118a64eb7f661f0ad.md",
+    "static/media/model.md": "/docs/static/media/model.9556fd798bd049597d0f.md",
+    "static/media/neighbor.md": "/docs/static/media/neighbor.be6b136d4aa5b8d4ef1a.md",
+    "static/media/contents.md": "/docs/static/media/contents.916c644dc8894abcc68f.md",
     "static/media/spring-boot.md": "/docs/static/media/spring-boot.60e1b0ea8c9f8a0eaa3b.md",
     "static/media/ctm.md": "/docs/static/media/ctm.acbd44a3b699337f531e.md",
     "static/media/lem.md": "/docs/static/media/lem.d983b6c86d1d0456a24f.md",
@@ -107,11 +111,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.04ec7a83.css.map": "/docs/static/css/main.04ec7a83.css.map",
-    "main.c19d705a.js.map": "/docs/static/js/main.c19d705a.js.map",
+    "main.06ddbd43.js.map": "/docs/static/js/main.06ddbd43.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04ec7a83.css",
-    "static/js/main.c19d705a.js"
+    "static/js/main.06ddbd43.js"
   ]
 }
