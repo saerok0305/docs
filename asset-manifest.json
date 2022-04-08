@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.04ec7a83.css",
-    "main.js": "/docs/static/js/main.06ddbd43.js",
+    "main.js": "/docs/static/js/main.458fe60f.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -70,17 +70,20 @@
     "static/media/KaTeX_Size3-Regular.woff": "/docs/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/github-hosting.md": "/docs/static/media/github-hosting.14964ebbce73438f61a5.md",
     "static/media/KaTeX_Size3-Regular.woff2": "/docs/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
+    "static/media/neighbor.md": "/docs/static/media/neighbor.51dafcadfe5d0c6ccb36.md",
+    "static/media/contents.md": "/docs/static/media/contents.d2bfe9babe5aca7d8873.md",
     "static/media/code-server.md": "/docs/static/media/code-server.f9468c38fcc822ccf8bd.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
+    "static/media/model.md": "/docs/static/media/model.fce9005ca2dee7a40397.md",
     "index.html": "/docs/index.html",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.422663432eae747b7da7.md",
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
+    "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.6f86c9d004afba3034ba.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
-    "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.968da5bb0740b341fb6f.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0cd1a92b64eccd474e14.md",
     "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
@@ -94,9 +97,6 @@
     "static/media/aem.md": "/docs/static/media/aem.b53441554f45864f47ef.md",
     "static/media/hdp.md": "/docs/static/media/hdp.f90480209168ee7d0314.md",
     "static/media/k8s.md": "/docs/static/media/k8s.191118a64eb7f661f0ad.md",
-    "static/media/model.md": "/docs/static/media/model.9556fd798bd049597d0f.md",
-    "static/media/neighbor.md": "/docs/static/media/neighbor.be6b136d4aa5b8d4ef1a.md",
-    "static/media/contents.md": "/docs/static/media/contents.916c644dc8894abcc68f.md",
     "static/media/spring-boot.md": "/docs/static/media/spring-boot.60e1b0ea8c9f8a0eaa3b.md",
     "static/media/ctm.md": "/docs/static/media/ctm.acbd44a3b699337f531e.md",
     "static/media/lem.md": "/docs/static/media/lem.d983b6c86d1d0456a24f.md",
@@ -111,11 +111,11 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.31d6cfe0d16ae931b73c.md",
     "main.04ec7a83.css.map": "/docs/static/css/main.04ec7a83.css.map",
-    "main.06ddbd43.js.map": "/docs/static/js/main.06ddbd43.js.map",
+    "main.458fe60f.js.map": "/docs/static/js/main.458fe60f.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04ec7a83.css",
-    "static/js/main.06ddbd43.js"
+    "static/js/main.458fe60f.js"
   ]
 }
