@@ -131,7 +131,7 @@ $$
 
 여기서 잠깐 PageRank를 좀 더 직관적으로 생각해 본다면, 웹서핑을 하는 사람이 랜덤으로 페이지에 있는 링크를 클릭하고, 클릭하고, ..., 클릭하고 를 무한히 반복한 다고 할때, 많이 방문하게 되는 페이지가 중요도가 높은 페이지라고 생각할 수 있는데, 이것은 인터넷에 존재하는 각 페이지들을 state로 하는 Markov Chain으로 볼 수 도 있다.
 
-이렇게 Markov Chain 관점에서 PageRank를 설명할 수 있는데, damping factor의 역할을 좀 더 formal하게 설명한다면, 각 페이지들을 state로 하는 Markov Chain에 erogodic한 속성을 부여해줌으로써, 각 노드의 중요도로 표현되는 PageRank 값은 아래와 같은 balance equestion을 통해 limiting distribuiton을 가진 벡터로 계산 될 수 있다.
+Markov Chain 관점에서 PageRank를 설명할 때 damping factor의 역할은, 각 페이지들을 state로 하는 Markov Chain에 erogodic한 속성을 부여해줌으로써, 각 노드의 중요도로 표현되는 PageRank 값은 아래와 같은 balance equestion을 통해 limiting distribuiton을 가진 벡터로 계산 될 수 있다.
 
 $$
 \pi = \pi P
