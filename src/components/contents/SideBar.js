@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 
 const Container = styled.div`
   position: absolute;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   left: 0;
   /* ${(props) =>
@@ -200,7 +200,7 @@ function SideBar({
         mappings.map(
           (item, index1) =>
             (item.header.path === selectedHeader || path === '/') && (
-              <Group>
+              <Group key={index1}>
                 <Label>{item.header.label}</Label>
                 <Items>
                   {item.side_bar &&

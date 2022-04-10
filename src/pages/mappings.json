@@ -3,26 +3,53 @@
         "header": {"label": "연구","path": "research", "md": "research.md", "meta":{}, "preview": false},
         "side_bar": [
             {
-                "label": "Bayesian Inference", "path": "bayesian-inference", "md": "bayesian-inference.md", "meta":{}, "preview": false
+                "label": "PageRank", "path": "pagerank", "md": "pagerank.md", "meta":{}, "preview": true, "img": "/docs/assets/research/pagerank/pagerank.png", "snippet":"Markov Chain 관점에서 PageRank를 설명할 때 damping factor의 역할은, 각 페이지들을 state로 하는 Markov Chain에 erogodic한 속성을 부여해줌으로써, 각 노드의 중요도로 표현되는 PageRank 값은 아래와 같은 balance equestion을 통해 limiting distribuiton을 가진 벡터로 계산 될 수 있다.",
+                    "sub": [
+                        {"label":"TextRank", "path": "textrank", "md": "textrank.md", "meta":{}, "preview": false}
+                    ]
+            },
+            {
+                "label": "Bayesian Inference", "path": "bayesian-inference", "md": "bayesian-inference.md", "meta":{}, "preview": false,
+                "sub": [
+                    {"label":"Coin Tossing(동전 던지기)", "path": "coin-tossing", "md": "coin-tossing.md", "meta":{}, "preview": true, "img": "/docs/assets/research/bayesian-inference/coin-tossing/coin-tossing.jpg", "snippet": "동전을 던졌을 때, 앞면이 나올 확률은 얼마일까? 우리는 경험적으로 앞면이 나올 확률은 1/2이라고 알고 있다."},
+                    {"label":"Curve-Fitting", "path": "curve-fitting", "md": "curve-fitting.md", "meta":{}, "preview": false, "img": "/docs/assets/research/bayesian-inference/curve-fitting/prob-perspective.png"}
+                ]
             },
             {
                 "label": "Topic Modeling", "path": "topic-modeling", "md": "topic-modeling.md", "meta":{}, "preview": false,
                 "sub":[
-                    {"label":"Latent Dirichlet Allocation", "path": "lda", "md": "lda.md", "meta":{}, "preview": true, "img": "/docs/assets/research/topic_modeling/lda/lda-model.png", "snippet":"LDA는 임의의 문서를 K개의 토픽 분포로 표현하고, 각 토픽은 V개의 단어 분포로 표현하는 모델이다."}
+                    {"label":"Latent Dirichlet Allocation", "path": "lda", "md": "lda.md", "meta":{}, "preview": true, "img": "/docs/assets/research/topic_modeling/lda/lda-model.png", "snippet":"LDA는 임의의 문서를 K개의 토픽 분포로 표현하고, 각 토픽은 V개의 단어 분포로 표현하는 모델이다."},
+                    {"label":"Correlated Topic Model", "path": "ctm", "md": "ctm.md", "meta":{}, "preview": false},
+                    {"label":"Gaussian LDA", "path": "glda", "md": "glda.md", "meta":{}, "preview": false},
+                    {"label":"Hierarchical Dirichlet Process", "path": "hdp", "md": "hdp.md", "meta":{}, "preview": false},
+                    {"label":"Latent Event Model", "path": "lem", "md": "lem.md", "meta":{}, "preview": false},
+                    {"label":"Adversarial-neural Event Model", "path": "aem", "md": "aem.md", "meta":{}, "preview": false}
                 ]
+            },
+            {
+                "label": "K-means Clustering", "path": "k-means", "md": "k-means.md", "meta":{}, "preview": false
             },
             {
                 "label": "Gaussian Mixture Model", "path": "gaussian-mixture-model", "md": "gaussian-mixture-model.md", "meta":{}, "preview": false
             },
             {
-                "label": "Variational AutoEncoder", "path": "variational-autoencoder", "md": "vae.md", "meta":{}, "preview": false
+                "label": "Variational AutoEncoder (VAE)", "path": "variational-autoencoder", "md": "vae.md", "meta":{}, "preview": false, "img": "/docs/assets/research/variational-autoencoder/ae-vae.png"
             },
             {
                 "label": "Stochastic Process", "path": "stochastic-process", "md": "stochastic-process.md", "meta":{}, "preview": false,
                 "sub":[
                     {"label":"Gaussian Process", "path": "gaussian-process", "md": "gaussian-process.md", "meta":{}, "preview": false},
                     {"label":"Dirichlet Process", "path": "dirichlet-process", "md": "dirichlet-process.md", "meta":{}, "preview": false},
-                    {"label":"Posisson Process", "path": "poisson-process", "md": "poisson-process.md", "meta":{}, "preview": false}
+                    {"label":"Posisson Process", "path": "poisson-process", "md": "poisson-process.md", "meta":{}, "preview": false},
+                    {"label":"Hawkes Process", "path": "hawkes-process", "md": "hawkes-process.md", "meta":{}, "preview": false}
+                ]
+            },
+            {
+                "label": "추천 시스템", "path": "recommendation-system", "md": "recommendation-system.md", "meta":{}, "preview": false,
+                "sub":[
+                    {"label":"컨텐츠 기반 필터링", "path": "contents", "md": "contents.md", "meta":{}, "preview": false},
+                    {"label":"이웃 기반 협업 필터링", "path": "neighbor", "md": "neighbor.md", "meta":{}, "preview": false},
+                    {"label":"모델 기반 협업 필터링", "path": "model", "md": "model.md", "meta":{}, "preview": false}
                 ]
             }
             
@@ -44,16 +71,16 @@
                 "label": "루씬", "path": "lucene", "md": "lucene.md", "meta":{} ,"preview": false
             },
             {
-                "label": "스프링 부트", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, "preview": false,
+                "label": "Spring Boot", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, "preview": false,
                 "sub":[
-                    {"label":"Maven Support", "path": "maven-support", "md": "maven-support.md", "meta":{},"preview": true}
+                    {"label":"Maven 설정", "path": "maven-support", "md": "maven-support.md", "meta":{},"preview": true, "img": "/docs/assets/development/spring-boot/maven-support/multi-module.JPG", "snippet": "개인적으로 자바 프로젝트를 Maven multi-module 프로젝트로 만들면서 Parent-Child 구조로 사용하는 경우가 많은데, 이때 각 Child 모듈을 Spring Boot 프로젝트로 사용하는 경우가 많았다."}
                 ]
             },
             {
-                "label": "리액트", "path": "react", "md": "react.md", "meta":{},"preview": true, "img": "/docs/assets/development/react/react-app.png",
+                "label": "리액트", "path": "react", "md": "react.md", "meta":{},"preview": false, "img": "/docs/assets/development/react/react-app.png",
                 "sub":[
                     {"label":"GitHub Pages를 위한 SPA 배포", "path": "spa-github-pages", "md": "spa-github-pages.md", "meta":{},"preview": true, "img": "/docs/assets/development/react/spa-github-pages/github-pages-404.JPG", "snippet": "GitHub Pages는 기본적으로 정적 페이지를 호스팅 할 수 있지만, 리액트 앱과 같은 SPA는 해결해야하는 문제가 있다."},
-                    {"label":"package.json", "path": "package-json", "md": "package-json.md", "meta":{},"preview": true}
+                    {"label":"package.json", "path": "package-json", "md": "package-json.md", "meta":{},"preview": false}
                 ]
             },
             {
@@ -68,30 +95,34 @@
         "header": {"label": "공부","path": "study", "md": "study.md", "meta":{}},"preview": false,
         "side_bar": [
             {
-                "label": "기타", "path": "etc", "md": "etc.md", "meta":{},"preview": false,
-                "sub":[
-                    {"label":"독립성 검정", "path": "test-of-independence", "md": "test-of-independence.md", "meta":{},"preview": true}
-                ]
+                "label": "HTTPS와 공개 키 암호 방식", "path": "crypto", "md": "crypto.md", "meta":{},"preview": true, "img": "/docs/assets/study/crypto/https.png"
+            },
+            {
+                "label":"독립성 검정", "path": "test-of-independence", "md": "test-of-independence.md", "meta":{},"preview": false
             }
+            
         ]
     },
     {
         "header": {"label": "프로젝트", "path": "project", "md": "project.md", "meta":{},"preview": false},
         "side_bar": [
             {
+                "label": "뉴스 어플리케이션", "path": "news", "md": "news.md","meta":{},"preview": false,
+                "sub":[
+                    {"label":"주요 뉴스 / 토픽 뉴스", "path": "topic-news", "component": "RealizationKor.js" ,"meta":{},"preview": true}
+                ]
+            },
+            {
                 "label": "리액트로 블로그 만들기", "path": "react-simple-documentation", "md": "react-simple-documentation.md","meta":{},"preview": false, 
                 "sub":[
-                    {"label":"설치 및 사용 방법", "path": "how-to-use-blog", "md": "how-to-use-blog.md" ,"meta":{},"preview": true},
+                    {"label":"블로그 템플릿 설치 및 사용 방법", "path": "how-to-use-blog", "md": "how-to-use-blog.md" ,"meta":{},"preview": true},
                     {"label":"GitHub를 이용한 호스팅", "path": "github-hosting", "md": "github-hosting.md" ,"meta":{},"preview": true, "img": "/docs/assets/project/react-simple-documentation/github-hosting/github-pages.JPG", "snippet": "GitHub 저장소의 Settings에 보면 Pages 항목이 있는데, 앞서 진행한 배포 작업이 정상적으로 이루어 졌다면, 아래와 같이 설정이 가능하고 최종적으로 아래와 같은 주소로 GitHub로 호스팅 된 자신의 블로그에 접속 할 수 있다."}
                 ]
             },
             {
-                "label": "뉴스", "path": "news", "md": "news.md","meta":{},"preview": false,
-                "sub":[
-                    {"label":"하이라이트 뉴스", "path": "highlight-news", "component": "HighlightNews" ,"meta":{},"preview": false},
-                    {"label":"뉴스 검색", "path": "search-news", "component": "SearchNews" ,"meta":{},"preview": false}
-                ]
+                "label": "CNN 기반 형태소 분석기", "path": "cnn-morph", "md": "cnn-morph.md","meta":{},"preview": false 
             }
+            
         ]
     }
 ]

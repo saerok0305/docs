@@ -20,7 +20,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 260px;
+  width: 220px;
   height: 140px;
   /* margin: 4px; */
 `;
@@ -87,7 +87,8 @@ function PreviewItem({ title, img, snippet, link, onClickPreview }) {
   return (
     <Container onClick={onClick}>
       <ImageContainer>
-        <Image data={data} />
+        {data && <Image data={data} />}
+        {!data && <Image data={barcode} />}
       </ImageContainer>
       <TextContainer>
         <Title>{title}</Title>

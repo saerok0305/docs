@@ -8,7 +8,6 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeRaw from "rehype-raw";
 import rehypeKatex from "rehype-katex";
-import "../../pages/research/topic-modeling/lda/Smoothed_LDA.png";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 

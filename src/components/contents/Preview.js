@@ -31,7 +31,6 @@ const PreviewItemContainer = styled.div`
 `;
 
 function Home({ link, onClickLink, changeMenuState }) {
-
   const onClickPreview = (path, index) => {
     onClickLink(path);
     changeMenuState(index);
@@ -51,7 +50,7 @@ function Home({ link, onClickLink, changeMenuState }) {
               <PreviewLink key={index} to={e.header.path}>
                 <PreviewItem
                   title={e.header.label}
-                  snippet={e.haeader.snippet}
+                  snippet={e.header.snippet}
                   img={e.header.img}
                   link={link}
                   onClickPreview={() => onClickPreview(e.header.path, index)}
@@ -73,7 +72,7 @@ function Home({ link, onClickLink, changeMenuState }) {
                   >
                     <PreviewItem
                       title={sideBarItem.label}
-                      snippe={sideBarItem.snippet}
+                      snippet={sideBarItem.snippet}
                       img={sideBarItem.img}
                       link={link}
                       onClickPreview={() =>
@@ -94,35 +93,38 @@ function Home({ link, onClickLink, changeMenuState }) {
               (sideBarItem, index2) =>
                 sideBarItem.sub &&
                 sideBarItem.sub.length > 0 &&
-                sideBarItem.sub.map((subItem, index3) => (
-                  <PreviewLink
-                    key={index1 + '-' + index2 + '-' + index3}
-                    to={
-                      item.header.path +
-                      '/' +
-                      sideBarItem.path +
-                      '/' +
-                      subItem.path
-                    }
-                  >
-                    <PreviewItem
-                      title={subItem.label}
-                      snippet={subItem.snippet}
-                      img={subItem.img}
-                      link={link}
-                      onClickPreview={() =>
-                        onClickPreview(
+                sideBarItem.sub.map(
+                  (subItem, index3) =>
+                    subItem.preview && (
+                      <PreviewLink
+                        key={index1 + '-' + index2 + '-' + index3}
+                        to={
                           item.header.path +
-                            '/' +
-                            sideBarItem.path +
-                            '/' +
-                            subItem.path,
-                          index1 + '-' + index2,
-                        )
-                      }
-                    />
-                  </PreviewLink>
-                )),
+                          '/' +
+                          sideBarItem.path +
+                          '/' +
+                          subItem.path
+                        }
+                      >
+                        <PreviewItem
+                          title={subItem.label}
+                          snippet={subItem.snippet}
+                          img={subItem.img}
+                          link={link}
+                          onClickPreview={() =>
+                            onClickPreview(
+                              item.header.path +
+                                '/' +
+                                sideBarItem.path +
+                                '/' +
+                                subItem.path,
+                              index1 + '-' + index2,
+                            )
+                          }
+                        />
+                      </PreviewLink>
+                    ),
+                ),
             ),
         )}
       </PreviewItemContainer>

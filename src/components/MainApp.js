@@ -92,6 +92,7 @@ function MainApp({ responsive, collapsedDefault }) {
           changeMenuState={changeMenuState}
         />
         <Content
+          responsive={responsive}
           collapsed={collapsed}
           onClickLink={onClickLink}
           onClickContent={onClickContent}

@@ -17,6 +17,7 @@ const Container = styled.div`
 `;
 
 function Content({
+  responsive,
   onClickContent,
   onClickLink,
   link,
@@ -129,6 +130,7 @@ function Content({
                       )) ||
                       (subItem.component && (
                         <GeneralComponent
+                          responsive={responsive}
                           component={
                             item.header.path +
                             '/' +
