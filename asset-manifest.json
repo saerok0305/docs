@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.2621f876.css",
-    "main.js": "/docs/static/js/main.344cf6af.js",
+    "main.css": "/docs/static/css/main.f76ef324.css",
+    "main.js": "/docs/static/js/main.d439a7b1.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -50,7 +50,7 @@
     "static/media/KaTeX_Script-Regular.woff": "/docs/static/media/KaTeX_Script-Regular.073b3402d036714b4370.woff",
     "static/media/KaTeX_Size4-Regular.ttf": "/docs/static/media/KaTeX_Size4-Regular.4ad7c7e8bb8d10a34bb7.ttf",
     "static/media/KaTeX_SansSerif-Regular.woff2": "/docs/static/media/KaTeX_SansSerif-Regular.cd5e231e0cc53b2cb2c0.woff2",
-    "static/media/coin-tossing.md": "/docs/static/media/coin-tossing.50177ef584ba20d696a5.md",
+    "static/media/coin-tossing.md": "/docs/static/media/coin-tossing.1d271d469d14d1ec47cc.md",
     "static/media/KaTeX_Script-Regular.woff2": "/docs/static/media/KaTeX_Script-Regular.c81d1b2a4b75d3eded60.woff2",
     "static/media/maven-support.md": "/docs/static/media/maven-support.97e10188b6ef75438c98.md",
     "static/media/KaTeX_Caligraphic-Bold.woff": "/docs/static/media/KaTeX_Caligraphic-Bold.d757c535a2e5902f1325.woff",
@@ -80,6 +80,7 @@
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.422663432eae747b7da7.md",
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
+    "static/media/news.md": "/docs/static/media/news.9053e737ba6fd5f5cf4f.md",
     "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.6f86c9d004afba3034ba.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
@@ -99,13 +100,13 @@
     "static/media/test-of-independence.md": "/docs/static/media/test-of-independence.818465a58351c1cb9fdb.md",
     "static/media/aem.md": "/docs/static/media/aem.b53441554f45864f47ef.md",
     "static/media/hdp.md": "/docs/static/media/hdp.f90480209168ee7d0314.md",
+    "static/media/cnn-morph.md": "/docs/static/media/cnn-morph.81a141ced06f83c65555.md",
     "static/media/k8s.md": "/docs/static/media/k8s.191118a64eb7f661f0ad.md",
     "static/media/spring-boot.md": "/docs/static/media/spring-boot.60e1b0ea8c9f8a0eaa3b.md",
     "static/media/ctm.md": "/docs/static/media/ctm.acbd44a3b699337f531e.md",
     "static/media/lem.md": "/docs/static/media/lem.d983b6c86d1d0456a24f.md",
     "static/media/env.md": "/docs/static/media/env.35c28492e5958677f60d.md",
     "static/media/glda.md": "/docs/static/media/glda.56c578cc3976ee74f959.md",
-    "static/media/news.md": "/docs/static/media/news.0244e5cd2e78d736e57d.md",
     "static/media/project.md": "/docs/static/media/project.1d4e74ff2c66c6943b76.md",
     "static/media/hadoop.md": "/docs/static/media/hadoop.fe2082bcf601a110d87e.md",
     "static/media/lucene.md": "/docs/static/media/lucene.27923d4a7bd4fb2efe2c.md",
@@ -113,12 +114,12 @@
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
-    "main.2621f876.css.map": "/docs/static/css/main.2621f876.css.map",
-    "main.344cf6af.js.map": "/docs/static/js/main.344cf6af.js.map",
+    "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
+    "main.d439a7b1.js.map": "/docs/static/js/main.d439a7b1.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2621f876.css",
-    "static/js/main.344cf6af.js"
+    "static/css/main.f76ef324.css",
+    "static/js/main.d439a7b1.js"
   ]
 }
