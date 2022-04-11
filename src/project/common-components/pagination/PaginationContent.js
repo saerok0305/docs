@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { propTypes } from "react-bootstrap/esm/Image";
-import styled from "styled-components";
-import useDidMountEffect from "../../../hooks/CustomEffect";
-import SpinLoader from "../SpinLoader";
-import Pagenation from "./Pagenation";
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { propTypes } from 'react-bootstrap/esm/Image';
+import styled from 'styled-components';
+import useDidMountEffect from '../../../hooks/CustomEffect';
+import SpinLoader from '../SpinLoader';
+import Pagenation from './Pagenation';
 
 const Container = styled.div`
   display: flex;
@@ -125,7 +125,7 @@ const PaginationContent = React.memo(function PaginationContent({
         page: page - 1,
       });
     },
-    [inputState, page, setInputState]
+    [inputState, page, setInputState],
   );
   const toRight = useCallback(
     (lastPage) => {
@@ -136,7 +136,7 @@ const PaginationContent = React.memo(function PaginationContent({
         page: page + 1,
       });
     },
-    [inputState, page, setInputState]
+    [inputState, page, setInputState],
   );
   const toPage = useCallback(
     (eventKey, e) => {
@@ -146,7 +146,7 @@ const PaginationContent = React.memo(function PaginationContent({
         page: eventKey,
       });
     },
-    [inputState, setInputState]
+    [inputState, setInputState],
   );
 
   const handleScroll = useCallback(
@@ -165,11 +165,11 @@ const PaginationContent = React.memo(function PaginationContent({
         if (top) {
           // console.log('top'); ////
           if (page > 1) {
+            ref.current.scroll(0, 10);
             setInputState({
               ...inputState,
               page: page - 1,
             });
-            ref.current.scroll(0, 10);
           } else {
             ref.current.scroll(0, 10);
           }
@@ -179,23 +179,23 @@ const PaginationContent = React.memo(function PaginationContent({
         } else if (bottom) {
           // console.log('bottom');
           if (page < totalPages) {
+            ref.current.scroll(0, 10);
             setInputState({
               ...inputState,
               page: page + 1,
             });
-            ref.current.scroll(0, 10);
           }
           if (scrollPosition) {
             scrollPosition.current = 10;
           }
         } else {
-          if (scrollPosition) {
-            scrollPosition.current = e.target.scrollTop;
-          }
+          // if (scrollPosition) {
+          //   scrollPosition.current = e.target.scrollTop;
+          // }
         }
       }
     },
-    [inputState, page, setInputState, totalPages]
+    [inputState, page, setInputState, totalPages],
   );
 
   return (

@@ -49,7 +49,8 @@
                 "sub":[
                     {"label":"컨텐츠 기반 필터링", "path": "contents", "md": "contents.md", "meta":{}, "preview": false},
                     {"label":"이웃 기반 협업 필터링", "path": "neighbor", "md": "neighbor.md", "meta":{}, "preview": false},
-                    {"label":"모델 기반 협업 필터링", "path": "model", "md": "model.md", "meta":{}, "preview": false}
+                    {"label":"모델 기반 협업 필터링", "path": "model", "md": "model.md", "meta":{}, "preview": false},
+                    {"label":"Matrix Factorization", "path": "matrix-factorization", "md": "matrix-factorization.md", "meta":{}, "preview": false}
                 ]
             }
             
@@ -109,7 +110,7 @@
             {
                 "label": "뉴스 어플리케이션", "path": "news", "md": "news.md","meta":{},"preview": false,
                 "sub":[
-                    {"label":"주요 뉴스 / 토픽 뉴스", "path": "topic-news", "component": "RealizationKor.js" ,"meta":{},"preview": true}
+                    {"label":"주요 뉴스 / 토픽 뉴스", "path": "topic-news", "component":"RealizationKor.js" ,"meta":{},"preview": true}
                 ]
             },
             {
