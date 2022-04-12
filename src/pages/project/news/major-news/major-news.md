@@ -3,4 +3,4 @@
 
 Github page가 https로 서비스되기 때문에 개인 api를 적용하는데 이슈가 있어 아래 link로 리다이렉트 함
 
-[데모 바로가기 링크](http://www.saerok.com/docs/project/news/topic-news)
+[데모 바로가기 링크](http://www.saerok.com/docs/project/news/major-news)
