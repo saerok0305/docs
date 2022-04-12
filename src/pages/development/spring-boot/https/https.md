@@ -1,6 +1,21 @@
 # Spring Boot에서 HTTPS 적용
 
-> Spring Boot에서 HTTP와 HTTPS 요청을 둘 다 받기위해서 사용한 코드
+Self-Signed Certificate 만들기
+
+```sh
+keytool -genkey -alias spring -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+```
+
+
+`application.properties` 파일
+```sh
+server.ssl.key-store=classpath:keystore.p12
+server.key-store-stype=PKCS12
+server.ssl.key-store-password=abcde12#
+server.ssl.key-alias=spring
+```
+
+Spring Boot에서 HTTP와 HTTPS 요청을 둘 다 받기위해서 사용한 코드
 
 ```java
 package app;
