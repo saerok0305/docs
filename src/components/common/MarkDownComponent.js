@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 
 import "katex/dist/katex.min.css";
 import RouterLink from "./RouterLink";
+import CodeBlock from "../../utils/CodeBlock";
 
 const MarkDownContainer = styled.div`
   display: flex;
@@ -53,6 +54,7 @@ function MarkDownComponent({ file, meta, setLink }) {
             //  </RouterLink>
             // ),
             //}}
+            components={CodeBlock}
           >
             {markdown}
           </ReactMarkdown>
