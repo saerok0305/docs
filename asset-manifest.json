@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.141025cf.js",
+    "main.js": "/docs/static/js/main.497e9a80.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -76,7 +76,7 @@
     "static/media/neighbor.md": "/docs/static/media/neighbor.51dafcadfe5d0c6ccb36.md",
     "static/media/contents.md": "/docs/static/media/contents.d2bfe9babe5aca7d8873.md",
     "static/media/code-server.md": "/docs/static/media/code-server.f9468c38fcc822ccf8bd.md",
-    "static/media/https.md": "/docs/static/media/https.45348e3d9420418d7264.md",
+    "static/media/https.md": "/docs/static/media/https.12e5a9dc7e49e13174a0.md",
     "static/media/topic-modeling.md": "/docs/static/media/topic-modeling.179989dd03efa2ff6846.md",
     "static/media/model.md": "/docs/static/media/model.fce9005ca2dee7a40397.md",
     "index.html": "/docs/index.html",
@@ -123,11 +123,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.141025cf.js.map": "/docs/static/js/main.141025cf.js.map",
+    "main.497e9a80.js.map": "/docs/static/js/main.497e9a80.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.141025cf.js"
+    "static/js/main.497e9a80.js"
   ]
 }
