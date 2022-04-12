@@ -28,19 +28,19 @@ const Container = styled.div`
   ${(props) => props.responsive === 'tablet' && css``}
 `;
 
-function GeneralComponent({ responsive, component }) {
+const GeneralComponent = React.memo(function GeneralComponent({ component }) {
   const Compoment = lazy(() =>
     // relative path for GeneralComponent.js => ../../pages/
     import(`../../pages/${component}`),
   );
   return (
-    <Container responsive={responsive}>
+    <Container>
       <GlobalStyle />
       <Suspense fallback={<div>loading ...</div>}>
         <Compoment />
       </Suspense>
     </Container>
   );
-}
+});
 
-export default GeneralComponent;
+export default React.memo(GeneralComponent);

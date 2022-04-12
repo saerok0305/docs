@@ -14,8 +14,10 @@
             {
                 "label": "Bayesian Inference", "path": "bayesian-inference", "md": "bayesian-inference.md", "meta":{}, "preview": false,
                 "sub": [
-                    {"label":"Coin Tossing(동전 던지기)", "path": "coin-tossing", "md": "coin-tossing.md", "meta":{}, "preview": true, "img": "/docs/assets/research/bayesian-inference/coin-tossing/coin-tossing.jpg", "snippet": "동전을 던졌을 때, 앞면이 나올 확률은 얼마일까? 우리는 경험적으로 앞면이 나올 확률은 1/2이라고 알고 있다."},
-                    {"label":"Curve-Fitting", "path": "curve-fitting", "md": "curve-fitting.md", "meta":{}, "preview": false, "img": "/docs/assets/research/bayesian-inference/curve-fitting/prob-perspective.png"}
+                    {"label": "Coin Tossing(동전 던지기)", "path": "coin-tossing", "md": "coin-tossing.md", "meta":{}, "preview": true, "img": "/docs/assets/research/bayesian-inference/coin-tossing/coin-tossing.jpg", "snippet": "동전을 던졌을 때, 앞면이 나올 확률은 얼마일까? 우리는 경험적으로 앞면이 나올 확률은 1/2이라고 알고 있다."},
+                    {"label": "Curve-Fitting", "path": "curve-fitting", "md": "curve-fitting.md", "meta":{}, "preview": false, "img": "/docs/assets/research/bayesian-inference/curve-fitting/prob-perspective.png"},
+                    {"label": "Gibbs Sampling", "path": "gibbs-sampling", "md": "gibbs-sampling.md", "meta":{}, "preview": true, "img": "/docs/assets/study/inverse-transform-sampling/Inverse_Transform_Sampling_Example.gif", "snippet": "Gibbs Sampling을 구현하기위해 사용한 Inverse Transform Sampling 기법을 소개하면서 실질적인 구현 방법을 먼저 소개하고, 이론적인 배경은 나중에 업데이트 할 예정이다."},
+                    {"label": "Variational Inference", "path": "variational-inference", "md": "vi.md", "meta":{}, "preview": false}
                 ]
             },
             {
@@ -103,7 +105,10 @@
                 "label": "HTTPS와 공개 키 암호 방식", "path": "crypto", "md": "crypto.md", "meta":{},"preview": true, "img": "/docs/assets/study/crypto/https.png"
             },
             {
-                "label":"독립성 검정", "path": "test-of-independence", "md": "test-of-independence.md", "meta":{},"preview": false
+                "label":"카이제곱 검정", "path": "chi-square-test", "md": "chi-square-test", "meta":{},"preview": false
+            },
+            {
+                "label":"P-value", "path": "p-value", "md": "p-value", "meta":{},"preview": false
             }
             
         ]
@@ -114,7 +119,7 @@
             {
                 "label": "뉴스 어플리케이션", "path": "news", "md": "news.md","meta":{},"preview": false,
                 "sub":[
-                    {"label":"주요 뉴스", "path": "topic-news", "component": "RealizationKor.js" ,"meta":{},"preview": true}
+                    {"label":"주요 뉴스", "path": "major-news", "component": "RealizationKor.js" ,"meta":{},"preview": true, "img": "/docs/assets/project/news/topic-news/topic-news.JPG", "snippet": "뉴스 어플리케이션"}
                 ]
             },
             {

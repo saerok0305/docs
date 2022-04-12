@@ -88,8 +88,9 @@ const WordCloudContainer = styled.div`
   align-items: center;
 
   border-radius: 50%;
-  background: ${defaultStyle.color0};
+  /* background: ${defaultStyle.color0}; */
   /* margin: 10px; */
+  border: 1px solid ${defaultStyle.color0};
 
   opacity: 0.5;
 
@@ -97,6 +98,7 @@ const WordCloudContainer = styled.div`
   &:hover {
     opacity: 1;
   }
+  margin: 10px;
 `;
 
 const WordCloud = React.memo(function WordCloud({
