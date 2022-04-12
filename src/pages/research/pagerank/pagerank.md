@@ -1,6 +1,6 @@
 # PageRank
 
-PageRank는 상당히 직관적이고 간단하게 이해할 수 있는 개념이지만 상당히 많은 연구자에 의해 파헤쳐진? 사실들이 많이 있다. 그 중 중요하다고 생각하는 부분들에 대해서 소개하려고 한다.
+PageRank는 상당히 직관적이고 간단하게 이해할 수 있는 개념이지만 그 이면을 들여다 보면 공부할 만한 사실들이 상당히 많이 있다. 그 중 중요하다고 생각하는 부분들에 대해서 소개하려고 한다.
 
 <img width="400" src="/docs/assets/research/pagerank/pagerank.png" />
 <figcaption align="center">
@@ -108,7 +108,7 @@ $$
 - $$\mathbf{1}$$: 1로 이루어진 column vector
 - $$\mathcal{A}$$: Adjecent Matrix (이 경우 각 컬럼의 합이 1이므로 stochastic matrix)
 - $$\mathbf{E}$$: 단위 행렬 (단위 행렬은 당연히 stocahsitic matrix)
-    - $$\mathbf{R}$$ 벡터를 propbability distribution로 생각하기 때문에, $$\mathbf{E} \cdot \mathbf{R} = \mathbf{1}$$  
+  - $$\mathbf{R}$$ 벡터를 propbability distribution로 생각하기 때문에, $$\mathbf{E} \cdot \mathbf{R} = \mathbf{1}$$
 
 <figcaption align="center">
   <b>식3: PageRank Equation의 행렬 표현</b>
@@ -127,7 +127,7 @@ $$
 
 결론적으로 식 3은 식 4의 형태를 가지게 되고, 인접 행렬이 변형된 $$\mathcal{A}$$ 행렬이 transition propbablity의 성격을 갖는다면, 즉 stochastic probability라면 eigenvalue가 단위 행렬 형태로 갖게 된다고 생각 할 수 있기 때문에, 패이지랭크 벡터 $$\mathbf{R}$$은 식 2에서 표현한 것처럼 iterative하게 계산 될 수 있다. 이것을 power iteration(혹은 power method)라 한다.
 
-특히 접 행렬이 변형된 $$\mathcal{A}$$ 행렬을 살펴보면, 자기 자신으로 transition 될 확률을 최소한 $$\cfrac {1-d} N$$ 만큼 보장 받게 된다. 이것은 damping factor라고 불리는 $$d$$라는 값 덕분에 웹사이트를 돌아다니는 random suffer가 어떤 노드에 정착해서 빠져나올 수 없는 상황을 방지하게 되는 역할을 한다.
+특히 인접 행렬이 변형된 $$\mathcal{A}$$ 행렬을 살펴보면, 자기 자신으로 transition 될 확률을 최소한 $$\cfrac {1-d} N$$ 만큼 보장 받게 된다. 이것은 damping factor라고 불리는 $$d$$라는 값 덕분에 웹사이트를 돌아다니는 random suffer가 어떤 노드에 정착해서 빠져나올 수 없는 상황을 방지하게 되는 역할을 한다.
 
 여기서 잠깐 PageRank를 좀 더 직관적으로 생각해 본다면, 웹서핑을 하는 사람이 랜덤으로 페이지에 있는 링크를 클릭하고, 클릭하고, ..., 클릭하고 를 무한히 반복한 다고 할때, 많이 방문하게 되는 페이지가 중요도가 높은 페이지라고 생각할 수 있는데, 이것은 인터넷에 존재하는 각 페이지들을 state로 하는 Markov Chain으로 볼 수 도 있다.
 
