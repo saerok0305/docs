@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.07444182.js",
+    "main.js": "/docs/static/js/main.0e1fd355.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -62,6 +62,7 @@
     "static/media/pagerank.md": "/docs/static/media/pagerank.fd20704f57861bf69d94.md",
     "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.0b41d39159752f8ccead.md",
     "static/media/KaTeX_Size1-Regular.woff": "/docs/static/media/KaTeX_Size1-Regular.0108e89c9003e8c14ea3.woff",
+    "static/media/svd.md": "/docs/static/media/svd.3f6d6bddcc614e87fc38.md",
     "static/media/KaTeX_Size2-Regular.woff": "/docs/static/media/KaTeX_Size2-Regular.3a99e70aee4076660d38.woff",
     "static/media/KaTeX_Size4-Regular.woff": "/docs/static/media/KaTeX_Size4-Regular.aeffd8025cba3647f1a6.woff",
     "static/media/KaTeX_Size1-Regular.woff2": "/docs/static/media/KaTeX_Size1-Regular.6eec866c69313624be60.woff2",
@@ -78,10 +79,11 @@
     "static/media/model.md": "/docs/static/media/model.fce9005ca2dee7a40397.md",
     "index.html": "/docs/index.html",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
+    "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.35f054eafe3c1931e946.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.422663432eae747b7da7.md",
+    "static/media/matrix-factorization.md": "/docs/static/media/matrix-factorization.ccc2dbf00c560eaec26e.md",
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
-    "static/media/news.md": "/docs/static/media/news.9053e737ba6fd5f5cf4f.md",
-    "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.6f86c9d004afba3034ba.md",
+    "static/media/news.md": "/docs/static/media/news.dbf0eeaf62d6bc6f4fd7.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.7538885b4040b717f3ac.md",
@@ -89,11 +91,11 @@
     "static/media/topic-news.md": "/docs/static/media/topic-news.6242e176fe4987a08698.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
-    "static/media/crypto.md": "/docs/static/media/crypto.0cd1a92b64eccd474e14.md",
-    "static/media/research.md": "/docs/static/media/research.ad8e486b477dfe22a07d.md",
+    "static/media/crypto.md": "/docs/static/media/crypto.5c60d1d1739f18535aa2.md",
     "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.0c4e71aef08665d13858.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
+    "static/media/research.md": "/docs/static/media/research.52b3a853e3289e768f1e.md",
     "static/media/gaussian-mixture-model.md": "/docs/static/media/gaussian-mixture-model.175a6cb29d8b9b878fe7.md",
     "static/media/dirichlet-process.md": "/docs/static/media/dirichlet-process.d7d566e2444be7ed24a8.md",
     "static/media/gaussian-process.md": "/docs/static/media/gaussian-process.21ddd8a1203bd4a43bec.md",
@@ -116,11 +118,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.07444182.js.map": "/docs/static/js/main.07444182.js.map",
+    "main.0e1fd355.js.map": "/docs/static/js/main.0e1fd355.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.07444182.js"
+    "static/js/main.0e1fd355.js"
   ]
 }
