@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.ffd1897d.js",
+    "main.js": "/docs/static/js/main.141025cf.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -59,7 +59,7 @@
     "static/media/spa-github-pages.md": "/docs/static/media/spa-github-pages.4ef627474664cd25e102.md",
     "static/media/KaTeX_Caligraphic-Bold.woff2": "/docs/static/media/KaTeX_Caligraphic-Bold.a1abf90dfd72792a577a.woff2",
     "static/media/KaTeX_Caligraphic-Regular.woff2": "/docs/static/media/KaTeX_Caligraphic-Regular.d6484fce1ef428d5bd94.woff2",
-    "static/media/pagerank.md": "/docs/static/media/pagerank.23d7eb671a32367d8492.md",
+    "static/media/pagerank.md": "/docs/static/media/pagerank.2e05b9897c46a5825c04.md",
     "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.0b41d39159752f8ccead.md",
     "static/media/KaTeX_Size1-Regular.woff": "/docs/static/media/KaTeX_Size1-Regular.0108e89c9003e8c14ea3.woff",
     "static/media/svd.md": "/docs/static/media/svd.3f6d6bddcc614e87fc38.md",
@@ -123,11 +123,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.ffd1897d.js.map": "/docs/static/js/main.ffd1897d.js.map",
+    "main.141025cf.js.map": "/docs/static/js/main.141025cf.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.ffd1897d.js"
+    "static/js/main.141025cf.js"
   ]
 }
