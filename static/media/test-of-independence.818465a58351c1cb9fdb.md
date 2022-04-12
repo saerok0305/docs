@@ -1,1 +1,0 @@
-# 독립성 검정 (Test of Independence)
