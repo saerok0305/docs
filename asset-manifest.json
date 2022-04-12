@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.4f12b72f.js",
+    "main.js": "/docs/static/js/main.4e25cb07.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -94,7 +94,7 @@
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.7538885b4040b717f3ac.md",
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/datewise.md": "/docs/static/media/datewise.5e9ba713d10bae0d1bb0.md",
-    "static/media/major-news.md": "/docs/static/media/major-news.8f28bc25459bc060819a.md",
+    "static/media/major-news.md": "/docs/static/media/major-news.e3af179eca48f214d0b4.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/chi-square-test.md": "/docs/static/media/chi-square-test.fc8bda8ed2276b7b0abf.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0f98d3203de5d3a93c52.md",
@@ -124,11 +124,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.4f12b72f.js.map": "/docs/static/js/main.4f12b72f.js.map",
+    "main.4e25cb07.js.map": "/docs/static/js/main.4e25cb07.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.4f12b72f.js"
+    "static/js/main.4e25cb07.js"
   ]
 }
