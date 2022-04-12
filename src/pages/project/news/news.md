@@ -9,8 +9,8 @@
     3. 뉴스 검색 / 이벤트 탐지 / 토픽 모델링
 
 ### 관린 기술
-    - 크롤링: python: selenium, sqlalchemy
-    - 나머지: JAVA
+    - 백엔드: python: selenium, sqlalchemy, JAVA, JPA, Spring Boot
+    - 프론틔: React 
     - logistic regression: pytorch
     - latent dirichlelt allocation / hierararchical dirichlelt process: JAVA (자체 엔진)
     - elasticsearch

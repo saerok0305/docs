@@ -9,6 +9,9 @@
                     ]
             },
             {
+                "label": "Singular Value Decomposition", "path": "svd", "md": "svd.md", "meta":{},"preview": true, "img": "/docs/assets/research/svd/axis.JPG", "snippet": "앞서 고유값 분해는 반드시 정방 행렬이어야만 했다. 하지만 특이값 분해는 정방 행렬일 필요 없이 m x n 행렬 AA를 다음과 같이 표현 한다."
+            },
+            {
                 "label": "Bayesian Inference", "path": "bayesian-inference", "md": "bayesian-inference.md", "meta":{}, "preview": false,
                 "sub": [
                     {"label":"Coin Tossing(동전 던지기)", "path": "coin-tossing", "md": "coin-tossing.md", "meta":{}, "preview": true, "img": "/docs/assets/research/bayesian-inference/coin-tossing/coin-tossing.jpg", "snippet": "동전을 던졌을 때, 앞면이 나올 확률은 얼마일까? 우리는 경험적으로 앞면이 나올 확률은 1/2이라고 알고 있다."},
@@ -74,7 +77,8 @@
             {
                 "label": "Spring Boot", "path": "spring-boot", "md": "spring-boot.md", "meta":{}, "preview": false,
                 "sub":[
-                    {"label":"Maven 설정", "path": "maven-support", "md": "maven-support.md", "meta":{},"preview": true, "img": "/docs/assets/development/spring-boot/maven-support/multi-module.JPG", "snippet": "개인적으로 자바 프로젝트를 Maven multi-module 프로젝트로 만들면서 Parent-Child 구조로 사용하는 경우가 많은데, 이때 각 Child 모듈을 Spring Boot 프로젝트로 사용하는 경우가 많았다."}
+                    {"label":"Maven 설정", "path": "maven-support", "md": "maven-support.md", "meta":{},"preview": true, "img": "/docs/assets/development/spring-boot/maven-support/multi-module.JPG", "snippet": "개인적으로 자바 프로젝트를 Maven multi-module 프로젝트로 만들면서 Parent-Child 구조로 사용하는 경우가 많은데, 이때 각 Child 모듈을 Spring Boot 프로젝트로 사용하는 경우가 많았다."},
+                    {"label":"Spring Boot에서 HTTPS 적용", "path": "https", "md": "https.md", "meta":{},"preview": true}
                 ]
             },
             {
@@ -110,7 +114,7 @@
             {
                 "label": "뉴스 어플리케이션", "path": "news", "md": "news.md","meta":{},"preview": false,
                 "sub":[
-                    {"label":"주요 뉴스 / 토픽 뉴스", "path": "topic-news", "component":"RealizationKor.js" ,"meta":{},"preview": true}
+                    {"label":"주요 뉴스", "path": "topic-news", "component":"RealizationKor.js" ,"meta":{},"preview": true}
                 ]
             },
             {

@@ -7,7 +7,8 @@ import CustomInput from '../../common-components/CustomInput';
 import ExtensionButton from '../../common-components/ExtensionButton';
 import { toDateString } from '../../util';
 import SubSearch from './SubSearch';
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch } from 'react-icons/ai';
+import ExtendedInput from './ExtendedInput';
 
 const Container = styled.div`
   display: flex;
@@ -137,32 +138,31 @@ const ComplexNewsSearch = React.memo(function ComplexNewsSearch({
   inputState,
   setInputState,
   setOutputState,
-  refetch,
+  retrieve, // retrieve(inputState)
   categories,
   sources,
 }) {
-  const onKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      // console.log('enter');
-      refetch();
-    }
-  };
-  const onSearch = () => {
+  
+  const onClickSearchButton = () => {
     setInputState({ ...inputState, page: 1 });
-    refetch({
-      inputState: { ...inputState, page: 1 },
-      setOutputState,
-    });
+    retrieve({ ...inputState, page: 1 });
   };
 
-  const onChange = (e) => {
-    const { name, value } = e.target;
-    // console.log(name + " : " + value);
-    setInputState({
-      ...inputState,
-      [name]: value,
-    });
-  };
+  // const onKeyPress = (e) => {
+  //   if (e.key === 'Enter') {
+  //     // console.log('enter');
+  //     refetch();
+  //   }
+  // };
+
+  // const onChange = (e) => {
+  //   const { name, value } = e.target;
+  //   // console.log(name + " : " + value);
+  //   setInputState({
+  //     ...inputState,
+  //     [name]: value,
+  //   });
+  // };
 
   const onDateChange = (dateName, dateValue) => {
     return (dateValue) => {
@@ -188,7 +188,7 @@ const ComplexNewsSearch = React.memo(function ComplexNewsSearch({
 
   const onClick = useCallback(() => {
     if (!open) {
-      setMaxHeight(ref.current.scrollHeight+50);
+      setMaxHeight(ref.current.scrollHeight + 50);
       setOpen(true);
     } else {
       setMaxHeight(0);
@@ -212,17 +212,25 @@ const ComplexNewsSearch = React.memo(function ComplexNewsSearch({
           icon={'icon'}
         />
         <SearchInputContainer>
-          <SearchInput
+          {/* <SearchInput
             name="query"
             placeholder="검색어를 입력하세요"
             defaultValue={inputState.query}
             autoComplete="off"
             onKeyPress={onKeyPress}
             onChange={onChange}
+          /> */}
+          <ExtendedInput
+            inputState={inputState}
+            setInputState={setInputState}
+            retrieve={retrieve}
+            setOutputState={setOutputState}
           />
         </SearchInputContainer>
 
-        <SearchButton onClick={onSearch}><AiOutlineSearch /></SearchButton>
+        <SearchButton onClick={onClickSearchButton}>
+          <AiOutlineSearch />
+        </SearchButton>
         <ExtensionButton open={open} onClick={onClick} />
       </MainSearchContainer>
       <SubSearchContainer>
@@ -230,7 +238,7 @@ const ComplexNewsSearch = React.memo(function ComplexNewsSearch({
           <SubSearch
             inputState={inputState}
             setInputState={setInputState}
-            refetch={onSearch}
+            retrieve={retrieve}
             categories={categories}
             sources={sources}
           />

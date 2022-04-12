@@ -114,13 +114,17 @@ const PaginationContent = React.memo(function PaginationContent({
 
   useDidMountEffect(() => {
     ref.current.scrollTo(0, 10);
-    retrieve();
+    retrieve(inputState);
   }, [page]);
 
   const toLeft = useCallback(
     (e) => {
       if (page === 1) return;
       setInputState({
+        ...inputState,
+        page: page - 1,
+      });
+      retrieve({
         ...inputState,
         page: page - 1,
       });
@@ -135,6 +139,10 @@ const PaginationContent = React.memo(function PaginationContent({
         ...inputState,
         page: page + 1,
       });
+      retrieve({
+        ...inputState,
+        page: page + 1,
+      });
     },
     [inputState, page, setInputState],
   );
@@ -142,6 +150,10 @@ const PaginationContent = React.memo(function PaginationContent({
     (eventKey, e) => {
       // console.log('페이지 선택: ' + eventKey);
       setInputState({
+        ...inputState,
+        page: eventKey,
+      });
+      retrieve({
         ...inputState,
         page: eventKey,
       });
@@ -158,7 +170,7 @@ const PaginationContent = React.memo(function PaginationContent({
 
         const bottom =
           e.target.scrollHeight - e.target.scrollTop - e.target.clientHeight <
-          2;
+          1;
 
         const top = e.target.scrollTop === 0;
 
@@ -167,6 +179,10 @@ const PaginationContent = React.memo(function PaginationContent({
           if (page > 1) {
             ref.current.scroll(0, 10);
             setInputState({
+              ...inputState,
+              page: page - 1,
+            });
+            retrieve({
               ...inputState,
               page: page - 1,
             });
@@ -184,10 +200,14 @@ const PaginationContent = React.memo(function PaginationContent({
               ...inputState,
               page: page + 1,
             });
+            retrieve({
+              ...inputState,
+              page: page + 1,
+            });
           }
-          if (scrollPosition) {
-            scrollPosition.current = 10;
-          }
+          // if (scrollPosition) {
+          //   scrollPosition.current = 10;
+          // }
         } else {
           // if (scrollPosition) {
           //   scrollPosition.current = e.target.scrollTop;

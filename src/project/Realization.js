@@ -295,16 +295,7 @@ function Realization({
   });
 
   const [clusterSearchResponse, refetchClusterSearch] = useAsync(
-    () =>
-      retrieveCluster({
-        // inputState,
-        inputState: {
-          ...inputState,
-          // page: 1,
-          // searchPriority: 'time', /////////////////////////////////////////
-        },
-        setOutputState: setClusterSearchState,
-      }),
+    retrieveCluster,
     [],
   );
 
@@ -315,11 +306,7 @@ function Realization({
   });
 
   const [detectEventResponse, refetchDetectEvent] = useAsync(
-    () =>
-      detectEvent({
-        inputState,
-        setOutputState: setMajorClusterState,
-      }),
+    detectEvent,
     [],
   );
   const {
@@ -328,7 +315,8 @@ function Realization({
     error: detectEvetError,
   } = detectEventResponse;
 
-  const retrieve = useCallback(() => {
+  const retrieve = (inputState) => {
+    console.log(inputState);
     refetchClusterSearch({
       inputState,
       setOutputState: setClusterSearchState,
@@ -337,11 +325,20 @@ function Realization({
       inputState,
       setOutputState: setMajorClusterState,
     });
-    setInputState({ ...inputState, page: 1 });
-  }, [inputState]);
+    // setInputState({ ...inputState, page: 1 });
+  };
+
+  const retrieveNews = (inputState) => {
+    console.log(inputState);
+    refetchClusterSearch({
+      inputState,
+      setOutputState: setClusterSearchState,
+    });
+    // setInputState({ ...inputState, page: 1 });
+  };
 
   useEffect(() => {
-    retrieve();
+    retrieve(inputState);
   }, []);
 
   const [extendIndex1, setExtendIndex1] = useState(-1);
@@ -587,7 +584,7 @@ function Realization({
           <Searcher
             inputState={inputState}
             setInputState={setInputState}
-            refetch={retrieve}
+            retrieve={retrieve}
             categories={categories}
             sources={sources}
           />
@@ -625,7 +622,7 @@ function Realization({
                     inputState={inputState}
                     setInputState={setInputState}
                     response={clusterSearchResponse}
-                    retrieve={refetchClusterSearch}
+                    retrieve={retrieveNews}
                     outputState={clusterSearchState}
                     item={clusterItem}
                   />

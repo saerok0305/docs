@@ -124,7 +124,7 @@ const labelState = {
 const SubSearch = React.memo(function SubSearch({
   inputState,
   setInputState,
-  refetch,
+  retrieve, // retrieve(inputState)
   categories,
   sources,
 }) {
@@ -195,7 +195,7 @@ const SubSearch = React.memo(function SubSearch({
   );
 
   useDidMountEffect(() => {
-    refetch();
+    retrieve({ ...inputState, page: 1 });
   }, [inputState.score]);
 
   return (

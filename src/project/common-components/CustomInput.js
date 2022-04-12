@@ -22,7 +22,7 @@ const Input = styled.input`
 
   &:focus {
     /* box-shadow: inset 0 0 0 0.2rem #ffec99; */
-    box-shadow: inset 0 0 0 0.1rem ${defaultStyle.color2};
+    box-shadow: inset 0 0 0 0.05rem ${defaultStyle.color1};
   }
 `;
 

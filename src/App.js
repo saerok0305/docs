@@ -53,6 +53,9 @@ function App() {
       <Mobile>
         <MainApp responsive={'mobile'} collapsedDefault={true} />
       </Mobile>
+      <Mobile>
+        <MainApp responsive={'default'} collapsedDefault={false} />
+      </Mobile>
     </Container>
   );
 }
