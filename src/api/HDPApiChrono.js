@@ -21,8 +21,6 @@ async function retrieveTopicClusters({ recommendationState, setOutputState }) {
     };
     setOutputState(refinedResponse);
 
-    console.log(refinedResponse); ///////////////////////////////
-
     console.log('UPDATE TOPIC-CLUSTERS ...'); //////////////////////////
 
     return refinedResponse;

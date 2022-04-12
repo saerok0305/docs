@@ -283,7 +283,6 @@ function Realization({
     };
     setTabState(newTabState);
     if (key === 'topic') {
-      console.log('!!!!!');
       onHdp('lda');
     }
   };
@@ -316,7 +315,6 @@ function Realization({
   } = detectEventResponse;
 
   const retrieve = (inputState) => {
-    console.log(inputState);
     refetchClusterSearch({
       inputState,
       setOutputState: setClusterSearchState,
@@ -329,7 +327,6 @@ function Realization({
   };
 
   const retrieveNews = (inputState) => {
-    console.log(inputState);
     refetchClusterSearch({
       inputState,
       setOutputState: setClusterSearchState,

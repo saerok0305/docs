@@ -15,19 +15,16 @@ async function retrieveRelatedKeywords(inputState) {
   if (query === '') return;
 
   const date1 = input.to.substring(0, 10);
-  console.log(date1); ///////
 
   let dateObj = toDateObj(input.to);
 
   dateObj.setDate(dateObj.getDate() - 7);
 
   const date2 = toDateString(dateObj);
-  console.log(date2); ////
 
   dateObj.setDate(dateObj.getDate() - 7);
 
   const date3 = toDateString(dateObj);
-  console.log(date3); //////////
 
   const dateArr = [date1, date2, date3];
 
@@ -39,8 +36,6 @@ async function retrieveRelatedKeywords(inputState) {
   ];
 
   const reqObj = { multiKeywordList };
-
-  console.log(reqObj); /////////
 
   let response = null; //////////////////// const
   if (!test) {
@@ -60,7 +55,7 @@ async function retrieveRelatedKeywords(inputState) {
     candidates: e,
   }));
 
-  console.log(' RETRIEVE RELATED KEYWORDS ...');
+//   console.log(' RETRIEVE RELATED KEYWORDS ...');
 
   return refinedResponse;
 }

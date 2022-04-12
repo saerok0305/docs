@@ -114,7 +114,7 @@
             {
                 "label": "뉴스 어플리케이션", "path": "news", "md": "news.md","meta":{},"preview": false,
                 "sub":[
-                    {"label":"주요 뉴스", "path": "topic-news", "component":"RealizationKor.js" ,"meta":{},"preview": true}
+                    {"label":"주요 뉴스", "path": "topic-news", "component": "RealizationKor.js" ,"meta":{},"preview": true}
                 ]
             },
             {

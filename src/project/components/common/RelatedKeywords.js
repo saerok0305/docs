@@ -85,8 +85,6 @@ function RelatedKeywords({
     else setId(-1);
   };
 
-  console.log(relatedKeywordsData); /////
-
   return (
     <RelatedKeywordsContainer>
       {relatedKeywordsData &&

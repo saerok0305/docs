@@ -70,7 +70,7 @@ async function retrieveCluster({ inputState, setOutputState }) {
     // keyword: inputState.keyword,
   };
 
-  console.log(JSON.stringify(reqObj)); ///////////
+  // console.log(JSON.stringify(reqObj)); ///////////
 
   let response = null; //////////////////// const
   if (!test) {
@@ -102,7 +102,7 @@ async function retrieveCluster({ inputState, setOutputState }) {
 
   if (setOutputState) setOutputState(refinedResponse);
 
-  console.log("CLUSTER SEARCH ..."); //////////////////////////
+  // console.log("CLUSTER SEARCH ..."); //////////////////////////
 
   return refinedResponse;
 }

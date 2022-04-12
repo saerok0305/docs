@@ -1,7 +1,6 @@
 import { toDateString, toDateTimeString } from './util';
 
 const now = new Date();
-console.log(now); //////////////
 const currentDate = new Date(
   now.getFullYear(),
   now.getMonth(),
@@ -10,7 +9,6 @@ const currentDate = new Date(
   now.getMinutes(),
   now.getSeconds(),
 );
-console.log(currentDate);
 
 const pastDate = new Date(
   now.getFullYear(),

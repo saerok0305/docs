@@ -40,7 +40,7 @@ async function detectEvent({ inputState, setOutputState }) {
     // interval: 'hour',
   };
 
-  console.log(JSON.stringify(reqObj)); /////
+  // console.log(JSON.stringify(reqObj)); /////
 
   let response = null; //////////////////// const
   if (!test) {
@@ -74,7 +74,7 @@ async function detectEvent({ inputState, setOutputState }) {
 
   if (setOutputState) setOutputState(refinedResponse);
 
-  console.log('EVENT DETECTION ...'); //////////////////////////
+  // console.log('EVENT DETECTION ...'); //////////////////////////
 
   return refinedResponse;
 }
