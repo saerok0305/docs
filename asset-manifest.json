@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.0e1fd355.js",
+    "main.js": "/docs/static/js/main.3c243be9.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -79,19 +79,21 @@
     "static/media/model.md": "/docs/static/media/model.fce9005ca2dee7a40397.md",
     "index.html": "/docs/index.html",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
+    "static/media/news.md": "/docs/static/media/news.e1839abe7bfba98b4fcd.md",
     "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.35f054eafe3c1931e946.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.422663432eae747b7da7.md",
     "static/media/matrix-factorization.md": "/docs/static/media/matrix-factorization.ccc2dbf00c560eaec26e.md",
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
-    "static/media/news.md": "/docs/static/media/news.dbf0eeaf62d6bc6f4fd7.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.7538885b4040b717f3ac.md",
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
-    "static/media/topic-news.md": "/docs/static/media/topic-news.6242e176fe4987a08698.md",
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
+    "static/media/topic-news.md": "/docs/static/media/topic-news.b2731c18664cf60aeebe.md",
+    "static/media/chi-square-test.md": "/docs/static/media/chi-square-test.fc8bda8ed2276b7b0abf.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/crypto.md": "/docs/static/media/crypto.5c60d1d1739f18535aa2.md",
+    "static/media/hdp.md": "/docs/static/media/hdp.9fa664353e32491347fe.md",
     "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.0c4e71aef08665d13858.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
@@ -102,7 +104,6 @@
     "static/media/poisson-process.md": "/docs/static/media/poisson-process.38dc29dbe569fc020462.md",
     "static/media/test-of-independence.md": "/docs/static/media/test-of-independence.818465a58351c1cb9fdb.md",
     "static/media/aem.md": "/docs/static/media/aem.b53441554f45864f47ef.md",
-    "static/media/hdp.md": "/docs/static/media/hdp.f90480209168ee7d0314.md",
     "static/media/cnn-morph.md": "/docs/static/media/cnn-morph.81a141ced06f83c65555.md",
     "static/media/k8s.md": "/docs/static/media/k8s.191118a64eb7f661f0ad.md",
     "static/media/spring-boot.md": "/docs/static/media/spring-boot.60e1b0ea8c9f8a0eaa3b.md",
@@ -118,11 +119,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.0e1fd355.js.map": "/docs/static/js/main.0e1fd355.js.map",
+    "main.3c243be9.js.map": "/docs/static/js/main.3c243be9.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.0e1fd355.js"
+    "static/js/main.3c243be9.js"
   ]
 }

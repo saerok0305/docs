@@ -1,1 +1,0 @@
-# Hierarchical Dirichlet Process (HDP)
