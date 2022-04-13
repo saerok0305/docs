@@ -1,6 +1,10 @@
 https://saerok0305.github.io/docs/
 https://saerok0305.github.io/docs/?/research
+https://saerok0305.github.io/docs/?/research/pagerank
+https://saerok0305.github.io/docs/?/research/svd
 https://saerok0305.github.io/docs/?/research/bayesian-inference
+https://saerok0305.github.io/docs/?/research/bayesian-inference/coin-tossing
+https://saerok0305.github.io/docs/?/research/bayesian-inference/gibbs-sampling
 https://saerok0305.github.io/docs/?/research/topic-modeling
 https://saerok0305.github.io/docs/?/research/topic-modeling/lda
 https://saerok0305.github.io/docs/?/research/gaussian-mixture-model

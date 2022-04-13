@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.370cfbc0.js",
+    "main.js": "/docs/static/js/main.4eb2df4d.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -98,12 +98,12 @@
     "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/chi-square-test.md": "/docs/static/media/chi-square-test.fc8bda8ed2276b7b0abf.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0f98d3203de5d3a93c52.md",
-    "static/media/research.md": "/docs/static/media/research.09ad7527e9ef3ba907e9.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
     "static/media/hdp.md": "/docs/static/media/hdp.9fa664353e32491347fe.md",
     "static/media/study.md": "/docs/static/media/study.8772b5d5967490c3c439.md",
     "static/media/elasticsearch.md": "/docs/static/media/elasticsearch.0c4e71aef08665d13858.md",
     "static/media/home.md": "/docs/static/media/home.05fe99f0644104ba5f56.md",
+    "static/media/research.md": "/docs/static/media/research.52b3a853e3289e768f1e.md",
     "static/media/gaussian-mixture-model.md": "/docs/static/media/gaussian-mixture-model.175a6cb29d8b9b878fe7.md",
     "static/media/dirichlet-process.md": "/docs/static/media/dirichlet-process.d7d566e2444be7ed24a8.md",
     "static/media/gaussian-process.md": "/docs/static/media/gaussian-process.21ddd8a1203bd4a43bec.md",
@@ -124,11 +124,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.370cfbc0.js.map": "/docs/static/js/main.370cfbc0.js.map",
+    "main.4eb2df4d.js.map": "/docs/static/js/main.4eb2df4d.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.370cfbc0.js"
+    "static/js/main.4eb2df4d.js"
   ]
 }
