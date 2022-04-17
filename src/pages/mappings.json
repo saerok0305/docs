@@ -108,10 +108,19 @@
                 "label": "HTTPS와 공개 키 암호 방식", "path": "crypto", "md": "crypto.md", "meta":{},"preview": true, "img": "/docs/assets/study/crypto/https.png"
             },
             {
-                "label":"카이제곱 검정", "path": "chi-square-test", "md": "chi-square-test", "meta":{},"preview": false
+                "label":"카이제곱 검정", "path": "chi-square-test", "md": "chi-square-test.md", "meta":{},"preview": false
             },
             {
-                "label":"P-value", "path": "p-value", "md": "p-value", "meta":{},"preview": false
+                "label":"P-value", "path": "p-value", "md": "p-value.md", "meta":{},"preview": false
+            },
+            {
+                "label":"NumPy", "path": "numpy", "md": "np.md", "meta":{},"preview": false
+            },
+            {
+                "label":"Pandas", "path": "pandas", "md": "pd.md", "meta":{},"preview": false
+            },
+            {
+                "label":"PyTorch", "path": "pytorch", "md": "pt.md", "meta":{},"preview": false
             }
             
         ]

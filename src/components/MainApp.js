@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import defaultStyle from '../style';
 import Content from './contents/Content';

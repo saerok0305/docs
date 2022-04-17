@@ -2,7 +2,7 @@
 
 > Singular Value Decomposition (이하 SVD)는 Eigendecomposition의 일반화된 형태이므로 먼저 Eigendecompositon에 대해 정리해 본다.
 
-## 1. Eigendecomposition (고유값 분호)
+## 1. Eigendecomposition (고유값 분해)
 
 Eigendecomposition은 이름부터 뭔가 Eigenvector / Eigenvalue와 관련이 있을 것 같으니, 이 둘에 대해서 잠시 떠올려 보자.
 
@@ -106,6 +106,7 @@ $$
 특이값 분해는 위 그림의 $$A$$ 행렬을 어떻게 정의하느냐에 활용도가 무궁무진하다.
 
 생각나는 것 몇가지만 적어보자면,
+
 - 정보 검색에서는 $$A$$를 Term X Document 행렬로 보고 $$U$$의 각 행과 $$V$$의 각 열을 Term Vector 또는 Document Vector로 활용하여 문서의 유사도 측정에 활용
 - 문서 요약에서는 $$A$$를 Term X Document 행렬로 보고 $$V$$에서 나타난 Sentence Embedding의 요소 값과 대응하는 singular vector를 활용하여 문장에서 나타나는 특정 Concept의 중요도를 반영하여 문장의 중요도를 측정
-- 추천 시스템에서는 $$A$$를 User X Item 행렬로 이루어진 Rating 값으로 보고 특정 User가 관심이 있을 법한 Item을 선정 한다던지, 특정 Item이 타게팅 하면 좋을 User를 선별 한다던지에 활용 
+- 추천 시스템에서는 $$A$$를 User X Item 행렬로 이루어진 Rating 값으로 보고 특정 User가 관심이 있을 법한 Item을 선정 한다던지, 특정 Item이 타게팅 하면 좋을 User를 선별 한다던지에 활용

@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
-import { Route, Routes, useLocation, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import barcode from '../../barcode.png';
 import PreviewItem from '../common/PreviewItem';
 import mappings from '../../pages/mappings.json';
-import StyledLink from '../common/StyledLink';
 import PreviewLink from '../common/PreviewLink';
 
 const Container = styled.div`

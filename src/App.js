@@ -5,6 +5,7 @@ import { Desktop, Mobile, Tablet } from './utils/Responsive';
 import MetaTag from './utils/MetaTag';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga4';
+import { useLocation } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -39,6 +40,20 @@ const Container = styled.div`
 `;
 function App() {
   const meta = { title: 'Documentation' };
+
+  // const location = useLocation();
+  // const path = location.pathname;
+
+  // useEffect(() => {
+  //   ReactGA.initialize('G-NT3JEGCF5K');
+  //   // ReactGA.send({ hitType: 'pageview', page: path });
+  //   // console.log(path); ////////
+  // }, []);
+
+  // useEffect(() => {
+  //   // ReactGA.initialize('G-NT3JEGCF5K');
+  //   ReactGA.send({ hitType: 'pageview', page: path });
+  // });
 
   return (
     <Container>

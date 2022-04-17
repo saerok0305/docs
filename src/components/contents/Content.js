@@ -1,11 +1,12 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import Home from './Preview';
 import NotFound from '../NotFound';
 import mappings from '../../pages/mappings.json';
 import MarkDownComponent from '../common/MarkDownComponent';
-import { css } from 'styled-components';
 import GeneralComponent from '../common/GeneralComponent';
+import { useEffect } from 'react';
+import { ReactGA } from 'react-ga4';
 
 const Container = styled.div`
   display: flex;
@@ -24,6 +25,8 @@ function Content({
   setLink,
   changeMenuState,
 }) {
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <Container onClick={onClickContent}>
       <Routes>
