@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.4eb2df4d.js",
+    "main.js": "/docs/static/js/main.df231a04.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -62,8 +62,9 @@
     "static/media/pagerank.md": "/docs/static/media/pagerank.2e05b9897c46a5825c04.md",
     "static/media/how-to-use-blog.md": "/docs/static/media/how-to-use-blog.0b41d39159752f8ccead.md",
     "static/media/KaTeX_Size1-Regular.woff": "/docs/static/media/KaTeX_Size1-Regular.0108e89c9003e8c14ea3.woff",
-    "static/media/svd.md": "/docs/static/media/svd.3f6d6bddcc614e87fc38.md",
+    "static/media/svd.md": "/docs/static/media/svd.0d9732f69bb618537cf1.md",
     "static/media/KaTeX_Size2-Regular.woff": "/docs/static/media/KaTeX_Size2-Regular.3a99e70aee4076660d38.woff",
+    "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.36f9a9c6e7b8c5fac2d2.md",
     "static/media/KaTeX_Size4-Regular.woff": "/docs/static/media/KaTeX_Size4-Regular.aeffd8025cba3647f1a6.woff",
     "static/media/KaTeX_Size1-Regular.woff2": "/docs/static/media/KaTeX_Size1-Regular.6eec866c69313624be60.woff2",
     "static/media/gibbs-sampling.md": "/docs/static/media/gibbs-sampling.6d106a8a8f4042309a26.md",
@@ -82,6 +83,7 @@
     "static/media/model.md": "/docs/static/media/model.fce9005ca2dee7a40397.md",
     "index.html": "/docs/index.html",
     "static/media/react.md": "/docs/static/media/react.eb32ff21ca821268f3b5.md",
+    "static/media/np.md": "/docs/static/media/np.f4a243ba7a75f50fceef.md",
     "static/media/news.md": "/docs/static/media/news.835ed9e2c541157fadb2.md",
     "static/media/recommendation-system.md": "/docs/static/media/recommendation-system.35f054eafe3c1931e946.md",
     "static/media/react-simple-documentation.md": "/docs/static/media/react-simple-documentation.422663432eae747b7da7.md",
@@ -95,7 +97,6 @@
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/datewise.md": "/docs/static/media/datewise.5e9ba713d10bae0d1bb0.md",
     "static/media/major-news.md": "/docs/static/media/major-news.e3af179eca48f214d0b4.md",
-    "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.c44e59bcd6c087ead8c0.md",
     "static/media/chi-square-test.md": "/docs/static/media/chi-square-test.fc8bda8ed2276b7b0abf.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0f98d3203de5d3a93c52.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
@@ -119,16 +120,18 @@
     "static/media/project.md": "/docs/static/media/project.1d4e74ff2c66c6943b76.md",
     "static/media/hadoop.md": "/docs/static/media/hadoop.fe2082bcf601a110d87e.md",
     "static/media/p-value.md": "/docs/static/media/p-value.b176013cf76bb8020690.md",
+    "static/media/pt.md": "/docs/static/media/pt.a6296c73e2a6e31942cf.md",
     "static/media/development.md": "/docs/static/media/development.016b1454d9329eb43ca8.md",
+    "static/media/pd.md": "/docs/static/media/pd.a1ff0a8321766307bb8c.md",
     "static/media/k8s.mdx": "/docs/static/media/k8s.bcfcc094e6180260a7df.mdx",
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.4eb2df4d.js.map": "/docs/static/js/main.4eb2df4d.js.map",
+    "main.df231a04.js.map": "/docs/static/js/main.df231a04.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.4eb2df4d.js"
+    "static/js/main.df231a04.js"
   ]
 }
