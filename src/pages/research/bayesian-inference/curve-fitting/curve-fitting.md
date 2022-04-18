@@ -91,6 +91,10 @@ $$
 E_D(w) = \cfrac 1 2 \displaystyle \sum_{n=1}^N \bigg\{ t_n - \mathbf w^{\intercal} \Phi(\mathbf x) \bigg\}^2
 $$
 
+<figcaption align="center">
+  <b>식 3: sum-=of-squares error</b>
+</figcaption>
+
 여기서 $$w$$로 미분하면,
 
 $$
@@ -103,9 +107,7 @@ $$
 \mathbf w =  (\Phi^\intercal \Phi)^{-1} \Phi^\intercal \mathbf t
 $$
 
-<figcaption align="center">
-  <b>식 3: 최소제곱법에서의 최적 파라미터</b>
-</figcaption>
+
 
 
 ## Probablistic perspective
@@ -128,10 +130,27 @@ $$
 
 ### Maximum Likelihood Estimation (MLE)
 
-최소제곱법이
+입력 데이터 $$X = \{x_1,...,x_N \}$$와 이에 대응하는 목표 값 $$t_1,...t_N$$이 독립적으로 발생했다고 하면 다음과 같은 likelihood funtion을 생각할 수 있다. 
 
 
 $$
-t = y(\mathbf x, \mathbf w) + \epsilon
+p(\mathbf t | \mathbf X, \mathbf w, \beta) = \displaystyle \prod_{n=1}^N  \mathcal N(t_n|\mathbf w^\intercal \phi(x_n), \beta^{-1})
 $$
 
+> 여기서 주목해야하는 관측치는 $$\mathbf t$$이다. $$X$$는 입력 조건에 해당하는 값이기 때문에 drop할 수 있다.
+
+위 식의 극대값을 구하는 것이 목적이므로, 계산 편의를 위해 로그를 취해 정리하면 다음과 같은 식을 얻을 수 있다. (이때, $$E_D(\mathbf w)$$는 위 식 3과 동일하다.)
+
+$$
+\begin{aligned}
+\ln p(\mathbf t | \mathbf w, \beta)
+&=
+\displaystyle \sum_{n=1}^N  \mathcal \ln N(t_n|\mathbf w^\intercal \phi(x_n), \beta^{-1})
+\\ &=
+\cfrac N 2 \ln\beta - \cfrac N 2 \ln(2\pi) - \beta E_D(\mathbf w)
+\end{aligned}
+$$
+
+MLE 관점에서 파라미터 $$\mathbf w$$를 추정하기 위해서는, 위 식(log-likelihood)을 $$\mathbf w$$대해 미분한 뒤 극대값을 찾으면 되는데, 이것은 $$E_D(\mathbf w)$$가 최소가 되는  $$\mathbf w$$ 값을 찾는 것과 동일한 상황이 된다.
+
+다시말하면, Curve fitting 문제에서 우리가 직관적으로 생각할 수 있는 풀이법인 최소제곱법(Least Squares)은 MLE 방식의 해석으로 볼 수 있다.
