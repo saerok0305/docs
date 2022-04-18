@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/docs/static/css/main.f76ef324.css",
-    "main.js": "/docs/static/js/main.df231a04.js",
+    "main.js": "/docs/static/js/main.534aee27.js",
     "static/js/787.d37de791.chunk.js": "/docs/static/js/787.d37de791.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/docs/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/docs/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -56,7 +56,8 @@
     "static/media/KaTeX_Caligraphic-Bold.woff": "/docs/static/media/KaTeX_Caligraphic-Bold.d757c535a2e5902f1325.woff",
     "static/media/KaTeX_Caligraphic-Regular.woff": "/docs/static/media/KaTeX_Caligraphic-Regular.db074fa22cf224af93d7.woff",
     "static/media/KaTeX_Size3-Regular.ttf": "/docs/static/media/KaTeX_Size3-Regular.8d6b6822586eea3d3b20.ttf",
-    "static/media/spa-github-pages.md": "/docs/static/media/spa-github-pages.4ef627474664cd25e102.md",
+    "static/media/spa-github-pages.md": "/docs/static/media/spa-github-pages.5024ef18171ee9a54282.md",
+    "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.a7bdfdf97a7f55879f4c.md",
     "static/media/KaTeX_Caligraphic-Bold.woff2": "/docs/static/media/KaTeX_Caligraphic-Bold.a1abf90dfd72792a577a.woff2",
     "static/media/KaTeX_Caligraphic-Regular.woff2": "/docs/static/media/KaTeX_Caligraphic-Regular.d6484fce1ef428d5bd94.woff2",
     "static/media/pagerank.md": "/docs/static/media/pagerank.2e05b9897c46a5825c04.md",
@@ -64,7 +65,6 @@
     "static/media/KaTeX_Size1-Regular.woff": "/docs/static/media/KaTeX_Size1-Regular.0108e89c9003e8c14ea3.woff",
     "static/media/svd.md": "/docs/static/media/svd.0d9732f69bb618537cf1.md",
     "static/media/KaTeX_Size2-Regular.woff": "/docs/static/media/KaTeX_Size2-Regular.3a99e70aee4076660d38.woff",
-    "static/media/curve-fitting.md": "/docs/static/media/curve-fitting.36f9a9c6e7b8c5fac2d2.md",
     "static/media/KaTeX_Size4-Regular.woff": "/docs/static/media/KaTeX_Size4-Regular.aeffd8025cba3647f1a6.woff",
     "static/media/KaTeX_Size1-Regular.woff2": "/docs/static/media/KaTeX_Size1-Regular.6eec866c69313624be60.woff2",
     "static/media/gibbs-sampling.md": "/docs/static/media/gibbs-sampling.6d106a8a8f4042309a26.md",
@@ -92,11 +92,11 @@
     "static/media/lucene.md": "/docs/static/media/lucene.404c3d1e095247f24d13.md",
     "static/media/bayesian-inference.md": "/docs/static/media/bayesian-inference.8deab1868926194811f9.md",
     "static/media/react-snap.md": "/docs/static/media/react-snap.6b320bd0d9f74ee8fd44.md",
+    "static/media/major-news.md": "/docs/static/media/major-news.fce1390941090582d089.md",
     "static/media/package-json.md": "/docs/static/media/package-json.02ca9eedd1305567d2e6.md",
     "static/media/stochastic-process.md": "/docs/static/media/stochastic-process.7538885b4040b717f3ac.md",
     "static/media/k-means.md": "/docs/static/media/k-means.cdb88c9edcd70a91c176.md",
     "static/media/datewise.md": "/docs/static/media/datewise.5e9ba713d10bae0d1bb0.md",
-    "static/media/major-news.md": "/docs/static/media/major-news.e3af179eca48f214d0b4.md",
     "static/media/chi-square-test.md": "/docs/static/media/chi-square-test.fc8bda8ed2276b7b0abf.md",
     "static/media/crypto.md": "/docs/static/media/crypto.0f98d3203de5d3a93c52.md",
     "static/media/vae.md": "/docs/static/media/vae.b2c08c8b684895bf9492.md",
@@ -127,11 +127,11 @@
     "static/media/hawkes-process.md": "/docs/static/media/hawkes-process.31d6cfe0d16ae931b73c.md",
     "static/media/textrank.md": "/docs/static/media/textrank.31d6cfe0d16ae931b73c.md",
     "main.f76ef324.css.map": "/docs/static/css/main.f76ef324.css.map",
-    "main.df231a04.js.map": "/docs/static/js/main.df231a04.js.map",
+    "main.534aee27.js.map": "/docs/static/js/main.534aee27.js.map",
     "787.d37de791.chunk.js.map": "/docs/static/js/787.d37de791.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ef324.css",
-    "static/js/main.df231a04.js"
+    "static/js/main.534aee27.js"
   ]
 }
