@@ -131,7 +131,7 @@
             {
                 "label": "뉴스 어플리케이션", "path": "news", "md": "news.md","meta":{},"preview": false,
                 "sub":[
-                    {"label":"주요 뉴스", "path": "major-news", "md": "major-news.md" ,"meta":{},"preview": true, "img": "/docs/assets/project/news/topic-news/topic-news.JPG", "snippet": "뉴스 어플리케이션"}
+                    {"label":"주요 뉴스", "path": "major-news", "component": "RealizationKor.js" ,"meta":{},"preview": true, "img": "/docs/assets/project/news/topic-news/topic-news.JPG", "snippet": "뉴스 어플리케이션"}
                 ]
             },
             {
